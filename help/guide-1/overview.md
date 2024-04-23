@@ -3,11 +3,9 @@ title: Overview
 description: This is the article overview.
 ---
 
-# Overview
+# Marketo Developer Guide Overview
 
-Welcome to the something something user guide.
-
-MORE...
+Bob was here.
 
 <!--
 This is the landing page of the user guide. It should be the first list item in the TOC.md file.
