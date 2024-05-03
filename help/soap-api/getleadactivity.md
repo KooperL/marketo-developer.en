@@ -663,7 +663,7 @@ The complete list of activity types can be found within the ActivityType enumera
 </SOAP-ENV:Envelope>
 ```
 
-Note that within <activityRecord> elements, the <id> element is being replaced by the <marketoGUID> element as unique identifier.  This change will occur in Spring 2017 release.  For additional information, see this [post](/blog/important-change-activity-records-marketo-apis/).
+Note that within `activityRecord` elements, the `id` element is being replaced by the `marketoGUID` element as unique identifier.  This change will occur in Spring 2017 release.
 
 ## Sample Code - PHP
 
