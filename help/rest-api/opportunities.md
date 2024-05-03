@@ -290,7 +290,7 @@ GET /rest/v1/opportunities/schema/fields.json?batchSize=5
 
 ####  Delete
 
-You may delete opportunities by dedupe fields or id field.  Specify using the `deleteBy` parameter with a value of either dedupeFields or idField.  If not specified, the default is dedupeFields.  The request body contains an `input` array of opportunities to delete.  A maximum of 300 opportunities per call are permitted.
+You may delete opportunities by dedupe fields or id field. Specify using the `deleteBy` parameter with a value of either dedupeFields or idField. If not specified, the default is dedupeFields. The request body contains an `input` array of opportunities to delete. A maximum of 300 opportunities per call are permitted.
 
 ```
 POST /rest/v1/opportunities/delete.json
@@ -332,5 +332,5 @@ POST /rest/v1/opportunities/delete.json
 ## Timeouts
 
 - Opportunity endpoints have a timeout of 30s unless noted below
-    - Sync Opportunities: 60s 
-    - Delete Opportunities: 60s
+   - Sync Opportunities: 60s 
+   - Delete Opportunities: 60s
