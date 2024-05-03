@@ -1,6 +1,6 @@
 ---
 title: "Examples"
-feature: "Javascript API"
+feature: "Examples"
 ---
 
 # Examples

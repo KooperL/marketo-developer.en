@@ -1,6 +1,6 @@
 ---
 title: "Redirect"
-feature: "Javascript API"
+feature: "Redirect"
 ---
 
 # Redirect

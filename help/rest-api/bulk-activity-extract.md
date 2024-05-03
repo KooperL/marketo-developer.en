@@ -3,6 +3,8 @@ title: "Bulk Activity Extract"
 feature: REST
 ---
 
+# Bulk Activity Extract
+
 [Bulk Activity Extract Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/)
 
 The Bulk Activity Extract set of REST APIs provides a programmatic interface for retrieving large amounts of activity data out of Marketo.  For cases which do not require low latency, and must transfer significant volumes of activity data out of Marketo, such as CRM-integration, ETL, data warehousing, and data archiving.

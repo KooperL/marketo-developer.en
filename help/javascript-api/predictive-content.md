@@ -1,6 +1,6 @@
 ---
 title: "Predictive Content"
-feature: "Javascript API"
+feature: "Predictive Content"
 ---
 
 # Predictive Content

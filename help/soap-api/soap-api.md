@@ -3,9 +3,11 @@ title: "SOAP API"
 feature: SOAP
 ---
 
+# SOAP API
+
 The SOAP API is no longer under active development. The calls still function, but our development is focused on [REST](/rest-api/) going forward.
 
-The Marketo SOAP API allows for the creation, retrieval, and removal of [entities and data](/getting-started/) stored within Marketo. You can find the [Marketo-SOAP-SDK](https://github.com/Marketo/SOAP-API-Java-Client "Marketo SOAP API Java SDK") on GitHub. There are also [client libraries](https://github.com/Marketo/Community-Supported-Client-Libraries) to save you some time.
+The Marketo SOAP API allows for the creation, retrieval, and removal of [entities and data](/getting-started/) stored within Marketo. You can find the [Marketo-SOAP-SDK](https://github.com/Marketo/SOAP-API-Java-Client) on GitHub. There are also [client libraries](https://github.com/Marketo/Community-Supported-Client-Libraries) to save you some time.
 
 Latest API Version: 3_1
 

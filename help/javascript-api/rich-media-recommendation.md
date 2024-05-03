@@ -1,6 +1,6 @@
 ---
 title: "Rich Media Recommendation"
-feature: "Javascript API"
+feature: "Rich Media Recommendation"
 ---
 
 # Rich Media Recommendation

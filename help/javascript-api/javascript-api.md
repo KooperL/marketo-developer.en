@@ -3,6 +3,8 @@ title: "JavaScript API"
 feature: "Javascript API"
 ---
 
+# Javascript APi
+
 The following is an overview of Marketo client-side JavaScript integration capabilities. You must have a Marketo account to make use of these capabilities. Usually, implementation simply involves adding an "embed code" to your web property. You may optionally use additional functionality by calling JavaScript functions that are exposed by the embed code. Those functions are fully documented here.
 
 The embed code is unique to your Marketo instance because is contains an account identifier. Obtain the embed code by navigating to the appropriate panel within the Marketo user interface, copy to clipboard, and paste into your web page.

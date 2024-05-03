@@ -1,6 +1,6 @@
 ---
 title: Social
-feature: "Javascript API"
+feature: "Social"
 ---
 
 # Social

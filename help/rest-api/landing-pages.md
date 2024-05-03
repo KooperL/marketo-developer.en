@@ -3,6 +3,8 @@ title: "Landing Pages"
 feature: REST
 ---
 
+# Landing Pages
+
 [Landing Page Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Landing-Pages)
 
 Landing Pages are web pages hosted by Marketo.

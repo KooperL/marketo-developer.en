@@ -1,6 +1,6 @@
 ---
 title: "Pattern Match"
-feature: "Javascript API"
+feature: "Pattern Match"
 ---
 
 # Pattern Match

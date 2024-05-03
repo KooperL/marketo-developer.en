@@ -1,6 +1,6 @@
 ---
 title: "Get Visitor Data"
-feature: "Javascript API"
+feature: "Get Visitor Data"
 ---
 
 # Get Visitor Data

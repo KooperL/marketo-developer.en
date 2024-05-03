@@ -1,6 +1,6 @@
 ---
 title: "Triggers"
-feature: "Javascript API"
+feature: "Triggers"
 ---
 
 # Triggers

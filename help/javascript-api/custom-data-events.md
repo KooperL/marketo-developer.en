@@ -1,6 +1,6 @@
 ---
 title: "Custom Data Events"
-feature: "Javascript API"
+feature: "Custom Data Events API"
 ---
 
 # Custom Data Events
