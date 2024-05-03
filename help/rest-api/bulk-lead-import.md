@@ -1,6 +1,7 @@
 ---
 title: "Bulk Lead Import"
 feature: REST
+description: "Batch importing of lead data."
 ---
 
 # Bulk Lead Import

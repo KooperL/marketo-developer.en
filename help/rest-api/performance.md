@@ -1,6 +1,7 @@
 ---
 title: "Performance"
 feature: REST
+description: "Performance tips for working with the Marketo API."
 ---
 
 # Performance

@@ -1,6 +1,7 @@
 ---
 title: "Fields"
 feature: REST
+description: "A list of supported field names."
 ---
 
 # Fields

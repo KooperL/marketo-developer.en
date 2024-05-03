@@ -431,7 +431,7 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
 Permissions must be enabled in your Xcode project to send push notifications to the user's device.
 
-To send push notifications, [add Push Notifications](push-notifications.md#ios_setup_push).
+To send push notifications, [add Push Notifications](push-notifications.md).
 
 Now in your `AppDelegate.m` file in XCode, import Marketo
 

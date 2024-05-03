@@ -1,6 +1,7 @@
 ---
 title: "Authentication"
 feature: REST
+description: "Authenticating Marketo users for API usage."
 ---
 
 # Authentication

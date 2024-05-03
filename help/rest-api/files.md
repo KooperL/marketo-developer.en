@@ -1,6 +1,7 @@
 ---
 title: "Files"
 feature: REST
+description: "Storing and manipulating Marketo files."
 ---
 
 # Files

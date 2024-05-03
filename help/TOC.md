@@ -1,6 +1,6 @@
 ---
 user-guide-title: "[!DNL Marketo] Developer Guide"
-user-guide-description: "This guide provides instructions for using [!DNL Marketo] APIs."
+user-guide-description: " ""This guide provides instructions for using [!DNL Marketo] APIs."
 breadcrumb-title: "[!DNL Marketo] Developer Guide"
 role: Admin
 feature: API
@@ -19,8 +19,8 @@ feature: API
    - [Javascript API](javascript-api/javascript-api.md)
    - [Pattern Match](javascript-api/pattern-match.md)
    - [Predictive Content](javascript-api/predictive-content.md)
-   - [Redirects](javascript-api/redirects.md)
-   - [Rich Media Recommendations](javascript-api/rich-media-recommendations.md)
+   - [Redirects](javascript-api/redirect.md)
+   - [Rich Media Recommendations](javascript-api/rich-media-recommendation.md)
    - [Social](javascript-api/social.md)
    - [Triggers](javascript-api/triggers.md)
    - [Web Personalization](javascript-api/web-personalization.md)
@@ -34,9 +34,8 @@ feature: API
    - [Installation](mobile/installation.md)
    - [Ionic](mobile/ionic.md)
    - [Mobile](mobile/mobile.md)
-   - [Mobile FAQ](mobile/mobile-faq.md)
    - [Phonegap](mobile/phonegap.md)
-   - [Push Notifications](mobile/push-notifications.mdd)
+   - [Push Notifications](mobile/push-notifications.md)
    - [React Native](mobile/react-native.md)
    - [User Profiles](mobile/user-profiles.md)
 - REST{#rest}
@@ -86,7 +85,7 @@ feature: API
       - [Sales Persons](rest-api/sales-persons.md)
    - [Paging Tokens](rest-api/paging-tokens.md)
    - [Performance](rest-api/performance.md)
-   - [Reference Architectures](rest-api/reference-architecture.md)
+   - [Reference Architectures](rest-api/reference-architectures.md)
    - [Sample Code](https://github.com/Marketo/REST-Sample-Code)
    - [User Management](rest-api/user-management.md)
 - SOAP {#soap}
@@ -107,7 +106,7 @@ feature: API
       - [getLead](soap-api/getlead.md)
       - [getMultipleLeads](soap-api/getmultipleleads.md)
       - [mergeLeads](soap-api/mergeleads.md)
-      - [syncLead](soap-api/syncleads.md)
+      - [syncLead](soap-api/synclead.md)
       - [syncMultipleLeads](soap-api/syncmultipleleads.md)
    - [Marketo Objects]{#marketo-objects}
       - [deleteMObjects](soap-api/deletemobjects.md)
@@ -118,12 +117,12 @@ feature: API
    - [Programs]{#programs}
       - [getChannels](soap-api/getchannels.md)
       - [getTags](soap-api/gettags.md)
-   - [SOAP FAQ](rest-api/soap-faq.md)
+   - [SOAP FAQ](soap-api/soap-faq.md)
    - [Static Lists]{#static-lists}
       - [getImportToListStatus](soap-api/getimporttoliststatus.md)
-      - [importToList](soap-api/importotlist.md)
+      - [importToList](soap-api/importtolist.md)
       - [listOperation](soap-api/listoperation.md)
-   - [Stream Position](rest-api/stream-position.md)
+   - [Stream Position](soap-api/stream-position.md)
 - Webhooks {#webhooks}
    - [Errors](webhooks/errors.md)
    - [Response Mappings](webhooks/response-mappings.md)

@@ -1,6 +1,7 @@
 ---
 title: Static Lists
 feature: REST
+description: "Perform CRUD operations on static lists."
 ---
 
 # Static lists

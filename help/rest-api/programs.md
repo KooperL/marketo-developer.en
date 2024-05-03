@@ -1,6 +1,7 @@
 ---
 title: "Programs"
 feature: REST
+description: "Create and edit program information."
 ---
 
 # Programs

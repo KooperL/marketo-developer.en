@@ -1,6 +1,7 @@
 ---
 title: "Custom Services"
 feature: REST
+description: "Authentication credentials with Marketo."
 ---
 
 # Custom Services

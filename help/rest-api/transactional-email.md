@@ -1,6 +1,7 @@
 ---
 title: "Transactional Email"
 feature: REST
+description: "Handle transactional emails for Request campaigns."
 ---
 
 # Transactional Email

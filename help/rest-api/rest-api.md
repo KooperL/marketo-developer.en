@@ -1,6 +1,7 @@
 ---
 title: "REST API"
 feature: REST
+description: "REST API overview"
 ---
 
 # REST API

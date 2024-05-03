@@ -1,6 +1,7 @@
 ---
 title: "Endpoint Reference"
 feature: REST
+description: "Marketo API endpoint references."
 ---
 
 # Endpoint Reference

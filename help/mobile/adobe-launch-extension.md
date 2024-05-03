@@ -11,7 +11,7 @@ Installation instructions for Marketo Mobile SDK extension in Adobe Launch. The 
 
 - [Add an application in Marketo Admin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/mobile-marketing/admin/add-a-mobile-app) (obtain your application Secret Key and Munchkin Id)
 - Follow instructions provided in Adobe Launch portal for installation
-- [Setup Push Notifications](push-notifications.md#ios_setup_push) (optional)
+- [Setup Push Notifications](push-notifications.md) (optional)
 
 ## iOS
 

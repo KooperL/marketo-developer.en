@@ -1,6 +1,7 @@
 ---
 title: "Authentication Signature"
 feature: REST
+description: "Using secure authentication for sending messages."
 ---
 
 # Authentication Signature

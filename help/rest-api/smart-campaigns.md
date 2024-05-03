@@ -1,6 +1,7 @@
 ---
 title: "Smart Campaigns"
 feature: REST
+description: "Smart campaign overview"
 ---
 
 # Smart Campaigns

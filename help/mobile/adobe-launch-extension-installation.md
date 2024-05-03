@@ -10,9 +10,9 @@ Installation instructions for Adobe Launch Marketo extension. The steps below ar
 ## Prerequisites
 
 1. [Add an application in Marketo Admin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/mobile-marketing/admin/add-a-mobile-app) (obtain your application Secret Key and Munchkin Id)
-1. [Configure the property in Adobe Launch portal](https://experienceleague.adobe.com/docs/launch/using/implement/configure/overview.html?lang=en)
+1. [Configure the property in Adobe Launch portal](https://experience.adobe.com/#/@amc/data-collection/home)
 1. Configure application secret key & Munchkin ID for the property in Adobe Launch portal
-1. [Setup Push Notifications](push-notifications.md#ios_setup_push) (optional)
+1. [Setup Push Notifications](push-notifications.md) (optional)
 
 ## How to Install Marketo Extension on iOS
 

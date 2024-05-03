@@ -1,6 +1,7 @@
 ---
 title: "Bulk Program Member Extract"
 feature: REST
+description: "Batch processing of Member data extraction."
 ---
 
 # Bulk Program Member Extract

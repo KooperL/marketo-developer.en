@@ -1,6 +1,7 @@
 ---
 title: "Tokens"
 feature: REST
+description: "Manage tokens in Marketo."
 ---
 
 # Tokens

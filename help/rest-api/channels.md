@@ -1,6 +1,7 @@
 ---
 title: "Channels"
 feature: REST
+description: "Configuring Channels data with Marketo APIs."
 ---
 
 # Channels

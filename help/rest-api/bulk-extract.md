@@ -1,6 +1,7 @@
 ---
 title: "Bulk Extract"
 feature: REST
+description: "Batch operations for extracting Marketo data."
 ---
 
 # Bulk Extract

@@ -1,6 +1,7 @@
 ---
 title: "Base URL"
 feature: REST
+description: "Describes how to URLs for Marketo."
 ---
 
 # Base URL

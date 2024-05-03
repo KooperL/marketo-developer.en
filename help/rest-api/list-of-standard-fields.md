@@ -1,6 +1,7 @@
 ---
 title: "Standard Fields"
 feature: REST
+description: "A table of standard Marketo fields."
 ---
 
 # Standard Fields

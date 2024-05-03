@@ -1,6 +1,7 @@
 ---
 title: "Named Account Lists"
 feature: REST
+description: "Configure named account lists."
 ---
 
 # Named Account Lists

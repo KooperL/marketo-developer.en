@@ -1,6 +1,7 @@
 ---
 title: "Lead Database"
 feature: REST
+description: "Manipulate the main lead database."
 ---
 
 # Lead Database

@@ -1,6 +1,7 @@
 ---
 title: "Field Types"
 feature: REST
+description: "A list of Marketo field types"
 ---
 
 # Field Types

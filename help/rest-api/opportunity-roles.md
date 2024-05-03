@@ -1,13 +1,14 @@
 ---
 title: "Opportunity Roles"
 feature: REST
+description: "Handling opportunity roles in Marketo."
 ---
 
 # Opportunity Roles
 
 [Opportunity Roles Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Opportunities/operation/getOpportunityRolesUsingGET)
 
-Leads are linked to opportunities via the intermediate opportunityRole object.
+Leads are linked to opportunities via the intermediate `opportunityRole` object.
 
 Opportunity Role APIs are only exposed for subscriptions which do not have a native CRM sync enabled.
 

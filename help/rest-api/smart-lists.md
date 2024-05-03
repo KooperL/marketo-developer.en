@@ -1,6 +1,7 @@
 ---
 title: "Smart Lists"
 feature: REST
+description: "Create and edit smart lists."
 ---
 
 # Smart Lists

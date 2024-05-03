@@ -1,6 +1,7 @@
 ---
 title: "Paging Tokens"
 feature: REST
+description: "View paging tokens data."
 ---
 
 # Paging Tokens

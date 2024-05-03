@@ -1,6 +1,7 @@
 ---
 title: "Emails"
 feature: REST
+description: "APIs for manipulating email assets."
 ---
 
 # Emails

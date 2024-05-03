@@ -1,6 +1,7 @@
 ---
 title: "Landing Pages"
 feature: REST
+description: "Query landing pages in Marketo."
 ---
 
 # Landing Pages
@@ -10,8 +11,6 @@ feature: REST
 Landing Pages are web pages hosted by Marketo.
 
 ## Query
-
-Note: A member 'url' was erroneously added to the Landing Page response in August 2020. This member will be removed in the October 2020 release and should not be used. 'URL' is the correct member
 
 Like most other assets, Landing Pages can be queried [by name](https://developer.adobe.com/marketo-apis/api/asset/#tag/Landing-Pages/operation/getLandingPageByNameUsingGET), [by id](https://developer.adobe.com/marketo-apis/api/asset/#tag/Landing-Pages/operation/getLandingPageByIdUsingGET), and by [browsing](https://developer.adobe.com/marketo-apis/api/asset/#tag/Landing-Pages/operation/browseLandingPagesUsingGET). These queries will only return metadata, and the list of content sections for a landing page must be queried separately by the id of the landing page.
 

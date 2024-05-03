@@ -1,6 +1,7 @@
 ---
 title: "Program Members"
 feature: REST
+description: "Create and manage program members."
 ---
 
 # Program Members
