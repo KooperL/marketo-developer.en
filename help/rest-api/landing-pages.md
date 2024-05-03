@@ -271,7 +271,7 @@ Variables are defined as meta tags inside `<head>` element of a guided mode land
 
 For more information see "Editable Variable" section in [Create a Guided Landing Page Template](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/demand-generation/landing-pages/landing-page-templates/create-a-guided-landing-page-template) documentation.
 
-#### Query
+### Query
 
 Retrieve variables for a guided landing page by passing the landing page id to Get Landing Page Variables endpoint.
 
@@ -307,7 +307,7 @@ GET /rest/asset/v1/landingPage/{id}/variables.json
 
 In  this example, the guided landing page contains 3 variables: stringVar, colorVar, boolVar.
 
-#### Update
+### Update
 
 Update a variable for a guided landing page by passing the landing page id, the variable id, and the variable value to Update Landing Page Variables endpoint.
 
