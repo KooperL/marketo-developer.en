@@ -16,11 +16,11 @@ First [create and approve your email](https://experienceleague.adobe.com/docs/ma
 
 ![Request-Campaign-Email-Settings](assets/request-campaign-email-settings.png)
 
-![Request-Campaign-Operational](assets/request-campaign-oerational.png)
+![Request-Campaign-Operational](assets/request-campaign-operational.png)
 
 Approve it and we're ready to create our campaign:
 
-![RequestCampaign-Approve-Draft](assets/requestcampaign-approve-draft.png)
+![RequestCampaign-Approve-Draft](assets/request-campaign-approve-draft.png)
 
 If you're new to creating campaigns, check out the [Create a New Smart Campaign](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-campaigns/creating-a-smart-campaign/create-a-new-smart-campaign.html) article. Once you've created your campaign, we must go through these steps. Configure your Smart List with the Campaign is Requested trigger:
 
@@ -36,7 +36,7 @@ Before activation, you must decide on some settings in the Schedule tab. If this
 
 Now we're ready to activate:
 
-![Request-Campaign-Schedule](assets/request-sampaign-schedule.png)
+![Request-Campaign-Schedule](assets/request-campaign-schedule.png)
 
 ## Sending the API Calls
 
