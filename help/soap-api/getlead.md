@@ -1,6 +1,7 @@
 ---
 title: "getLead"
 feature: SOAP
+description: "getLead SOAP calls"
 ---
 
 # getLead

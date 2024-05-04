@@ -1,11 +1,12 @@
 ---
 title: "syncMObjects"
 feature: SOAP
+description: "syncMObjects SOAP calls"
 ---
 
 # syncMObjects
 
-Accepts an array of [MObjects](marketo-objects.md) to be created or updated, up to a maximum to 100 per call, and returns the outcome (status) of the operation (CREATED, UPDATED, FAILED, UNCHANGED, SKIPPED) and the Marketo IDs of the MObject(s). The API can be called in one of three operation modes:
+Accepts an array of [MObjects](./marketo-objects.md) to be created or updated, up to a maximum to 100 per call, and returns the outcome (status) of the operation (CREATED, UPDATED, FAILED, UNCHANGED, SKIPPED) and the Marketo IDs of the MObject(s). The API can be called in one of three operation modes:
 
 1. INSERT - Only insert new objects, skip existing objects
 1. UPDATE - Only update existing objects, skip new objects.
@@ -43,7 +44,7 @@ The UPDATE and UPSERT operations use the ID as the key. In a single API call som
 1. Stage
 1. Type
 
-For OpportunityPersonRole MObject, you can supply all the fields from the output of [describeMObject](describemobject.md) as name-value pairs. The standard set of attributes on OpportunityPersonRole MObject are listed here:
+For OpportunityPersonRole MObject, you can supply all the fields from the output of [describeMObject](./describemobject.md) as name-value pairs. The standard set of attributes on OpportunityPersonRole MObject are listed here:
 
 1. OpportunityId (Required)
 1. PersonId (Required)

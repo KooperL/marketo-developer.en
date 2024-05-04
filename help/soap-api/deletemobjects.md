@@ -1,11 +1,12 @@
 ---
 title: "deleteMObjects"
 feature: SOAP
+description: "deleteMObjects SOAP calls"
 ---
 
 # deleteMObjects
 
-Deletes one or more [MObjects](marketo-objects.md) and returns the outcome of the operation (DELETED, UNCHANGED, FAILED).
+Deletes one or more [MObjects](./marketo-objects.md) and returns the outcome of the operation (DELETED, UNCHANGED, FAILED).
 
 ## Request
 

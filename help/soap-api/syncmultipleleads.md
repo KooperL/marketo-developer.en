@@ -1,6 +1,7 @@
 ---
 title: "syncMultipleLeads"
 feature: SOAP
+description: "syncMultipleLeads SOAP calls"
 ---
 
 # syncMultipleLeads

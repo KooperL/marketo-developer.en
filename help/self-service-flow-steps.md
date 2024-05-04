@@ -1,5 +1,6 @@
 ---
 title: "Self-Service Flow Steps"
+description: "Self-Service Flow steps overview"
 ---
 
 # Self-service Flow Steps

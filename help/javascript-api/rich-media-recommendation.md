@@ -237,4 +237,4 @@ rtp('get','rcmd', 'richmedia');
 
 #### Example of Rich Media Recommendation Template #3
 
-**Name**: template3 **Description**: Vertical content including only title and description. On mouse hover, header changes color and is hyperlinked to content URL. Description also links to content without color change. ![Rich Media template](assets/rich-media-template-3.png)
+**Name**: template3 **Description**: Vertical content including only title and description. On mouse hover, header changes color and is hyperlinked to content URL. Description also links to content without color change. ![Rich Media template](assets/rich-media-template3.png)

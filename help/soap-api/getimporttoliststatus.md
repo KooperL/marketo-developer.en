@@ -1,6 +1,7 @@
 ---
 title: "getImportToListStatus"
 feature: SOAP
+description: "getImportToListStatus SOAP calls"
 ---
 
 # getImportToListStatus

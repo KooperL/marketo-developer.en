@@ -1,5 +1,6 @@
 ---
 title: "Home"
+description: "Marketo API homepage"
 ---
 
 # Marketo Developer Documentation

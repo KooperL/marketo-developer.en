@@ -1,6 +1,7 @@
 ---
 title: "PhoneGap"
 feature: Mobile
+description: "Using PhoneGap with Marekto on mobile devices"
 ---
 
 # PhoneGap
@@ -112,7 +113,7 @@ Check the list of platforms added `$cordova platform ls`
 
 ### 3. Enable Push Notifications in xCode
 
-1. Turn on push notification capability in xCode project.![notification_capability](assets/notification_capability-300x82.png)
+1. Turn on push notification capability in xCode project.
 
 ### 4. Track Push Notifications
 

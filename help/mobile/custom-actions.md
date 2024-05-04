@@ -1,6 +1,7 @@
 ---
 title: "Custom Actions"
 feature: Mobile
+description: "Custom Actions overview"
 ---
 
 # Custom Actions

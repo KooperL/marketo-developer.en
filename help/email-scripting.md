@@ -1,6 +1,7 @@
 ---
 title: "Email Scripting"
 feature: Email
+description: "Email Scripting overview"
 ---
 
 # Email Scripting

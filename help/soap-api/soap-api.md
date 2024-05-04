@@ -1,6 +1,7 @@
 ---
 title: "SOAP API"
 feature: SOAP
+description: "Marketo SOAP overview"
 ---
 
 # SOAP API

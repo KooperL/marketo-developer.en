@@ -1,6 +1,7 @@
 ---
 title: "getCampaignsForSource"
 feature: SOAP
+description: "getCampaignsForSource SOAP calls"
 ---
 
 # getCampaignsForSource

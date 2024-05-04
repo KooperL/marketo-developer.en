@@ -1,6 +1,7 @@
 ---
 title: "importToList"
 feature: SOAP
+description: "importToList SOAP calls"
 ---
 
 # importToList

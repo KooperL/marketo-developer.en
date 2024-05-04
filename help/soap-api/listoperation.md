@@ -1,6 +1,7 @@
 ---
 title: "listOperation"
 feature: SOAP
+description: "listOperation SOAP calls"
 ---
 
 # listOperation

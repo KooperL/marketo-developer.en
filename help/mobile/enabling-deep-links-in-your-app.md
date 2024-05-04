@@ -1,6 +1,7 @@
 ---
 title: "Enabling Deep Links"
 feature: Mobile
+description: "Instructions for enabling Deep Links"
 ---
 
 # Enabling Deep Links

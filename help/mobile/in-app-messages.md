@@ -1,6 +1,7 @@
 ---
 title: "In-App Messages"
 feature: Mobile
+description: "Overview of In-App Messages"
 ---
 
 # In-App Messages

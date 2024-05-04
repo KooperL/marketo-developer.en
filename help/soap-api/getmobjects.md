@@ -1,11 +1,12 @@
 ---
 title: "getMObjects"
 feature: SOAP
+description: "getMObjects SOAP calls"
 ---
 
 # getMObjects
 
-Retrieves one or more [MObjects](marketo-objects.md) using a combination of criteria consisting of:
+Retrieves one or more [MObjects](./marketo-objects.md) using a combination of criteria consisting of:
 
 - Zero or one unique ID, either the Marketo ID or external ID
 - Zero or more attribute filters as name/value/comparison trios

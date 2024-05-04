@@ -1,6 +1,7 @@
 ---
 title: "scheduleCampaign"
 feature: SOAP
+description: "scheduleCampaign SOAP calls"
 ---
 
 # scheduleCampaign

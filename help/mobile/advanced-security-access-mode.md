@@ -1,6 +1,7 @@
 ---
 title: "Advanced Security Access Mode"
 feature: Security, Mobile
+description: "Details around Advanced Security Access Mode"
 ---
 
 # Advanced Security Access Mode

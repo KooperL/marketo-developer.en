@@ -1,6 +1,7 @@
 ---
 title: "requestCampaign"
 feature: SOAP
+description: "requestCampaign SOAP calls"
 ---
 
 # requestCampaign

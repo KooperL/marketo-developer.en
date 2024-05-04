@@ -1,6 +1,7 @@
 ---
 title: "Leads"
 feature: SOAP
+description: "Leads SOAP calls"
 ---
 
 # Leads

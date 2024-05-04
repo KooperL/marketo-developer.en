@@ -1,13 +1,14 @@
 ---
 title: "SOAP FAQ"
 feature: SOAP
+description: "SOAP FAQ"
 ---
 
 # SOAP FAQ
 
 **Q:** How can I get a list of all Programs within Marketo along with their meta data?
 
-**A:** To retrieve a list of all programs, you can use [getMObjects](getmobjects.md) passing the type equal to "Program" and setting includeDetails to true.
+**A:** To retrieve a list of all programs, you can use [getMObjects](./getmobjects.md) passing the type equal to "Program" and setting includeDetails to true.
 
 **Q:** Is there a way to speed up the performance of getMultipleLeads?
 

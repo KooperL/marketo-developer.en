@@ -1,6 +1,7 @@
 ---
 title: "Push Notifications"
 feature: Mobile
+description: "Enabling Push Notifications for Marketo Mobile"
 ---
 
 # Push Notifications
@@ -21,7 +22,7 @@ There are three steps to enable push notifications:
 1. Click on "Certificates, Identifiers & Profiles".
 1. Click on "Certificates->All" folder underneath "iOS, tvOS, watchOS".
 1. Select the "+" on the top left screen next to certificates ![](assets/certificates-plus.png)
-1. Enable "Apple Push Notification service SSL (Sandbox & Production)" checkbox, and click "Continue".![](assets/certificates-push.png)
+1. Enable "Apple Push Notification service SSL (Sandbox & Production)" checkbox, and click "Continue".
 1. Select the application identifier that you are using the build the app.![](assets/push-appid.png)
 1. Create and upload CSR to generate the push certificate. ![](assets/push-ssl.png)
 1. Download certificate to local computer and double-click to install. ![](assets/certificate-download.png)
@@ -289,7 +290,7 @@ Open `AndroidManifest.xml` and add following permissions. Your app must request 
 1. Setting up FCM with HTTPv1 (Google has [deprecated XMPP protocol](https://firebase.google.com/docs/cloud-messaging/xmpp-server-ref) on 12th June, 2023 and will be removed in June 2024) 
 
 - Enable MME FCM HTTPv1 in Marketo feature manager ![](assets/feature-manager.png)
-    - Upload Service Account Json file for the app in MLM. ![](assets/configure-android-push.png) 
+    - Upload Service Account Json file for the app in MLM.
     - You can download the Service Account Json file from Firebase Console.   ![](assets/fcm-console.png)
     - Wait for an hour after uploading Service Account Json file in Marketo before sending push notifications.  
 

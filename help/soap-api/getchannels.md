@@ -1,6 +1,7 @@
 ---
 title: "getChannels"
 feature: SOAP
+description: "getChannels SOAP calls"
 ---
 
 # getChannels

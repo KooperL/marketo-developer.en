@@ -1,5 +1,6 @@
 ---
 title: "Partner Sandbox"
+description: "Partner Sandbox overview"
 ---
 
 # Partner Sandbox

@@ -1,6 +1,7 @@
 ---
 title: "syncLead"
 feature: SOAP
+description: "syncLead SOAP calls"
 ---
 
 # syncLean

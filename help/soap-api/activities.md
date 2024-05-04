@@ -1,6 +1,7 @@
 ---
 title: "Activities"
 feature: SOAP
+description: "SOAP calls for Activities"
 ---
 
 # Activities

@@ -14,29 +14,29 @@ A common use case for the Marketo API is to trigger the sending of transactional
 
 First [create and approve your email](https://experienceleague.adobe.com/docs/marketo/using/home.html). If the email is truly transactional, you will likely must set it to operational, but be sure that it legally qualifies as operational. This is configured from with the Edit Screen under Email Actions > Email Settings:
 
-![Request-Campaign-Email-Settings](assets/Request-Campaign-Email-Settings.png)
+![Request-Campaign-Email-Settings](assets/request-campaign-email-settings.png)
 
-![Request-Campaign-Operational](assets/Request-Campaign-Operational.png)
+![Request-Campaign-Operational](assets/request-campaign-oerational.png)
 
 Approve it and we're ready to create our campaign:
 
-![RequestCampaign-Approve-Draft](assets/RequestCampaign-Approve-Draft.png)
+![RequestCampaign-Approve-Draft](assets/requestcampaign-approve-draft.png)
 
 If you're new to creating campaigns, check out the [Create a New Smart Campaign](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/smart-campaigns/creating-a-smart-campaign/create-a-new-smart-campaign.html) article. Once you've created your campaign, we must go through these steps. Configure your Smart List with the Campaign is Requested trigger:
 
-![Request-Campaign-Smart-List](assets/Request-Campaign-Smart-List-1024x406.png)
+![Request-Campaign-Smart-List](assets/request-campaign-smart-list.png)
 
 Now we must configure the flow to point a Send Email step to our email:
 
-![Request-Campaign-Flow](assets/Request-Campaign-Flow-1024x218.png)
+![Request-Campaign-Flow](assets/request-campaign-flow.png)
 
 Before activation, you must decide on some settings in the Schedule tab. If this particular email should only ever be sent once to a given record, then leave the qualification settings as is. If it's required that they receive the email multiple times, though, you want to adjust this to either every time or to one of the available cadences:
 
-![Qualification-Rules](assets/Qualification-Rules.png)
+![Qualification-Rules](assets/qualification-rules.png)
 
 Now we're ready to activate:
 
-![Request-Campaign-Schedule](assets/Request-Campaign-Schedule-1024x427.png)
+![Request-Campaign-Schedule](assets/request-sampaign-schedule.png)
 
 ## Sending the API Calls
 

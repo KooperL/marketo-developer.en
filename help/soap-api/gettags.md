@@ -1,6 +1,7 @@
 ---
 title: "getTags"
 feature: SOAP
+description: "getTags SOAP calls"
 ---
 
 # getTags

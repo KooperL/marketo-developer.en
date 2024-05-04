@@ -1,6 +1,7 @@
 ---
 title: "describeMObject"
 feature: SOAP
+description: "describeMObjects SOAP calls"
 ---
 
 # describeMObject

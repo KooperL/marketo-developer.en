@@ -1,6 +1,7 @@
 ---
 title: "mergeLeads"
 feature: SOAP
+description: "mergeLeads SOAP calls"
 ---
 
 # mergeLeads
