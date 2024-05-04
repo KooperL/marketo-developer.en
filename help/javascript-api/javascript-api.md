@@ -1,6 +1,6 @@
 ---
 title: "JavaScript API"
-feature: "Javascript API"
+description: "Javascript API"
 ---
 
 # Javascript APi

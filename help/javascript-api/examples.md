@@ -1,6 +1,6 @@
 ---
 title: "Examples"
-feature: "Examples"
+description: "Examples"
 ---
 
 # Examples

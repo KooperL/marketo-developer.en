@@ -1,5 +1,6 @@
 ---
 title: "API License"
+description: "API license for Marketo"
 ---
 
 # API License

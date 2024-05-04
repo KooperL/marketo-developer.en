@@ -1,6 +1,6 @@
 ---
 title: "Web Personalization"
-feature: "Web Personalization"
+description: "Web Personalization"
 ---
 
 # Web Personalization

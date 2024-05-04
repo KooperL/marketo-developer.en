@@ -1,6 +1,6 @@
 ---
 title: "Rich Media Recommendation"
-feature: "Rich Media Recommendation"
+description: "Rich Media Recommendation"
 ---
 
 # Rich Media Recommendation

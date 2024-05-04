@@ -1,6 +1,6 @@
 ---
 title: "Get Visitor Data"
-feature: "Get Visitor Data"
+description: "Get Visitor Data"
 ---
 
 # Get Visitor Data

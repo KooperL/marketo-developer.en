@@ -1,6 +1,6 @@
 ---
 title: "Triggers"
-feature: "Triggers"
+description: "Triggers"
 ---
 
 # Triggers

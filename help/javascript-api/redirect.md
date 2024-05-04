@@ -1,6 +1,6 @@
 ---
 title: "Redirect"
-feature: "Redirect"
+description: "Redirect"
 ---
 
 # Redirect

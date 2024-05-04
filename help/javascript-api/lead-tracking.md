@@ -1,6 +1,6 @@
 ---
 title: "Lead Tracking"
-feature: "Lead Tracking API"
+description: "Lead Tracking API"
 ---
 
 # Lead Tracking API

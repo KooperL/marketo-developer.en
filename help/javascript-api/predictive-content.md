@@ -1,6 +1,6 @@
 ---
 title: "Predictive Content"
-feature: "Predictive Content"
+description: "Predictive Content"
 ---
 
 # Predictive Content

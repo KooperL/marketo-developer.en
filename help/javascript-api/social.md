@@ -1,6 +1,6 @@
 ---
 title: Social
-feature: "Social"
+description: "Social"
 ---
 
 # Social

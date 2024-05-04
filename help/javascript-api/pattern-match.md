@@ -1,6 +1,6 @@
 ---
 title: "Pattern Match"
-feature: "Pattern Match"
+description: "Pattern Match"
 ---
 
 # Pattern Match

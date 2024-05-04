@@ -1,6 +1,6 @@
 ---
 title: "Configuration"
-feature: "Configuration API"
+description: "Configuration API"
 ---
 
 # Configuration
