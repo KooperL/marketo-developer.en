@@ -13,17 +13,17 @@ This Marketo API License Agreement ("Agreement") governs the implementation and 
 
 1. Definitions
 
-"API Limits" means restrictions (e.g., rate limits and concurrency limits) to Your API calls as described on the Marketo Developer website substantially described at: http://developers.marketo.com/documentation/rest/.
+"API Limits" means restrictions (e.g., rate limits and concurrency limits) to Your API calls as described on the Marketo Developer website substantially described at: https://developer.adobe.com/marketo-apis/.
 
 "Application Programming Interface" or "API" means a collection of routines, classes, function parameters, protocols, webhooks, related libraries and other instructions provided in Source Code or Object Code form.
 
-"API Specification" means a written description or definition of the routines, classes, function parameters, protocols, webhooks, related libraries and other instructions that allow a Software Application to interoperate with the Marketo Solution, and as substantially described at: http://developers.marketo.com/documentation/rest/.
+"API Specification" means a written description or definition of the routines, classes, function parameters, protocols, webhooks, related libraries and other instructions that allow a Software Application to interoperate with the Marketo Solution, and as substantially described at: https://developer.adobe.com/marketo-apis/.
 
 "Feedback" means suggestions or comments provided by You to Marketo that are related to Marketo products (e.g., Marketo APIs or the Marketo Solution).
 
 "Forking" mean the act of creating a distinct and/or separate set of APIs that are based upon, derived from, or a modification of the Marketo APIs.
 
-"Marketo API" means a collection of routines, classes, function parameters, protocols, related libraries, tools and other instructions provided in Source Code or Object Code form that allow access to or interoperability with the Marketo Solution by a Software Application, as substantially described and made available at: http://developers.marketo.com/documentation/rest/.
+"Marketo API" means a collection of routines, classes, function parameters, protocols, related libraries, tools and other instructions provided in Source Code or Object Code form that allow access to or interoperability with the Marketo Solution by a Software Application, as substantially described and made available at: https://developer.adobe.com/marketo-apis/.
 
 "Marketo Solution" means a service or services made available to You through the Marketo APIs and substantially described at: http://www.marketo.com/software/.
 
