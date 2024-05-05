@@ -1,6 +1,7 @@
 ---
 title: "Errors"
 feature: Webhooks
+description: "Error codes for Webhooks"
 ---
 
 # Errors

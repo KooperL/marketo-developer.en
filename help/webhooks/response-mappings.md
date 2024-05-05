@@ -1,6 +1,7 @@
 ---
 title: "Response Mappings"
 feature: Webhooks
+description: "Response Mappings for Marketo"
 ---
 
 # Response Mappings

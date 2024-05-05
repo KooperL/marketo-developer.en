@@ -4,7 +4,7 @@ user-guide-description: "This guide provides instructions for using [!DNL Market
 breadcrumb-title: "[!DNL Marketo] Developer Guide"
 role: Admin
 feature: API
-feature-set: APIs
+feature-set: API
 ---
 
 # [!DNL Marketo] Developer {#marketo}
@@ -58,6 +58,7 @@ feature-set: APIs
       - [Static Lists](rest-api/static-lists.md)
       - [Tokens](rest-api/tokens.md)
       - [Transactional Email](rest-api/transactional-email.md)
+   - [Authentication](rest-api/authentication.md)
    - [Authentication Signature](rest-api/authentication-signature.md)
    - [Base URL](rest-api/base-url.md)
    - [Bulk Extract]{#bulk-extract}
@@ -114,6 +115,7 @@ feature-set: APIs
       - [describeMObjects](soap-api/describemobject.md)
       - [getMObjects](soap-api/getmobjects.md)
       - [listMObjects](soap-api/listmobjects.md)
+      - [Marketo Objects](soap-api/marketo-objects.md)
       - [syncMObjects](soap-api/syncmobjects.md)
    - [Programs]{#programs}
       - [getChannels](soap-api/getchannels.md)
