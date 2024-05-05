@@ -37,8 +37,6 @@ Installation instructions for Marketo Mobile SDK. The steps below are required t
 
 1. Now add the Resource bundle as shown: Locate `MarketoFramework.XCframework` in project navigator and open it in Finder. Drag and drop `MKTResources.bundle` to Copy Bundle Resources.
 
-![Copy Bundle Resources](assets/addresourcebundle.gif)
-
 ### Setup Swift Bridging Header
 
 1. Go to File > New > File and Select "Header File".

@@ -181,7 +181,7 @@ This class has one constructor taking an Auth, and the Id of the campaign. Leads
 
 To customize our content, first we must configure a [program](https://experienceleague.adobe.com/docs/marketo/using/product-docs/core-marketo-concepts/programs/creating-programs/create-a-program.html) and an [email](https://experienceleague.adobe.com/docs/marketo/using/home.html) in Marketo. To generate our custom content, we must create tokens inside the program, and then place them into the email that we're going to be sending. For simplicity's sake, we are using just one token in this example, but you can replace any number of tokens in an email, in the From Email, From Name, Reply-to, or any piece of content in the email. So let's create one token Rich Text for replacement and call it "bodyReplacement". Rich Text allows us to replace any content in the token with arbitrary HTML that we want to input.
 
-![New-Token](assets/New-Token-1024x589.png)
+![New-Token](assets/New-Token.png)
 
 Tokens can't be saved while empty, so go ahead and insert some placeholder text here. Now we must insert our token into the email:
 
