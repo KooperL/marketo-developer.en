@@ -1,6 +1,6 @@
 ---
 title: "getCampaignsForSource"
-feature: SOAP
+feature: Reporting
 description: "getCampaignsForSource SOAP calls"
 ---
 

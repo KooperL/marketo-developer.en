@@ -1,6 +1,6 @@
 ---
 title: "deleteCustomObjects"
-feature: SOAP, Custom Objects
+feature: Reporting, Custom Objects
 description: "deleteCustomObjects SOAP calls."
 ---
 

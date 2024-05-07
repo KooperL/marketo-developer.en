@@ -1,6 +1,6 @@
 ---
 title: "describeMObject"
-feature: SOAP
+feature: Reporting
 description: "describeMObjects SOAP calls"
 ---
 

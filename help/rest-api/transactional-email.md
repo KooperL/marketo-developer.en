@@ -32,8 +32,6 @@ Now we must configure the flow to point a Send Email step to our email:
 
 Before activation, you must decide on some settings in the Schedule tab. If this particular email should only ever be sent once to a given record, then leave the qualification settings as is. If it's required that they receive the email multiple times, though, you want to adjust this to either every time or to one of the available cadences:
 
-![Qualification-Rules](assets/qualification-rules.png)
-
 Now we're ready to activate:
 
 ![Request-Campaign-Schedule](assets/request-campaign-schedule.png)

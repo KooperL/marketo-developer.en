@@ -1,6 +1,6 @@
 ---
 title: "getLeadActivity"
-feature: SOAP
+feature: Reporting
 description: "getLeadActivity SOAP calls"
 ---
 

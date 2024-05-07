@@ -1,6 +1,6 @@
 ---
 title: "syncMObjects"
-feature: SOAP
+feature: Reporting
 description: "syncMObjects SOAP calls"
 ---
 

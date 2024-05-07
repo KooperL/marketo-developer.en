@@ -1,6 +1,6 @@
 ---
 title: "SOAP FAQ"
-feature: SOAP
+feature: Reporting
 description: "SOAP FAQ"
 ---
 

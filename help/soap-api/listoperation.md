@@ -1,6 +1,6 @@
 ---
 title: "listOperation"
-feature: SOAP
+feature: Reporting
 description: "listOperation SOAP calls"
 ---
 

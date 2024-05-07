@@ -1,6 +1,6 @@
 ---
 title: "Leads"
-feature: SOAP
+feature: Reporting
 description: "Leads SOAP calls"
 ---
 

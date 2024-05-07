@@ -1,6 +1,6 @@
 ---
 title: "Activity Type Filters"
-feature: SOAP
+feature: Reporting
 description: "Activity Type filters for SOAP calls."
 ---
 

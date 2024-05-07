@@ -1,6 +1,6 @@
 ---
 title: "getTags"
-feature: SOAP, Tags
+feature: Reporting, Tags
 description: "getTags SOAP calls"
 ---
 

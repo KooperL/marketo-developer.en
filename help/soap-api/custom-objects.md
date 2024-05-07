@@ -1,6 +1,6 @@
 ---
 title: "Custom Objects"
-feature: SOAP
+feature: Reporting
 description: "Creating custom objects."
 ---
 
