@@ -1,6 +1,7 @@
 ---
 title: "JavaScript API"
-description: "Javascript API", "Munchkin Tracking Code"
+description: "Javascript API"
+feature: Munchkin Tracking Code
 ---
 
 # Javascript APi
