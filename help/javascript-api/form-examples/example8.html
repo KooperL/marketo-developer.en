@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms 2.0 Example 8 Test Page</title>
+  </head>
+  <body>
+    <h2>Example 8</h2>
+    <p>Show the form in a lightbox style dialog if the url contains a parameter lightboxForm=true</p>
+    <p><a href='?lightboxForm=true'>Load page with lightboxForm=true</a></p>
+
+    <script src="//app-sjst.marketo.com/js/forms2/js/forms2.js"></script>
+    <form id="mktoForm_1057"></form>
+    <script>
+      MktoForms2.loadForm("//app-sjst.marketo.com", "785-UHP-775", 1057, function (form){ 
+        if(location.href.indexOf("lightboxForm=true") != -1){
+          MktoForms2.lightbox(form).show();
+        }
+      });
+    </script>
+  </body>
+</html>

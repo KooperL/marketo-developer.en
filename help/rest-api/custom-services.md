@@ -24,7 +24,7 @@ Be sure to give your role a descriptive name. API-Only users have a specific set
 
 Only permissions in the "Access API" group are applied to API users, that is, awarding all admin permissions will not grant any API Permissions to a user.
 
-When constructing a role, think carefully about what actions you should permit the application using it to do. Award only the minimal set of permissions required to carry out those actions. Allowing an unnecessarily permissive set of permissions can allow integrations to perform unwanted actions in your subscription. You can use the [permissions tool](endpoint-index.md#permissions) to determine your minimal set of permissions. See the full list of [permissions](#permission_list).
+When constructing a role, think carefully about what actions you should permit the application using it to do. Award only the minimal set of permissions required to carry out those actions. Allowing an unnecessarily permissive set of permissions can allow integrations to perform unwanted actions in your subscription. You can use the [permissions tool](endpoint-reference.md) to determine your minimal set of permissions. See the full list of [permissions](#permission_list).
 
 ## Users
 

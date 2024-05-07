@@ -5,7 +5,7 @@ description: "Configuration API"
 
 # Configuration
 
-Munchkin can accept various configuration settings to customize behavior. Configuration settings are properties of a JavaScript object that is passed as the second parameter when calling [Munchkin.init()](/javascript-api/lead-tracking/api-reference/#munchkin_init).
+Munchkin can accept various configuration settings to customize behavior. Configuration settings are properties of a JavaScript object that is passed as the second parameter when calling [Munchkin.init()](lead-tracking.md#munchkin-behavior)
 
 ```json
 Munchkin.init("AAA-BBB-CCC", {

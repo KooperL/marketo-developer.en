@@ -8,9 +8,7 @@ description: "getLeadActivity SOAP calls"
 
 This function retrieves the activity history for a single lead identified by the provided key. You can specify which activity types you wish to be returned in the result. If you want all activity types, a blank value needs to be passed. For more than one activity type, pass in a list of activity types. When requesting multiple activities, the remaining count is not an accurate number, but should be treated as a flag which indicates that there are more activities when the remaining count > 0.
 
-A [stream position](/soap-api/stream-position.md) can be used to paginate through large result sets.
-
-The complete list of activity types can be found within the ActivityType enumeration located in the [SOAP API WSDL](/soap-api/#wsdl).
+A [stream position](stream-position.md) can be used to paginate through large result sets.
 
 ## Request
 

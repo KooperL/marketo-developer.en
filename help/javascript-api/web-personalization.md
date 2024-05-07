@@ -6,7 +6,7 @@ feature: "Web Personalization"
 
 # Web Personalization
 
-The Web Personalization JavaScript API extends the platform's automated personalization capability. It allows for event tracking and dynamic customization of a webpage. Additional capabilities: [Custom Data Events](/javascript-api/custom-data-events.md), [Dynamic Content](/javascript-api/web-personalization/dynamic-content/), [Get Visitor Data](/javascript-api/get-visitor-data.md), [Exclude Tag for Specific Bots](#exclude_tag_for_specific_bots).
+The Web Personalization JavaScript API extends the platform's automated personalization capability. It allows for event tracking and dynamic customization of a webpage. Additional capabilities: [Custom Data Events](custom-data-events.md), [Dynamic Content](web-personalization.md), [Get Visitor Data](get-visitor-data.md), [Exclude Tag for Specific Bots](#exclude_tag_for_specific_bots).
 
 - You must become a Web Personalization customer and have the [RTP tag deployed](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/web-personalization/rtp-tag-implementation/deploy-the-rtp-javascript) on your site before using the User Context API.
 - RTP does not support Account Based Marketing named account lists. ABM lists and code only pertain to the uploaded account lists (CSV files) managed within RTP.

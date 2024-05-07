@@ -1,0 +1,43 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms 2.0 Example 6 Test Page</title>
+  </head>
+  <body>
+    <h2>Example 6</h2>
+    <p>Prevent a user from submitting a form.  For the purpose of this example, you must click the click counter button at least three times before the submit button on the form will function. 
+
+    <p>
+      <button id='ClickCounter'>Click Counter Button (0)</button>
+    </p>
+
+    <script src="//app-sjst.marketo.com/js/forms2/js/forms2.js"></script>
+    <form id="mktoForm_1057"></form>
+    <script>
+      MktoForms2.loadForm("//app-sjst.marketo.com", "785-UHP-775", 1057, function (form){ 
+        //check if the form is submittable
+        if(form.submittable()){
+          //Set it to be non submittable
+          form.submittable(false);
+        }
+      });
+
+      var clickCount = 0;
+      //wire up the click counter button;
+      var clickCounterBtn = document.getElementById("ClickCounter");
+      clickCounterBtn.onclick = function(){
+        clickCount++;
+        //update the buttons's text;
+        clickCounterBtn.innerHTML = "Click Counter Button ("+clickCount+")";
+
+        if(clickCount >= 3){
+          //Get the form and set it to be submittable.
+          MktoForms2.whenReady(function (form){
+            form.submittable(true);
+          });
+        }
+      };
+    </script>
+  </body>
+</html>

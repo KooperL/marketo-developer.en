@@ -61,7 +61,7 @@ profile.setLinkedInId("linkedinid")
 profile.setTwitterId("twitterid")
 ```
 
-1. Add more [standard fields](list-of-standard-fields.md).
+1. Add more [standard fields](../rest-api/list-of-standard-fields.md).
 
 >[!BEGINTABS]
 
@@ -109,7 +109,7 @@ marketo.associateLead(profile)
 
 >[!ENDTABS]
 
-## Creating User Profiles on Android
+## Creating User Profiles on Android {#android_user_profiles}
 
 1. Create User Profile.
 
@@ -131,7 +131,7 @@ catch (MktoException e) {
 }
 ```
 
-1. Add more [standard fields](list-of-standard-fields.md).
+1. Add more [standard fields](../rest-api/list-of-standard-fields.md).
 
 ```java
 // Add other custom fields

@@ -8,9 +8,9 @@ description: "Overview of In-App Messages"
 
 To use the In-App messaging capabilities from Marketo, you must perform the following steps:
 
-1. Install the Marketo Mobile SDK as described in the [Mobile Installation](/mobile/installation/).
+1. Install the Marketo Mobile SDK as described in the [Mobile Installation](installation.md).
 1. Add your mobile app to Marketo as described in [Add a Mobile App](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/mobile-marketing/admin/add-a-mobile-app).
-1. Optionally, add code to your mobile app to capture [Custom Actions](/mobile/custom-actions/).
+1. Optionally, add code to your mobile app to capture [Custom Actions](custom-actions.md).
 
 Once you have installed the Marketo Mobile SDK, and completed adding your app in Marketo, you are ready to send In-App messages that display when a user opens your app.
 

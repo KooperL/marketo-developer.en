@@ -1,0 +1,26 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms 2.0 Example 2 Test Page</title>
+  </head>
+  <body>
+    <h2>Example 2</h2>
+    <p>Take the visitor to a URL determined by JavaScript after successful submission, instead of the configured thank you page.
+    </p>
+
+    <script src="//app-sjst.marketo.com/js/forms2/js/forms2.js"></script>
+    <form id="mktoForm_1057"></form>
+    <script>
+      MktoForms2.loadForm("//app-sjst.marketo.com", "785-UHP-775", 1057, function(form){
+        //Add an onSuccess handler
+        form.onSuccess(function(values, followUpUrl){
+          //Take the lead to a different page on successful submit, ignoring the form's configured followUpUrl.
+          location.href = "https://google.com/?q=marketo+forms+v2+examples";
+          //return false to prevent the submission handler continuing with its own processing
+          return false;
+        });
+      });
+    </script>
+  </body>
+</html>

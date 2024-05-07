@@ -1,0 +1,22 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms 2.0 Example 7 Test Page</title>
+  </head>
+  <body>
+    <h2>Example 7</h2>
+
+    <p>Set values on hidden fields on the form.</p>
+
+    <script src="//app-sjst.marketo.com/js/forms2/js/forms2.js"></script>
+    <form id="mktoForm_1057"></form>
+    <script>
+      MktoForms2.loadForm("//app-sjst.marketo.com", "785-UHP-775", 1057, function (form){ 
+        //Set values for the hidden fields, "userIsAwesome" and "enrollDate".
+        //Note that these fields were configured in the form editor as hidden fields already.
+        form.vals({"userIsAwesome":"true", "enrollDate":"2014-01-01"});
+      });
+    </script>
+  </body>
+</html>

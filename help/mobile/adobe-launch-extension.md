@@ -1,6 +1,6 @@
 ---
 title: "Marketo Mobile Extension for Adobe Launch"
-feature: "Mobile Marketing"
+feature: Mobile Marketing
 description: "Marketo Mobile Extension for Adobe Launch overview"
 ---
 
@@ -38,7 +38,7 @@ Follow instructions [here](installation.md#ios_test_devices)
 
 ## Set up push notifications on iOS
 
-Follow instructions [here](push-notifications.me) and use the class name "ALMarketo" instead of "Marketo"
+Follow instructions [here](push-notifications.md) and use the class name "ALMarketo" instead of "Marketo"
 
 ## Android
 
@@ -63,10 +63,10 @@ If you are using ProGuard for your app, then add the following lines in your `pr
 
 ## Android  Test Devices
 
-Follow instructions [here](installation/#android_test_devices)
+Follow instructions [here](installation.md#android_test_devices)
 
 ## Set up push notifications on Android
 
-Follow instructions [here](installation/#android_firebase_cloud_messaging_support) and use the class name "ALMarketo" instead of "Marketo"
+Follow instructions [here](installation.md#android_firebase_cloud_messaging_support) and use the class name "ALMarketo" instead of "Marketo"
 
-For setting up user profiles follow instructions [here](user-profiles/) and for custom actions follow instructions [here](custom-actions/#android_custom_action). In following instructions, use the class name "ALMarketo" instead of "Marketo"
+For setting up user profiles follow instructions [here](user-profiles.md) and for custom actions follow instructions [here](custom-actions.md#android_custom_action). In following instructions, use the class name "ALMarketo" instead of "Marketo"

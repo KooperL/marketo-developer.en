@@ -21,7 +21,7 @@ Each individual webhook has the following properties:
 - Response Type - Select the format of the response that you receive from the service (JSON or XML). The correct response type must be selected to map properties of the response back to lead fields in Marketo
 - Custom Headers - Accessed through Webhooks Actions -> Set Custom Header, this menu allows the addition of any number of custom Key-Value pairs as HTTP Headers.
 
-Data can be written back to leads from web-service responses by using [Response Mappings](/webhooks/response-mappings/)
+Data can be written back to leads from web-service responses by using [Response Mappings](response-mappings.md)
 
 ## Tokens
 

@@ -40,7 +40,7 @@ authHeader = "<ns1:AuthenticationHeader>" +
 | `mktowsUserId` | Required | Marketo client access ID is found within your Marketo admin SOAP API panel under Integration. |
 | `requestSignature` | Required | HMAC-SHA1 signature based on shared secret key, `requestTimestamp`, and Marketo User Id |
 | `requestTimestamp` | Required | Request timestamp (W3C WSDL date format Ex. "2013-06-09T14:04:54-08:00") |
-| `partnerId` | Optional | LaunchPoint Technology Partner [API Key](/Marketo_LaunchPoint_Technology_Partner_API_Key.pdf). |
+| `partnerId` | Optional | LaunchPoint Technology Partner [API Key](../launchpoint-api.pdf). |
 
 ## Request XML - getLeadActivity
 
