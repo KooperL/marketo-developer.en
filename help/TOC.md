@@ -50,6 +50,7 @@ feature-set: "Marketo Engage"
       - [Landing Pages](rest-api/landing-pages.md)
       - [Landing Page Templates](rest-api/landing-page-templates.md)
       - [Landing Page Redirect Rules](rest-api/landing-page-redirect-rules.md)
+      - [List of Standard Fields](rest-api/list-of-standard-fields.md)
       - [Programs](rest-api/programs.md)
       - [Smart Campaigns](rest-api/smart-campaigns.md)
       - [Smart Lists](rest-api/smart-lists.md)
@@ -91,6 +92,7 @@ feature-set: "Marketo Engage"
    - [User Management](rest-api/user-management.md)
 - SOAP {#soap}
    - [Activities]{#activities}
+      - [Activities](soap-api/activities.md)
       - [getLeadActivity](soap-api/getleadactivity.md)
       - [getLeadChanges](soap-api/getleadchanges.md)
    - [Activity Type Filters](soap-api/activity-type-filters.md)
@@ -99,6 +101,7 @@ feature-set: "Marketo Engage"
       - [requestCampaign](soap-api/requestcampaign.md)
       - [scheduleCampaign](soap-api/schedulecampaign.md)
    - [Custom Objects]{#custom-objects}
+      - [Custom Objects](soap-api/custom-objects.md)
       - [deleteCustomObjects](soap-api/deletecustomobjects.md)
       - [getCustomObjects](soap-api/getcustomobjects.md)
       - [syncCustomObjects](soap-api/synccustomobjects.md)
@@ -107,6 +110,7 @@ feature-set: "Marketo Engage"
       - [getLead](soap-api/getlead.md)
       - [getMultipleLeads](soap-api/getmultipleleads.md)
       - [mergeLeads](soap-api/mergeleads.md)
+      - [Leads](soap-api/leads.md)
       - [syncLead](soap-api/synclead.md)
       - [syncMultipleLeads](soap-api/syncmultipleleads.md)
    - [Marketo Objects]{#marketo-objects}

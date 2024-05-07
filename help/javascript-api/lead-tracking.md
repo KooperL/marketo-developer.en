@@ -60,7 +60,7 @@ The default behavior of Marketo Munchkin is to do the following on page load:
 1. Send a "Visit Web Page" event to the designated Marketo instance using the information from the current page and browser. This records an activity to the corresponding record in Marketo.
 1. Send "Clicked Link on Web Page" event for any user clicks that occur on links.
 
-The behavior of Munchkin can be modified through the usage of Munchkin [Configuration settings](/javascript-api/lead-tracking/configuration/), such as whether a cookie is created for all leads upon visiting the page with the `cookieAnon` setting, or modifying the click delay with `clickTime` setting. The sending of the Visit activity may be disabled by setting the apiOnly setting to true. As of version 162 (August 2022), clicks `tel` and `mailto` links are tracked in addition to `http/s` links.
+The behavior of Munchkin can be modified through the usage of Munchkin [Configuration settings](lead-tracking.md#lead-tracking-api), such as whether a cookie is created for all leads upon visiting the page with the `cookieAnon` setting, or modifying the click delay with `clickTime` setting. The sending of the Visit activity may be disabled by setting the apiOnly setting to true. As of version 162 (August 2022), clicks `tel` and `mailto` links are tracked in addition to `http/s` links.
 
 ## Known and Anonymous Leads
 
@@ -78,7 +78,7 @@ A new anonymous web activity record is created for each individual browser, so i
 
 Munchkin creates and tracks individual cookies on a per-domain basis, so for known-lead tracking to occur across domains, a lead association event must occur for each domain. For example, if I control two domains, `marketo.com`, and `example.com`, and a lead fills out a form on `marketo.com`, then navigates to `example.com` later, then their activity on `marketo.com` is tracked on a known lead record, but their activity on `example.com` is anonymous. Known leads persist across subdomains however, so a known lead on `www.example.com` is also a known lead on `info.example.com`.
 
-In the case that your top-level domain is two parts, such as `.co.uk`, then add a domainLevel parameter to your Munchkin snippet for the code to track correctly. See [here](/javascript-api/lead-tracking/configuration/#domainlevel_property) for more details.
+In the case that your top-level domain is two parts, such as `.co.uk`, then add a domainLevel parameter to your Munchkin snippet for the code to track correctly. See [here](lead-tracking.md#domains) for more details.
 
 ## Cookie
 
