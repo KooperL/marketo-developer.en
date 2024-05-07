@@ -1,6 +1,6 @@
 ---
 title: "Landing Page Templates"
-feature: REST
+feature: "REST API", "Landing Pages"
 description: "Build and edit landing page templates."
 ---
 

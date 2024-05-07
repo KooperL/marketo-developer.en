@@ -1,6 +1,6 @@
 ---
 title: "PhoneGap"
-feature: Mobile
+feature: "Mobile Marketing"
 description: "Using PhoneGap with Marekto on mobile devices"
 ---
 

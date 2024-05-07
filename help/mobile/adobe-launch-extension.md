@@ -1,6 +1,6 @@
 ---
 title: "Marketo Mobile Extension for Adobe Launch"
-feature: Mobile
+feature: "Mobile Marketing"
 description: "Marketo Mobile Extension for Adobe Launch overview"
 ---
 

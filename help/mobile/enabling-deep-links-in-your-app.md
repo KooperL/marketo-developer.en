@@ -1,6 +1,6 @@
 ---
 title: "Enabling Deep Links"
-feature: Mobile
+feature: "Mobile Marketing"
 description: "Instructions for enabling Deep Links"
 ---
 

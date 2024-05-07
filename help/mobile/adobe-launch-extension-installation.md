@@ -1,6 +1,6 @@
 ---
 title: "Adobe Launch Extension Installation"
-feature: "Mobile"
+feature: "Mobile Marketing"
 description: "Adobe Launch extension installation overview"
 ---
 

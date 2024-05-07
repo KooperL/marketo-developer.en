@@ -1,6 +1,6 @@
 ---
 title: "Ionic"
-feature: Mobile
+feature: "Mobile Marketing"
 description: "Using Ionic with Marketo for mobile devices"
 ---
 

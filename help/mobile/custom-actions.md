@@ -1,6 +1,6 @@
 ---
 title: "Custom Actions"
-feature: Mobile
+feature: "Mobile Marketing"
 description: "Custom Actions overview"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Bulk Import"
-feature: REST
+feature: "REST API"
 description: "Batch importing person data."
 ---
 

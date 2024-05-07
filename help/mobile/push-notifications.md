@@ -1,6 +1,6 @@
 ---
 title: "Push Notifications"
-feature: Mobile
+feature: "Mobile Marketing"
 description: "Enabling Push Notifications for Marketo Mobile"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Paging Tokens"
-feature: REST
+feature: "REST API"
 description: "View paging tokens data."
 ---
 

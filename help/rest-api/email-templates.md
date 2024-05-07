@@ -1,6 +1,6 @@
 ---
 title: "Email Templates"
-feature: REST
+feature: "REST API"
 description: "Create email templates with Marketo APIs."
 ---
 

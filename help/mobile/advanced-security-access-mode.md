@@ -1,6 +1,6 @@
 ---
 title: "Advanced Security Access Mode"
-feature: Security, Mobile
+feature: "Mobile Marketing"
 description: "Details around Advanced Security Access Mode"
 ---
 

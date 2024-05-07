@@ -1,6 +1,6 @@
 ---
 title: "User Context"
-feature: REST
+feature: "REST API"
 description: "User context overview and API descriptions"
 ---
 

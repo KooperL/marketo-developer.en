@@ -1,6 +1,6 @@
 ---
 title: "Assets"
-feature: REST
+feature: "REST API"
 description: "An API for working with Marketo assets."
 ---
 

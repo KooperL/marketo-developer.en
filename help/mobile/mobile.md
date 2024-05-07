@@ -1,6 +1,6 @@
 ---
 title: "Mobile"
-feature: Mobile
+feature: "Mobile Marketing"
 description: "Using Marketo Mobile"
 ---
 

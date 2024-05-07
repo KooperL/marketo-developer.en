@@ -1,6 +1,6 @@
 ---
 title: "Dynamic Content"
-feature: REST
+feature: "REST API", Dynamic Content"
 description: "Configure dynamic content with Marketo APIs."
 ---
 

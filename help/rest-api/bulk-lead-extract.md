@@ -1,6 +1,6 @@
 ---
 title: "Bulk Lead Extract"
-feature: REST
+feature: "REST API"
 description: "Batch extraction of lead data."
 ---
 

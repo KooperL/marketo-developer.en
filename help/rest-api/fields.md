@@ -1,6 +1,6 @@
 ---
 title: "Fields"
-feature: REST
+feature: "REST API", "Field Management"
 description: "A list of supported field names."
 ---
 

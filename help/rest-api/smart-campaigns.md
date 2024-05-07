@@ -1,6 +1,6 @@
 ---
 title: "Smart Campaigns"
-feature: REST
+feature: "REST API", "Smart Campaigns"
 description: "Smart campaign overview"
 ---
 

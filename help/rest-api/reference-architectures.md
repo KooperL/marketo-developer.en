@@ -1,6 +1,6 @@
 ---
 title: "Reference Architectures"
-feature: REST
+feature: "REST API"
 description: "Reference material discussing the Marketo architecture."
 ---
 

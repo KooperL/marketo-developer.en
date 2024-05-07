@@ -3,8 +3,7 @@ user-guide-title: "[!DNL Marketo] Developer Guide"
 user-guide-description: "This guide provides instructions for using [!DNL Marketo] APIs."
 breadcrumb-title: "[!DNL Marketo] Developer Guide"
 role: Admin
-feature: API
-feature-set: API
+feature-set: "Marketo Engage"
 ---
 
 # [!DNL Marketo] Developer {#marketo}

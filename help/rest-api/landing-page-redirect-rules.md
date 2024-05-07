@@ -1,6 +1,6 @@
 ---
 title: "Landing Page Redirect Rules"
-feature: REST
+feature: "REST API", "Landing Pages"
 description: "Configure landing page redirect rules through the API."
 ---
 

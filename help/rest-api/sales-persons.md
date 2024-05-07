@@ -1,6 +1,6 @@
 ---
 title: "Sales Persons"
-feature: REST
+feature: "REST API"
 description: "Read data around sales persons."
 ---
 

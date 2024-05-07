@@ -1,6 +1,6 @@
 ---
 title: "Opportunity Roles"
-feature: REST
+feature: "REST API"
 description: "Handling opportunity roles in Marketo."
 ---
 

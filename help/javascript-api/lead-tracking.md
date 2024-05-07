@@ -1,6 +1,6 @@
 ---
 title: "Lead Tracking"
-description: "Lead Tracking API"
+description: "Lead Tracking API","Munchkin Tracking Code"
 ---
 
 # Lead Tracking API

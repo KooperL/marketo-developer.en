@@ -1,6 +1,6 @@
 ---
 title: "Named Accounts"
-feature: REST
+feature: "REST API"
 description: "Manipulate named accounts through the API."
 ---
 

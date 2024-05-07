@@ -1,6 +1,6 @@
 ---
 title: "React Native"
-feature: Mobile
+feature: "Mobile Marketing"
 description: "Installing React Native for Marketo"
 ---
 

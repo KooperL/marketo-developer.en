@@ -1,6 +1,6 @@
 ---
 title: "Installation"
-feature: Mobile
+feature: "Mobile Marketing"
 description: "How to install SDKs for Mobile Marketo"
 ---
 

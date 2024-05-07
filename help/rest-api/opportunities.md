@@ -1,6 +1,6 @@
 ---
 title: "Opportunities"
-feature: REST
+feature: "REST API"
 description: " Configure opportunities with the Marketo API."
 ---
 

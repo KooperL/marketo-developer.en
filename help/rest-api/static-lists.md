@@ -1,6 +1,6 @@
 ---
 title: Static Lists
-feature: REST
+feature: "REST API", "Static Lists"
 description: "Perform CRUD operations on static lists."
 ---
 

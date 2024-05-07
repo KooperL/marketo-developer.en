@@ -1,6 +1,6 @@
 ---
 title: "Tokens"
-feature: REST
+feature: "REST API", Tokens
 description: "Manage tokens in Marketo."
 ---
 

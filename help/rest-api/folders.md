@@ -1,6 +1,6 @@
 ---
 title: "Folders"
-feature: REST
+feature: "REST API"
 description: "Manipulating folders with the Marketo API."
 ---
 

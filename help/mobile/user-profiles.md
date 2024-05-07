@@ -1,6 +1,6 @@
 ---
 title: "User Profiles"
-feature: Mobile
+feature: "Mobile Marketing", Users and Roles"
 description: "Using User Profiles in Marketo Mobile"
 ---
 

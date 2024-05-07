@@ -1,6 +1,6 @@
 ---
 title: "In-App Messages"
-feature: Mobile
+feature: "Mobile Marketing"
 description: "Overview of In-App Messages"
 ---
 

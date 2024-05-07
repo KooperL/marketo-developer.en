@@ -1,6 +1,6 @@
 ---
 title: "requestCampaign"
-feature: SOAP
+feature: SOAP, "Smart Campaigns"
 description: "requestCampaign SOAP calls"
 ---
 
