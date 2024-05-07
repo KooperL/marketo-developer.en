@@ -1,6 +1,6 @@
 ---
 title: "Error Codes"
-feature: "REST API"
+feature: REST API
 description: "Marketo error code descriptions."
 ---
 

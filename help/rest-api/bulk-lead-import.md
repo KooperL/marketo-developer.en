@@ -1,6 +1,6 @@
 ---
 title: "Bulk Lead Import"
-feature: "REST API"
+feature: REST API
 description: "Batch importing of lead data."
 ---
 

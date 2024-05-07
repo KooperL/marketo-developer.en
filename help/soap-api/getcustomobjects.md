@@ -1,6 +1,6 @@
 ---
 title: "getCustomObjects"
-feature: SOAP, "Custom Objects"
+feature: SOAP, Custom Objects
 description: "getCustomObjects SOAP calls"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Standard Fields"
-feature: "REST API", "Field Management"
+feature: REST API, Field Management
 description: "A table of standard Marketo fields."
 ---
 

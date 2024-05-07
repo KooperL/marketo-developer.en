@@ -1,6 +1,6 @@
 ---
 title: "Bulk Activity Extract"
-feature: "REST API"
+feature: REST API
 description: "Batch processing Activity data from Marketo."
 ---
 

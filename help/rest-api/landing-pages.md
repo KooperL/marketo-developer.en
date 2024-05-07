@@ -1,6 +1,6 @@
 ---
 title: "Landing Pages"
-feature: "REST API", "Landing Pages"
+feature: REST API, Landing Pages
 description: "Query landing pages in Marketo."
 ---
 

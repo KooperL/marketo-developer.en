@@ -1,6 +1,6 @@
 ---
 title: "Bulk Custom Object Extract"
-feature: "REST API","Custom Objects"
+feature: REST API, Custom Objects
 description: "Batch processing custom Marketo objects."
 ---
 

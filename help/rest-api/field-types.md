@@ -1,6 +1,6 @@
 ---
 title: "Field Types"
-feature: "REST API"
+feature: REST API
 description: "A list of Marketo field types"
 ---
 

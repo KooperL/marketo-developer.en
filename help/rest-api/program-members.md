@@ -1,6 +1,6 @@
 ---
 title: "Program Members"
-feature: "REST API"
+feature: REST API
 description: "Create and manage program members."
 ---
 

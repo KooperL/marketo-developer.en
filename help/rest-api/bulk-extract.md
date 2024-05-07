@@ -1,6 +1,6 @@
 ---
 title: "Bulk Extract"
-feature: "REST API"
+feature: REST API
 description: "Batch operations for extracting Marketo data."
 ---
 

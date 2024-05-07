@@ -1,6 +1,6 @@
 ---
 title: "Authentication Signature"
-feature: "REST API"
+feature: REST API
 description: "Using secure authentication for sending messages."
 ---
 

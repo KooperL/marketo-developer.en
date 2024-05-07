@@ -1,6 +1,6 @@
 ---
 title: "Forms"
-feature: "REST API", "Forms"
+feature: REST API, Forms
 description: "Create and manage forms through the API."
 ---
 

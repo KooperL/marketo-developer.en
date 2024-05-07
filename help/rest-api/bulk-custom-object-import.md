@@ -1,6 +1,6 @@
 ---
 title: "Bulk Custom Object Import"
-feature: "REST API","Custom Objects"
+feature: Custom Objects
 description: "Batch importing of custom objects."
 ---
 

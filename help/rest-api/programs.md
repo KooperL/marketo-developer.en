@@ -1,6 +1,6 @@
 ---
 title: "Programs"
-feature: "REST API", Programs
+feature: REST API, Programs
 description: "Create and edit program information."
 ---
 

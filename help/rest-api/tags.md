@@ -1,6 +1,6 @@
 ---
 title: "Tags"
-feature: "REST API", Tags
+feature: REST API, Tags
 description: "Manage tags for programs in Marketo."
 ---
 

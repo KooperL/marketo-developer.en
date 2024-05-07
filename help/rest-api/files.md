@@ -1,6 +1,6 @@
 ---
 title: "Files"
-feature: "REST API"
+feature: REST API
 description: "Storing and manipulating Marketo files."
 ---
 

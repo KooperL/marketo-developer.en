@@ -1,6 +1,6 @@
 ---
 title: "Marketo Integration Best Practices"
-feature: "REST API"
+feature: REST API
 description: "Best Practices for using Marketo APIs."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Bulk Program Member Import
-feature: "REST API"
+feature: REST API
 description: "Batch importing of member data."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Companies"
-feature: "REST API"
+feature: REST API
 description: "Configure company data with Marketo APIs."
 ---
 

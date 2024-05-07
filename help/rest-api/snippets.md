@@ -1,6 +1,6 @@
 ---
 title: "Snippets"
-feature: "REST API", Snippets
+feature: REST API, Snippets
 description: "Managing snippets through the Marketo API."
 ---
 

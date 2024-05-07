@@ -1,6 +1,6 @@
 ---
 title: "Bulk Program Member Extract"
-feature: "REST API"
+feature: REST API
 description: "Batch processing of Member data extraction."
 ---
 

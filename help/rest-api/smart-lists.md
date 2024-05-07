@@ -1,6 +1,6 @@
 ---
 title: "Smart Lists"
-feature: "REST API"
+feature: REST API
 description: "Create and edit smart lists."
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "User Management"
-feature: "REST API"
+feature: REST API
 description: "Perform CRUD operations on user records."
 ---
 
