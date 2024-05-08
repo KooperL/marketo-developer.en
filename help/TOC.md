@@ -104,6 +104,7 @@ hide: yes
       - [getLeadActivity](soap-api/getleadactivity.md)
       - [getLeadChanges](soap-api/getleadchanges.md)
    - [Activity Type Filters](soap-api/activity-type-filters.md)
+   - [Authentication Signature](soap-api/authentication-signature.md)
    - Campaigns {#campaigns}
       - [getCampaignsForSource](soap-api/getcampaignsforsource.md)
       - [requestCampaign](soap-api/requestcampaign.md)

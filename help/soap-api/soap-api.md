@@ -6,9 +6,9 @@ description: "Marketo SOAP overview"
 
 # SOAP API
 
-The SOAP API is no longer under active development. The calls still function, but our development is focused on [REST](/rest-api/) going forward.
+The SOAP API is no longer under active development. The calls still function, but our development is focused on [REST](https://developer.adobe.com/marketo-apis/) going forward.
 
-The Marketo SOAP API allows for the creation, retrieval, and removal of [entities and data](/getting-started/) stored within Marketo. You can find the [Marketo-SOAP-SDK](https://github.com/Marketo/SOAP-API-Java-Client) on GitHub. There are also [client libraries](https://github.com/Marketo/Community-Supported-Client-Libraries) to save you some time.
+The Marketo SOAP API allows for the creation, retrieval, and removal of entities and data stored within Marketo. You can find the [Marketo-SOAP-SDK](https://github.com/Marketo/SOAP-API-Java-Client) on GitHub. There are also [client libraries](https://github.com/Marketo/Community-Supported-Client-Libraries) to save you some time.
 
 Latest API Version: 3_1
 
@@ -38,6 +38,6 @@ Our recommendation is that batch sizes are no larger than 300. Larger sizes are 
 
 ![admin-web-services2](assets/admin-web-services2.png)
 
-1. Set an appropriate Encryption Key, click "Save Changes" and use the SOAP API Endpoint, User ID, and Encryption Key values to generate the correct [authentication signature](/soap-api/authentication-signature/) for each SOAP API call.
+1. Set an appropriate Encryption Key, click "Save Changes" and use the SOAP API Endpoint, User ID, and Encryption Key values to generate the correct [authentication signature](authentication-signature.md) for each SOAP API call.
 
 ![admin-web-services3](assets/admin-web-services3.png)
