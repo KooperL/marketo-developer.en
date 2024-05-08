@@ -127,7 +127,7 @@ GET /rest/asset/v1/staticLists.json?folder={"id":13,"type":"Folder"}
 
 ## Create and Update
 
-[Creating a static list](/asset-/Static_Lists/createStaticListUsingPOST) is executed with an application/x-www-form-urlencoded POST with two required parameters. The `folder` parameter is used to specify the parent folder under which the static list will be created and is formatted as a JSON object containing id and type. The `name` parameter is used to name the static list and must be unique. Optionally the `description` parameter may be used to describe the static list.
+[Creating a static list](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Static-Lists/createStaticListUsingPOST) is executed with an application/x-www-form-urlencoded POST with two required parameters. The `folder` parameter is used to specify the parent folder under which the static list will be created and is formatted as a JSON object containing id and type. The `name` parameter is used to name the static list and must be unique. Optionally the `description` parameter may be used to describe the static list.
 
 ```
 POST /rest/asset/v1/staticLists.json

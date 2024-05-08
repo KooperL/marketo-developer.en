@@ -30,6 +30,6 @@ Custom objects consist of:
 
 The following calls can be used to interact with COs.
 
-- [getCustomObjects](/soap-api/custom-objects/getcustomobjects/)
-- [syncCustomObjects](/soap-api/custom-objects/synccustomobjects/)
-- [deleteCustomObjects](/soap-api/custom-objects/deletecustomobjects/)
+- [getCustomObjects](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Custom-Objects/operation/getCustomObjectsUsingGET)
+- [syncCustomObjects](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Custom-Objects/operation/syncCustomObjectsUsingPOST)
+- [deleteCustomObjects](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Custom-Objects/operation/deleteCustomObjectsUsingPOST)

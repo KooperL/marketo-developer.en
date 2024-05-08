@@ -8,7 +8,7 @@ description: "getCustomObjects SOAP calls"
 
 Retrieves one or more custom objects using a combination of criteria consisting of zero or one custom object key.
 
-Returns a list of matching custom objects, all of a single type, up to 100 in a batch, and a [stream position](/soap-api/stream-position.md) token for retrieving successive batches.
+Returns a list of matching custom objects, all of a single type, up to 100 in a batch, and a [stream position](stream-position.md) token for retrieving successive batches.
 
 ## Request
 

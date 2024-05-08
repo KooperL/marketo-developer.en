@@ -14,7 +14,7 @@ To use the In-App messaging capabilities from Marketo, you must perform the foll
 
 Once you have installed the Marketo Mobile SDK, and completed adding your app in Marketo, you are ready to send In-App messages that display when a user opens your app.
 
-By default, in-app messages are triggered when your app opens. If you want to trigger in-app messages for other events, such as when a specific page is viewed, or when a specific button is pushed, you must add custom actions to your code. See [Custom Actions](/mobile/custom-actions/) section for code samples of this.
+By default, in-app messages are triggered when your app opens. If you want to trigger in-app messages for other events, such as when a specific page is viewed, or when a specific button is pushed, you must add custom actions to your code. See [Custom Actions](custom-actions.md) section for code samples of this.
 
 ## Troubleshooting
 

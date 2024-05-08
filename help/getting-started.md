@@ -41,7 +41,7 @@ As a Marketo Admin, you have the ability to create required and optional tag typ
 
 For example, you may want to create a custom "Region" tag type with multiple tag values (for example, Northeast, Southeast) allowing you to analyze which region is generating the most leads. Or, for instance, you can create an "Owner" tag type, which allows you to assess and understand which Program owners (for example, Maria, David, or John) are having the greatest impact on creating leads and opportunities. More information about tags can be found [here](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/core-marketo-concepts/programs/working-with-programs/understanding-tags).
 
-Related APIs: [REST](/https://developer.adobe.com/marketo-apis/api/asset/), [SOAP](soap-api/gettags.md)
+Related APIs: [REST](https://developer.adobe.com/marketo-apis/api/asset/), [SOAP](soap-api/gettags.md)
 
 ## Lists
 
@@ -81,7 +81,7 @@ Related APIs: [REST](https://developer.adobe.com/marketo-apis/api/asset/#tag/Tok
 
 ## Custom Objects
 
-A Marketo custom object allows for the creation of a one-to-many, or many-to-many (Edge-Bridge-Edge) relationship between your Marketo Leads and the custom object records. Once you have created and published a Marketo custom object, you can perform CRUD operations on the custom object via the Marketo API. More information about custom object creation can be found [here](https://experienceleague.adobe.com/en/docs/marketo/using/home). When new records are added to the custom object, you can use a smart list trigger to respond. You can also use custom object data as a filter in smart lists (segmentation), or in emails using [Email Scripting](/email-scripting/).
+A Marketo custom object allows for the creation of a one-to-many, or many-to-many (Edge-Bridge-Edge) relationship between your Marketo Leads and the custom object records. Once you have created and published a Marketo custom object, you can perform CRUD operations on the custom object via the Marketo API. More information about custom object creation can be found [here](https://experienceleague.adobe.com/en/docs/marketo/using/home). When new records are added to the custom object, you can use a smart list trigger to respond. You can also use custom object data as a filter in smart lists (segmentation), or in emails using [Email Scripting](email-scripting.md).
 
 Related APIs: [REST](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Custom-Objects), [SOAP](soap-api/custom-objects.md)
 
