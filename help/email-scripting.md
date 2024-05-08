@@ -1,6 +1,6 @@
 ---
 title: "Email Scripting"
-feature: Email
+feature: Email Programs
 description: "Email Scripting overview"
 ---
 
@@ -112,7 +112,7 @@ You can test your script using the "Send Sample Email" email action within the M
 
 You can also use the Email Preview to test your script. To do so, you must select View As: Lead Detail, and select a lead from an available static list. This has the added benefit of outputting any exceptions that may have occurred during script execution:
 
-![View Email As](assets/View-As.png)
+![View Email As](assets/view-as.png)
 
 ## Helpful Hints
 
