@@ -14,7 +14,7 @@ These APIs generally fall into two broad categories: [Lead Database](https://dev
 - **Rate Limit:** API access per instance limited to 100 calls per 20 seconds.
 - **Concurrency Limit:**  Maximum of ten concurrent API calls.
 
-The size of standard calls is limited to a URI length of 8KB, and a body size of 1MB, though the body can be 10MB for our bulk APIs. If there is an error in with your call, the API will typically still return a status code of 200, but the JSON response will contain a "success" member with a value of `false`, and an array of errors in the "errors" member. More on errors [here](/rest-api/error-codes/).
+The size of standard calls is limited to a URI length of 8KB, and a body size of 1MB, though the body can be 10MB for our bulk APIs. If there is an error in with your call, the API will typically still return a status code of 200, but the JSON response will contain a "success" member with a value of `false`, and an array of errors in the "errors" member. More on errors [here](error-codes.md).
 
 ## Getting Started
 
@@ -88,4 +88,4 @@ If you don't have a lead record with your email address in your database, substi
 
 ## API Usage
 
-Each of your API users is reported individually in the API usage report, so splitting up your web services by user allows you to easily account for the usage of each of your integrations. If the number of API calls to your instance are exceeding the limit and causing subsequent calls to fail, using this practice allows you to account for the volume from each of your services and let you evaluate how to resolve the issue. See your usage by going to **Admin** -> **Integration** > **Web Services** and clicking the number of calls in the past seven days. You can also get the same information from the [Usage APIs](/documentation/rest/get-daily-usage/)
+Each of your API users is reported individually in the API usage report, so splitting up your web services by user allows you to easily account for the usage of each of your integrations. If the number of API calls to your instance are exceeding the limit and causing subsequent calls to fail, using this practice allows you to account for the volume from each of your services and let you evaluate how to resolve the issue. See your usage by going to **Admin** -> **Integration** > **Web Services** and clicking the number of calls in the past seven days.

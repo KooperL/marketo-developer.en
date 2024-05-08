@@ -32,15 +32,15 @@ There are three steps to enable push notifications:
 
 ### Enable Push Notifications in xCode
 
-1. Turn on push notification capability in xCode project.![](assets/push-xcode.png)
+Turn on push notification capability in xCode project.![](assets/push-xcode.png)
 
 ### Enable Push Notifications in App with Marketo SDK
 
 Add the following code to `AppDelegate.m` file to deliver push notifications to your customer's devices.
 
-**Note** - If using Adobe Launch extension, use **"ALMarketo"** as classname
+**Note** - If using Adobe Launch extension, use `ALMarketo` as classname
 
-1. Import following in `AppDelegate.h`.
+Import following in `AppDelegate.h`.
 
 >[!BEGINTABS]
 
@@ -58,7 +58,7 @@ import UserNotifications
 
 >[!ENDTABS]
 
-1. Add `UNUserNotificationCenterDelegate` to `AppDelegate` as shown below.
+Add `UNUserNotificationCenterDelegate` to `AppDelegate` as shown below.
 
 >[!BEGINTABS]
 
@@ -76,9 +76,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenter
 
 >[!ENDTABS]
 
-1. Initiate Push notification Service
-
-    To enable push notification add below code.
+Initiate Push notification Service. To enable push notification add below code.
 
 >[!BEGINTABS]
 
@@ -126,9 +124,7 @@ Call this method to initiate the registration process with Apple Push Service. I
 
 If registration fails, the app calls its App delegate's `application:didFailToRegisterForRemoteNotificationsWithError:` method instead.
 
-1. Register Push Token with Marketo
-
-    To receive push notifications from Marketo you must register the device token with Marketo.
+Register Push Token with Marketo. To receive push notifications from Marketo you must register the device token with Marketo.
 
 >[!BEGINTABS]
 
@@ -170,11 +166,9 @@ Marketo.sharedInstance().unregisterPushDeviceToken
 
 >[!ENDTABS]
 
-    Note To re-register the push token extract the code from step 3 into an AppDelegate method and call form the ViewController login method.
+To re-register the push token extract the code from step 3 into an AppDelegate method and call form the ViewController login method.
 
-1. Handle push notification
-
-    To receive push notifications from Marketo you must register the device token with Marketo.
+ Handle push notification. To receive push notifications from Marketo you must register the device token with Marketo.
 
 >[!BEGINTABS]
 
@@ -198,9 +192,9 @@ func application(_ application: UIApplication, didReceiveRemoteNotification user
 
 >[!ENDTABS]
 
-1. Add the following method in AppDelegate
+Add the following method in AppDelegate
 
-    By using this method you can either present alert, sound or increase badge while the app is in foreground. You must call completionHandler of your choice in this Method.
+By using this method you can either present alert, sound or increase badge while the app is in foreground. You must call completionHandler of your choice in this Method.
 
 >[!BEGINTABS]
 
@@ -226,10 +220,10 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 ```
 
 >[!ENDTABS]
+ 
+ Handle newly received Push notification in AppDelegate
 
-1. Handle newly received Push notification in AppDelegate
-
-    The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
+The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
 
 >[!BEGINTABS]
 
@@ -255,7 +249,7 @@ func userNotificationCenter(_ center: UNUserNotificationCenter,
 
 >[!ENDTABS]
 
-1. Track push notifications
+Track push notifications
 
 If your app is running in the background (or is not active), then the device will receive a push notification as shown below. Marketo will track when the user taps the notification.
 

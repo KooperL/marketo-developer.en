@@ -12,7 +12,7 @@ Custom actions can be used as triggers and filters in Smart Campaigns. For more 
 
 ## Sending Custom Actions on iOS
 
-1. Send custom action.
+Send custom action.
 
 >[!BEGINTABS]
 
@@ -31,7 +31,7 @@ sharedInstance.reportAction("Login", withMetaData:nil);
 
 >[!ENDTABS]
 
-1. Send custom action with metadata.
+Send custom action with metadata.
 
 >[!BEGINTABS]
 
@@ -61,7 +61,7 @@ sharedInstance.reportAction("Bought Shirt", withMetaData:meta);
 
 >[!ENDTABS]
 
-1. Report all actions immediately (send all saved actions).
+Report all actions immediately (send all saved actions).
 
 >[!BEGINTABS]
 

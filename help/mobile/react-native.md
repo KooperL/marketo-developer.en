@@ -79,11 +79,9 @@ Sometimes a React Native app needs to access a native platform API that is not a
 
 The NativeModule system exposes instances of Java/Objective-C/C++ (native) classes to JavaScript (JS) as JS objects, thereby allowing you to execute arbitrary native code from within JS. While we don't expect this feature to be part of the usual development process, it is essential that it exists. If React Native doesn't export a native API that your JS app needs you should be able to export it yourself!
 
-1. Create Native Module Bridge
-
 React Native bridge is used for communicating between the JSX and native app layers. In our case, the host app will be able to write the JSX code that can invoke the Marketo SDK's methods.
 
-**Android**
+### Android
 
 This file contains the wrapper methods that can call the Marketo SDK's methods internally with parameters that you provide.
 
@@ -221,35 +219,34 @@ public class MainApplication extends Application implements ReactApplication {
 
 ```
 
-**iOS**
+### iOS
 
 In the following guide you will create a native module, _RNMarketoModule_, that will allow you to access Marketo's APIs from JavaScript.
 
-1. To get started, open up the iOS project within your React Native application in Xcode. You can find your iOS project here within a React Native app. We recommend using Xcode to write your native code. Xcode is built for iOS development, and using it will help you to quickly resolve smaller errors like code syntax.
+To get started, open up the iOS project within your React Native application in Xcode. You can find your iOS project here within a React Native app. We recommend using Xcode to write your native code. Xcode is built for iOS development, and using it will help you to quickly resolve smaller errors like code syntax.
 
-1. Create our main custom native module header and implementation files. Create a new file called `MktoBridge.h` and add the following to it:
+Create our main custom native module header and implementation files. Create a new file called `MktoBridge.h` and add the following to it:
 
-  ```
-  //
-  //  MktoBridge.h
-  //
-  //  Created by Marketo, An Adobe company.
-  //
+```
+//
+//  MktoBridge.h
+//
+//  Created by Marketo, An Adobe company.
+//
 
-  #import <Foundation/Foundation.h>
-  #import <React/RCTBridgeModule.h>
+#import <Foundation/Foundation.h>
+#import <React/RCTBridgeModule.h>
 
-  NS_ASSUME_NONNULL_BEGIN
+NS_ASSUME_NONNULL_BEGIN
 
-  @interface MktoBridge : NSObject 
+@interface MktoBridge : NSObject 
 
-  @end
+@end
 
-  NS_ASSUME_NONNULL_END
+NS_ASSUME_NONNULL_END
+```
 
-  ```
-
-Next up, let's start implementing the native module. Create the corresponding implementation file, MktoBridge.m, in the same folder and include the following content:
+Create the corresponding implementation file, MktoBridge.m, in the same folder and include the following content:
 
 ```
 //
@@ -323,7 +320,7 @@ RCT_EXPORT_METHOD(setSecureSignature:(NSDictionary *)secureSignature){
 @end
 ```
 
-1. Initialize Marketo SDK
+#### Initialize Marketo SDK
 
 Find a place in your application where you would like to add a call to the native module's createCalendarEvent() method. Below is an example of a component, NewModuleButton you can add in your app. You can invoke the native module inside NewModuleButton's onPress() function.
 
@@ -379,9 +376,8 @@ RNMarketoModule.uninitializeMarketoPush()
 
 ```
 
-1. Configure Push Notifications
+#### Configure Push Notifications
 
-**Set up push notifications for Android**
 
 Initialize Push with Project ID and Channel name
 
@@ -519,7 +515,7 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
 }
 ```
 
-1. Add Test Devices
+### Add Test Devices
 
 **Android**
 

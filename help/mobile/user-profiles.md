@@ -13,7 +13,7 @@ How to Create User Profiles
 
 ## Creating User Profiles on iOS {#ios_user_profiles}
 
-1. Create User Profile.
+Create User Profile.
 
 You can create rich profiles by sending the user fields as shown below.
 
@@ -61,7 +61,7 @@ profile.setLinkedInId("linkedinid")
 profile.setTwitterId("twitterid")
 ```
 
-1. Add more [standard fields](../rest-api/list-of-standard-fields.md).
+Add more [standard fields](../rest-api/list-of-standard-fields.md).
 
 >[!BEGINTABS]
 
@@ -85,7 +85,7 @@ profile.setFieldName("phone", withValue:"123.456.7890");
 
 >[!ENDTABS]
 
-1. Report User Profile.
+Report User Profile.
 
 >[!BEGINTABS]
 
@@ -113,46 +113,46 @@ marketo.associateLead(profile)
 
 1. Create User Profile.
 
-You can create rich profiles by sending user fields as shown below.
+    You can create rich profiles by sending user fields as shown below.
 
-```java
-MarketoLead profile = new MarketoLead();
+    ```java
+    MarketoLead profile = new MarketoLead();
 
-// Get user profile from network and populate
-try {
-    profile.setEmail("htcone3@gmail.com");
-    profile.setFirstName("Mike");
-    profile.setLastName("Gray");
-    profile.setFacebookId("facebookid");
-    profile.setAddress("1234 King Fish Blvd");
-}
-catch (MktoException e) {
-    e.printStackTrace();
-}
-```
+    // Get user profile from network and populate
+    try {
+        profile.setEmail("htcone3@gmail.com");
+        profile.setFirstName("Mike");
+        profile.setLastName("Gray");
+        profile.setFacebookId("facebookid");
+        profile.setAddress("1234 King Fish Blvd");
+    }
+    catch (MktoException e) {
+        e.printStackTrace();
+    }
+    ```
 
 1. Add more [standard fields](../rest-api/list-of-standard-fields.md).
 
-```java
-// Add other custom fields
-profile.setCustomField("mobilePhone", "123.456.7890");
-profile.setCustomField("numberOfEmployees", "10");
-profile.setCustomField("phone", "123.456.7890");
-profile.setCustomField("rating", "R");
-profile.setCustomField("facebookDisplayName", "mini");
-profile.setCustomField("facebookReach", "10");
-profile.setCustomField("facebookReferredEnrollments", "100");
-profile.setCustomField("facebookReferredVisits", "9998");
-profile.setCustomField("lastReferredEnrollment", "03/01/2015");
-profile.setCustomField("lastReferredVisit", "03/01/2015");
-profile.setCustomField("linkedInDisplayName", "Android");
-```
+    ```java
+    // Add other custom fields
+    profile.setCustomField("mobilePhone", "123.456.7890");
+    profile.setCustomField("numberOfEmployees", "10");
+    profile.setCustomField("phone", "123.456.7890");
+    profile.setCustomField("rating", "R");
+    profile.setCustomField("facebookDisplayName", "mini");
+    profile.setCustomField("facebookReach", "10");
+    profile.setCustomField("facebookReferredEnrollments", "100");
+    profile.setCustomField("facebookReferredVisits", "9998");
+    profile.setCustomField("lastReferredEnrollment", "03/01/2015");
+    profile.setCustomField("lastReferredVisit", "03/01/2015");
+    profile.setCustomField("linkedInDisplayName", "Android");
+    ```
 
 1. Report User Profile.
 
-```java
-MarketoLead profile = new MarketoLead();
+    ```java
+    MarketoLead profile = new MarketoLead();
 
-// This method will update user profile
-marketoSdk.associateLead(profile);
-```
+    // This method will update user profile
+    marketoSdk.associateLead(profile);
+    ```

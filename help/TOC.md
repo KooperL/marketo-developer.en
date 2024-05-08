@@ -41,7 +41,9 @@ hide: yes
    - [React Native](mobile/react-native.md)
    - [User Profiles](mobile/user-profiles.md)
 - REST{#rest}
+   - [REST API](rest-api/rest-api.md)
    - Assets {#assets}
+      - [Assets](rest-api/assets.md)
       - [Dynamic Content](rest-api/dynamic-content.md)
       - [Emails](rest-api/emails.md)
       - [Email Templates](rest-api/email-templates.md)
@@ -62,6 +64,7 @@ hide: yes
    - [Authentication](rest-api/authentication.md)
    - [Authentication Signature](rest-api/authentication-signature.md)
    - [Base URL](rest-api/base-url.md)
+   - [Best Practices](rest-api/marketo-integration-best-practices.md)
    - Bulk Extract {#bulk-extract}
       - [Bulk Activity](rest-api/bulk-activity-extract.md)
       - [Bulk Custom Object](rest-api/bulk-custom-object-extract.md)
@@ -73,6 +76,7 @@ hide: yes
       - [Bulk Import](rest-api/bulk-import.md)
       - [Bulk Lead](rest-api/bulk-lead-import.md)
       - [Bulk Program Member](rest-api/bulk-program-member-import.md)
+   - [Channels](rest-api/channels.md)
    - [Custom Services](rest-api/custom-services.md)
    - [Endpoint Reference](rest-api/endpoint-reference.md)
    - [Error Codes](rest-api/error-codes.md)
@@ -80,6 +84,7 @@ hide: yes
       - [Companies](rest-api/companies.md)
       - [Field List](rest-api/fields.md)
       - [Field Types](rest-api/field-types.md)
+      - [Lead Database](rest-api/lead-database.md)
       - [Named Accounts](rest-api/named-accounts.md)
       - [Named Account Lists](rest-api/named-account-lists.md)
       - [Opportunities](rest-api/opportunities.md)
@@ -90,6 +95,8 @@ hide: yes
    - [Performance](rest-api/performance.md)
    - [Reference Architectures](rest-api/reference-architectures.md)
    - [Sample Code](https://github.com/Marketo/REST-Sample-Code)
+   - [Tags](rest-api/tags.md)
+   - [User Context](rest-api/user-context.md)
    - [User Management](rest-api/user-management.md)
 - SOAP {#soap}
    - Activities {#activities}
@@ -97,6 +104,7 @@ hide: yes
       - [getLeadActivity](soap-api/getleadactivity.md)
       - [getLeadChanges](soap-api/getleadchanges.md)
    - [Activity Type Filters](soap-api/activity-type-filters.md)
+   - [Authentication Signature](soap-api/authentication-signature.md)
    - Campaigns {#campaigns}
       - [getCampaignsForSource](soap-api/getcampaignsforsource.md)
       - [requestCampaign](soap-api/requestcampaign.md)
@@ -124,6 +132,7 @@ hide: yes
    - Programs {#programs}
       - [getChannels](soap-api/getchannels.md)
       - [getTags](soap-api/gettags.md)
+   - [SOAP API](soap-api/soap-api.md)
    - [SOAP FAQ](soap-api/soap-faq.md)
    - Static Lists {#static-lists}
       - [getImportToListStatus](soap-api/getimporttoliststatus.md)
