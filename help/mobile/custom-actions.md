@@ -14,71 +14,70 @@ Custom actions can be used as triggers and filters in Smart Campaigns. For more 
 
 1. Send custom action.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    Marketo *sharedInstance = [Marketo sharedInstance];
-    [sharedInstance reportAction:@"Login" withMetaData:nil];
-    ```
+```
+Marketo *sharedInstance = [Marketo sharedInstance];
+[sharedInstance reportAction:@"Login" withMetaData:nil];
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    sharedInstance.reportAction("Login", withMetaData:nil);
-    ```
+```
+sharedInstance.reportAction("Login", withMetaData:nil);
+```
 
-    >[!ENDTABS]
-
+>[!ENDTABS]
 
 1. Send custom action with metadata.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    MarketoActionMetaData *meta = [[MarketoActionMetaData alloc] init];
-    [meta setType:@"Shopping"];
-    [meta setDetails:@"RedShirt"];
-    [meta setLength:20];
-    [meta setMetric:30];
+```
+MarketoActionMetaData *meta = [[MarketoActionMetaData alloc] init];
+[meta setType:@"Shopping"];
+[meta setDetails:@"RedShirt"];
+[meta setLength:20];
+[meta setMetric:30];
 
-    [sharedInstance reportAction:@"Bought Shirt" withMetaData:meta];
-    ```
+[sharedInstance reportAction:@"Bought Shirt" withMetaData:meta];
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    let meta = MarketoActionMetaData()
-    meta.setType("Shopping");
-    meta.setDetails("RedShirt");
-    meta.setLength(20);
-    meta.setMetric(30);
+```
+let meta = MarketoActionMetaData()
+meta.setType("Shopping");
+meta.setDetails("RedShirt");
+meta.setLength(20);
+meta.setMetric(30);
 
-    sharedInstance.reportAction("Bought Shirt", withMetaData:meta);
-    ```
+sharedInstance.reportAction("Bought Shirt", withMetaData:meta);
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 1. Report all actions immediately (send all saved actions).
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    [sharedInstance reportAll];
-    ```
+```
+[sharedInstance reportAll];
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    sharedInstance.reportAll();
-    ```
+```
+sharedInstance.reportAll();
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 ## Sending Custom Actions on Android
 

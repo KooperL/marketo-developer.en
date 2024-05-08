@@ -65,25 +65,25 @@ Before you can use the Marketo iOS SDK, you must initialize it with your Munchki
 
     Note that we must pass "native" as framework type for Native Apps.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    Marketo *sharedInstance = [Marketo sharedInstance];
+```
+Marketo *sharedInstance = [Marketo sharedInstance];
 
-    [sharedInstance initializeWithMunchkinID:@"munchkinAccountId" appSecret:@"secretKey" mobileFrameworkType:@"native" launchOptions:launchOptions];
-    ```
+[sharedInstance initializeWithMunchkinID:@"munchkinAccountId" appSecret:@"secretKey" mobileFrameworkType:@"native" launchOptions:launchOptions];
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    let sharedInstance: Marketo = Marketo.sharedInstance()
+```
+let sharedInstance: Marketo = Marketo.sharedInstance()
 
-    sharedInstance.initialize(withMunchkinID: "munchkinAccountId", appSecret: "secretKey", mobileFrameworkType: "native", launchOptions: launchOptions)
-    ```
+sharedInstance.initialize(withMunchkinID: "munchkinAccountId", appSecret: "secretKey", mobileFrameworkType: "native", launchOptions: launchOptions)
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 1. Replace `munkinAccountId` and `secretKey` above using your "Munchkin Account ID" and "Secret Key" which are found in the Marketo **Admin** > **Mobile Apps and Devices** section.
 

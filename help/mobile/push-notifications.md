@@ -42,85 +42,85 @@ Add the following code to `AppDelegate.m` file to deliver push notifications to 
 
 1. Import following in `AppDelegate.h`.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    #import <UserNotifications/UserNotifications.h>
-    ```
+```
+#import <UserNotifications/UserNotifications.h>
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    import UserNotifications
-    ```
+```
+import UserNotifications
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 1. Add `UNUserNotificationCenterDelegate` to `AppDelegate` as shown below.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    @interface AppDelegate : UIResponder <UIApplicationDelegate, UNUserNotificationCenterDelegate>
-    ```
+```
+@interface AppDelegate : UIResponder <UIApplicationDelegate, UNUserNotificationCenterDelegate>
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenterDelegate
-    ```
+```
+class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenterDelegate
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 1. Initiate Push notification Service
 
     To enable push notification add below code.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```objectivec
-    BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-            center.delegate = self;
-            [center requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error){
-                if(!error){
-                    dispatch_async(dispatch_get_main_queue(), ^{
-                        [[UIApplication sharedApplication] registerForRemoteNotifications];
-                    });
-                }
-            }];
-    
-        return YES;
-    }
+```objectivec
+BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+        center.delegate = self;
+        [center requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error){
+            if(!error){
+                dispatch_async(dispatch_get_main_queue(), ^{
+                    [[UIApplication sharedApplication] registerForRemoteNotifications];
+                });
+            }
+        }];
 
-    ```
+    return YES;
+}
 
-    >[!TAB Swift]
+```
 
-    ```
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-                
-        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound,    .badge]) { granted, error in
-                if let error = error {
-                    print("\(error.localizedDescription)")
-                } else {
-                    DispatchQueue.main.async {
-                        application.registerForRemoteNotifications()
-                    }
+>[!TAB Swift]
+
+```
+func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+            
+    UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound,    .badge]) { granted, error in
+            if let error = error {
+                print("\(error.localizedDescription)")
+            } else {
+                DispatchQueue.main.async {
+                    application.registerForRemoteNotifications()
                 }
             }
-            
-            return true
-    }
-    ```
+        }
+        
+        return true
+}
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 Call this method to initiate the registration process with Apple Push Service. If registration succeeds, the app calls your App delegate object's `application:didRegisterForRemoteNotificationsWithDeviceToken:` method and passes it a device token.
 
@@ -130,45 +130,45 @@ If registration fails, the app calls its App delegate's `application:didFailToRe
 
     To receive push notifications from Marketo you must register the device token with Marketo.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-        // Register the push token with Marketo
-        [[Marketo sharedInstance] registerPushDeviceToken:deviceToken];
-    }
-    ```
+```
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Register the push token with Marketo
+    [[Marketo sharedInstance] registerPushDeviceToken:deviceToken];
+}
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        // Register the push token with Marketo
-        Marketo.sharedInstance().registerPushDeviceToken(deviceToken)
-    }
-    ```
+```
+func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    // Register the push token with Marketo
+    Marketo.sharedInstance().registerPushDeviceToken(deviceToken)
+}
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
-    The token can also be unregistered when user logs out.
+The token can also be unregistered when user logs out.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    [[Marketo sharedInstance] unregisterPushDeviceToken];
-    ```
+```
+[[Marketo sharedInstance] unregisterPushDeviceToken];
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    Marketo.sharedInstance().unregisterPushDeviceToken
-    ```
+```
+Marketo.sharedInstance().unregisterPushDeviceToken
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
     Note To re-register the push token extract the code from step 3 into an AppDelegate method and call form the ViewController login method.
 
@@ -176,84 +176,84 @@ If registration fails, the app calls its App delegate's `application:didFailToRe
 
     To receive push notifications from Marketo you must register the device token with Marketo.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
-    {
-        [[Marketo sharedInstance] handlePushNotification:userInfo];
-    }
-    ```
+```
+- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+{
+    [[Marketo sharedInstance] handlePushNotification:userInfo];
+}
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-        Marketo.sharedInstance().handlePushNotification(userInfo)
-    }
+```
+func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+    Marketo.sharedInstance().handlePushNotification(userInfo)
+}
 
-    ```
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 1. Add the following method in AppDelegate
 
     By using this method you can either present alert, sound or increase badge while the app is in foreground. You must call completionHandler of your choice in this Method.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    -(void)userNotificationCenter:(UNUserNotificationCenter *)center
-        willPresentNotification:(UNNotification *)notification
-            withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
+```
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center
+    willPresentNotification:(UNNotification *)notification
+        withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
 
-        completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
-    }
-    ```
+    completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
+}
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    func userNotificationCenter(_ center: UNUserNotificationCenter, 
-                willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (
-        UNNotificationPresentationOptions) -> Void) {
-        completionHandler([.alert, .sound,.badge])
-    }
-    ```
+```
+func userNotificationCenter(_ center: UNUserNotificationCenter, 
+            willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (
+    UNNotificationPresentationOptions) -> Void) {
+    completionHandler([.alert, .sound,.badge])
+}
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 1. Handle newly received Push notification in AppDelegate
 
     The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
 
-    >[!BEGINTABS]
+>[!BEGINTABS]
 
-    >[!TAB Objective C]
+>[!TAB Objective C]
 
-    ```
-    - (void)userNotificationCenter:(UNUserNotificationCenter *)center
-    didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler {
-        [[Marketo sharedInstance] userNotificationCenter:center didReceiveNotificationResponse:response withCompletionHandler:completionHandler];
-    }
-    ```
+```
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler {
+    [[Marketo sharedInstance] userNotificationCenter:center didReceiveNotificationResponse:response withCompletionHandler:completionHandler];
+}
+```
 
-    >[!TAB Swift]
+>[!TAB Swift]
 
-    ```
-    func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                    didReceive response: UNNotificationResponse,
-                                    withCompletionHandler
-                                    completionHandler: @escaping () -> Void) {
-            Marketo.sharedInstance().userNotificationCenter(center, didReceive: response, withCompletionHandler: completionHandler)
-    }
-    ```
+```
+func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler
+                                completionHandler: @escaping () -> Void) {
+        Marketo.sharedInstance().userNotificationCenter(center, didReceive: response, withCompletionHandler: completionHandler)
+}
+```
 
-    >[!ENDTABS]
+>[!ENDTABS]
 
 1. Track push notifications
 
