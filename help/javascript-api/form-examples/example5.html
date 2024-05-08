@@ -1,0 +1,30 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Forms 2.0 Example 5 Test Page</title>
+  </head>
+  <body>
+    <h2>Example 5</h2>
+    <p>Submit a form based on a click event on some other element or event that is not part of the form.</p>
+    <p>
+      <button id='MyAlternativeSubmitButtonId'>An Alternative Submit Button</button>
+    </p>
+
+    <script src="//app-sjst.marketo.com/js/forms2/js/forms2.js"></script>
+    <form id="mktoForm_1057"></form>
+    <script>
+      //load the form normally.
+      MktoForms2.loadForm("//app-sjst.marketo.com", "785-UHP-775", 1057);
+
+      //find the button element that you want to attach the event to.
+      var btn = document.getElementById("MyAlternativeSubmitButtonId");
+      btn.onclick = function(){
+        //When the button is clicked, get the form object and submit it.
+        MktoForms2.whenReady(function (form){
+          form.submit();
+        });
+      };
+    </script>
+  </body>
+</html>

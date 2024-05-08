@@ -1,0 +1,142 @@
+---
+user-guide-title: "[!DNL Marketo] Developer Guide"
+user-guide-description: "This guide provides instructions for using [!DNL Marketo] APIs."
+breadcrumb-title: "[!DNL Marketo] Developer Guide"
+role: Admin
+feature-set: "Marketo Engage"
+hide: yes
+---
+
+# [!DNL Marketo] Developer {#marketo}
+
+- [Home](home.md)
+- [Getting Started](getting-started.md)
+- [Javascript API] {#javascriptapi}
+   - [Configuration](javascript-api/configuration.md)
+   - [Custom Data Events](javascript-api/custom-data-events.md)
+   - [Examples](javascript-api/examples.md)
+   - [Forms API Reference](javascript-api/forms-api-reference.md)
+   - [Get Visitor Data](javascript-api/get-visitor-data.md)
+   - [Javascript API](javascript-api/javascript-api.md)
+   - [Lead Tracking](javascript-api/lead-tracking.md)
+   - [Pattern Match](javascript-api/pattern-match.md)
+   - [Predictive Content](javascript-api/predictive-content.md)
+   - [Redirects](javascript-api/redirect.md)
+   - [Rich Media Recommendations](javascript-api/rich-media-recommendation.md)
+   - [Social](javascript-api/social.md)
+   - [Triggers](javascript-api/triggers.md)
+   - [Web Personalization](javascript-api/web-personalization.md)
+- [Mobile]{#mobile}
+   - [Install Adobe Launch Extension](mobile/adobe-launch-extension-installation.md)
+   - [Adobe Launch Extension](mobile/adobe-launch-extension.md)
+   - [Advanced Security Mode](mobile/advanced-security-access-mode.md)
+   - [Custom Actions](mobile/custom-actions.md)
+   - [Deep Links](mobile/enabling-deep-links-in-your-app.md)
+   - [In-App Messaging](mobile/in-app-messages.md)
+   - [Installation](mobile/installation.md)
+   - [Ionic](mobile/ionic.md)
+   - [Mobile](mobile/mobile.md)
+   - [Phonegap](mobile/phonegap.md)
+   - [Push Notifications](mobile/push-notifications.md)
+   - [React Native](mobile/react-native.md)
+   - [User Profiles](mobile/user-profiles.md)
+- REST{#rest}
+   - [Assets]{#assets}
+      - [Dynamic Content](rest-api/dynamic-content.md)
+      - [Emails](rest-api/emails.md)
+      - [Email Templates](rest-api/email-templates.md)
+      - [Files](rest-api/files.md)
+      - [Folders](rest-api/folders.md)
+      - [Forms](rest-api/forms.md)
+      - [Landing Pages](rest-api/landing-pages.md)
+      - [Landing Page Templates](rest-api/landing-page-templates.md)
+      - [Landing Page Redirect Rules](rest-api/landing-page-redirect-rules.md)
+      - [List of Standard Fields](rest-api/list-of-standard-fields.md)
+      - [Programs](rest-api/programs.md)
+      - [Smart Campaigns](rest-api/smart-campaigns.md)
+      - [Smart Lists](rest-api/smart-lists.md)
+      - [Snippets](rest-api/snippets.md)
+      - [Static Lists](rest-api/static-lists.md)
+      - [Tokens](rest-api/tokens.md)
+      - [Transactional Email](rest-api/transactional-email.md)
+   - [Authentication](rest-api/authentication.md)
+   - [Authentication Signature](rest-api/authentication-signature.md)
+   - [Base URL](rest-api/base-url.md)
+   - [Bulk Extract]{#bulk-extract}
+      - [Bulk Activity](rest-api/bulk-activity-extract.md)
+      - [Bulk Custom Object](rest-api/bulk-custom-object-extract.md)
+      - [Bulk Extract](rest-api/bulk-extract.md)
+      - [Bulk Lead](rest-api/bulk-lead-extract.md)
+      - [Bulk Program Member](rest-api/bulk-program-member-extract.md)
+   - [Bulk Import]{#bulk-import}
+      - [Bulk Custom Object](rest-api/bulk-custom-object-import.md)
+      - [Bulk Import](rest-api/bulk-import.md)
+      - [Bulk Lead](rest-api/bulk-lead-import.md)
+      - [Bulk Program Member](rest-api/bulk-program-member-import.md)
+   - [Custom Services](rest-api/custom-services.md)
+   - [Endpoint Reference](rest-api/endpoint-reference.md)
+   - [Error Codes](rest-api/error-codes.md)
+   - [Lead Database]{#lead-database}
+      - [Companies](rest-api/companies.md)
+      - [Field List](rest-api/fields.md)
+      - [Field Types](rest-api/field-types.md)
+      - [Named Accounts](rest-api/named-accounts.md)
+      - [Named Account Lists](rest-api/named-account-lists.md)
+      - [Opportunities](rest-api/opportunities.md)
+      - [Opportunity Roles](rest-api/opportunity-roles.md)
+      - [Program Members](rest-api/program-members.md)
+      - [Sales Persons](rest-api/sales-persons.md)
+   - [Paging Tokens](rest-api/paging-tokens.md)
+   - [Performance](rest-api/performance.md)
+   - [Reference Architectures](rest-api/reference-architectures.md)
+   - [Sample Code](https://github.com/Marketo/REST-Sample-Code)
+   - [User Management](rest-api/user-management.md)
+- SOAP {#soap}
+   - [Activities]{#activities}
+      - [Activities](soap-api/activities.md)
+      - [getLeadActivity](soap-api/getleadactivity.md)
+      - [getLeadChanges](soap-api/getleadchanges.md)
+   - [Activity Type Filters](soap-api/activity-type-filters.md)
+   - [Campaigns]{#campaigns}
+      - [getCampaignsForSource](soap-api/getcampaignsforsource.md)
+      - [requestCampaign](soap-api/requestcampaign.md)
+      - [scheduleCampaign](soap-api/schedulecampaign.md)
+   - [Custom Objects]{#custom-objects}
+      - [Custom Objects](soap-api/custom-objects.md)
+      - [deleteCustomObjects](soap-api/deletecustomobjects.md)
+      - [getCustomObjects](soap-api/getcustomobjects.md)
+      - [syncCustomObjects](soap-api/synccustomobjects.md)
+   - [Error Codes](soap-api/error-codes.md)
+   - [Leads]{#leads}
+      - [getLead](soap-api/getlead.md)
+      - [getMultipleLeads](soap-api/getmultipleleads.md)
+      - [mergeLeads](soap-api/mergeleads.md)
+      - [Leads](soap-api/leads.md)
+      - [syncLead](soap-api/synclead.md)
+      - [syncMultipleLeads](soap-api/syncmultipleleads.md)
+   - [Marketo Objects]{#marketo-objects}
+      - [deleteMObjects](soap-api/deletemobjects.md)
+      - [describeMObjects](soap-api/describemobject.md)
+      - [getMObjects](soap-api/getmobjects.md)
+      - [listMObjects](soap-api/listmobjects.md)
+      - [Marketo Objects](soap-api/marketo-objects.md)
+      - [syncMObjects](soap-api/syncmobjects.md)
+   - [Programs]{#programs}
+      - [getChannels](soap-api/getchannels.md)
+      - [getTags](soap-api/gettags.md)
+   - [SOAP FAQ](soap-api/soap-faq.md)
+   - [Static Lists]{#static-lists}
+      - [getImportToListStatus](soap-api/getimporttoliststatus.md)
+      - [importToList](soap-api/importtolist.md)
+      - [listOperation](soap-api/listoperation.md)
+   - [Stream Position](soap-api/stream-position.md)
+- Webhooks {#webhooks}
+   - [Errors](webhooks/errors.md)
+   - [Response Mappings](webhooks/response-mappings.md)
+   - [Webhooks](webhooks/webhooks.md)
+- [Client Libraries](https://github.com/Marketo/Community-Supported-Client-Libraries)
+- [Data Streams](data-streams.md)
+- [Email Scripting](email-scripting.md)
+- [License](api-license.md)
+- [Partner Sandbox](partner-sandbox.md)
+- [Self-Service Flow Steps](self-service-flow-steps.md)
