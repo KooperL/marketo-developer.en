@@ -135,6 +135,7 @@ feature-set: "Marketo Engage"
    - [Webhooks](webhooks/webhooks.md)
 - [Client Libraries](https://github.com/Marketo/Community-Supported-Client-Libraries)
 - [Data Streams](data-streams.md)
+- [Email Scripting](email-scripting.md)
 - [License](api-license.md)
 - [Partner Sandbox](partner-sandbox.md)
 - [Self-Service Flow Steps](self-service-flow-steps.md)
