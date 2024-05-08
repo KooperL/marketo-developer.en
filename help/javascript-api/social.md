@@ -33,7 +33,7 @@ There are two basic methods for customization of a social widget:
 
 There are two ways to subscribe to events in the CF JavaScript library, globally, or for a single widget. Events are documented below in the events table.
 
-## Global Event Subscription
+### Global Event Subscription
 
 ```html
 <script>
@@ -48,7 +48,7 @@ cf_scripts.afterload(function(){
 </script>
 ```
 
-## Per-Widget Event Subscription
+### Per-Widget Event Subscription
 
 ```html
 <script>
@@ -83,7 +83,13 @@ This example shows a previously hidden element with id "signedUp" after a user h
 ## Basic Events Table
 
 | Event name| Description | Widgets that use this event | Supported Arguments (passed to event callback function) | 
-| --- | --- | --- | --- | | share_sent | Fires every time a share request is sent to the server for processing | All widgets that have the ability to share | 1."share_sent" (String)<br>2. Parameters sent (Object) | | share_success | Fires when the share request is successfully processed. | All widgets that have the ability to share. | 1."share_success" (String)<br>2. Share response object, containing message sent and shortened url (Object) | | vote_success | Fires when a user has successfully voted in a poll. | Poll, VS, Vote widgets | 1. "vote_success" (String)<br>2. Item voted for, including title, description, entity identifier (Object) | | offer_enrolled | Fires when a user has successfully enrolled in an offer | All offer widgets | 1."offer_enrolled" (String)<br>2. Changed user properties (Object),<br>3. Changed user attributes (Object) | | profile_saved | Fires when a user has updated their profile from profile capture | All non-offer widgets that have profile capture enabled | 1."profile_saved" (String)<br>2. Changed user properties (Object)<br>3. Changed user attributes (Object) | | video_loaded | Fires when an embedded video is fully loaded and initialized. | VideoShare widget | 1. "video_loaded" (String) 2. ".cf_videoshare_wrap" Element that holds the video (jQuery Object) |
+| --- | --- | --- | --- | 
+| share_sent | Fires every time a share request is sent to the server for processing | All widgets that have the ability to share | 1."share_sent" (String)<br>2. Parameters sent (Object) |
+| share_success | Fires when the share request is successfully processed. | All widgets that have the ability to share. | 1."share_success" (String)<br>2. Share response object, containing message sent and shortened url (Object) | 
+| vote_success | Fires when a user has successfully voted in a poll. | Poll, VS, Vote widgets | 1. "vote_success" (String)<br>2. Item voted for, including title, description, entity identifier (Object) | 
+| offer_enrolled | Fires when a user has successfully enrolled in an offer | All offer widgets | 1."offer_enrolled" (String)<br>2. Changed user properties (Object),<br>3. Changed user attributes (Object) | 
+| profile_saved | Fires when a user has updated their profile from profile capture | All non-offer widgets that have profile capture enabled | 1."profile_saved" (String)<br>2. Changed user properties (Object)<br>3. Changed user attributes (Object) | 
+| video_loaded | Fires when an embedded video is fully loaded and initialized. | VideoShare widget | 1. "video_loaded" (String) 2. ".cf_videoshare_wrap" Element that holds the video (jQuery Object) |
 
 ## Replacing the UI with a Custom UI
 
@@ -110,8 +116,6 @@ cf_scripts.afterload(function($, CF){
 </script>
 ```
 
-`// <![CDATA[ cf_scripts.afterload(function($, CF){ // After the cf script library has loaded, find the button with // id="myNewSignUpButton", and attach a click listener to it. $("#myNewSignUpButton").click(function(){ // When it is clicked, activate the popup widget flow for the referral, // asking it to point to the clicked button. CF.widget.activate("referral_SignUp", {pointTo:$(this)}); }); }); // ]]>`
-
 Because adding click handlers is common, there's a shortcut method for adding them. The following is functionally equivalent to the preceding example.
 
 ```html
@@ -129,9 +133,9 @@ cf_scripts.afterload(function($, CF){
 
 ## Getting Widget UI Data to Put Into Your Replacement UI
 
-If you need data about the widget to draw your replacement UI, you can get the data from the special event _ui_data_. You can listen for this event with the normal _CF.widget.listen_ function, but doing so can cause a potential race condition where your event listener is added after the widget has already fired the_ui_data_ event, thus you never receive data. To avoid this race, use the _CF.widget.uiData_ method instead, which will give you the most recent available _ui_data_, and listen for all future updates as well. The _ui_data_ event is fired whenever there is an action taken that would have caused the widget's standard UI to be redrawn, even if you've disabled that ui with _popupUIOnly_ option.
+If you need data about the widget to draw your replacement UI, you can get the data from the special event _ui_data_. You can listen for this event with the normal `CF.widget.listen` function, but doing so can cause a potential race condition where your event listener is added after the widget has already fired the_ui_data_ event, thus you never receive data. To avoid this race, use the `CF.widget.uiData_ method instead, which will give you the most recent available _ui_data_, and listen for all future updates as well. The _ui_data` event is fired whenever there is an action taken that would have caused the widget's standard UI to be redrawn, even if you've disabled that ui with `popupUIOnly` option.
 
-An example that uses uiData function to display the number of entries a user has for a sweepstakes with widget name _sweeps_Sweepstakes_.
+An example that uses `uiData` function to display the number of entries a user has for a sweepstakes with widget name _sweeps_Sweepstakes_.
 
 ```html
 <span>You have <span id="entryCount">?</span> entries.</span>

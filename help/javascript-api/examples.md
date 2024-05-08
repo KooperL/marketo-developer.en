@@ -9,7 +9,7 @@ Below you can find a set of demonstrative Forms 2.0 web form examples.
 
 ## Hide Form After Successful Submission
 
-This example does not take the visitor to the follow up page or reload the current page.  [[View Example](form-examples/example1.html)]
+This example does not take the visitor to the follow up page or reload the current page.
 
 ```javascript
 MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function(form) {
@@ -26,7 +26,7 @@ MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function(form
 
 ## Take Visitor to User-Defined URL
 
-This example takes the visitor to a URL determined by JavaScript after successful submission, instead of to the configured thank you page.  [[View Example](form-examples/example2.html)]
+This example takes the visitor to a URL determined by JavaScript after successful submission, instead of to the configured thank you page.
 
 ```javascript
 MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function(form) {
@@ -38,24 +38,22 @@ MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function(form
         return false;
     });
 });
-
 ```
 
 ## Set Form Field Values
 
-This example sets form fields.  [[View Example](form-examples/example3.html)]
+This example sets form fields.
 
 ```javascript
 MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function(form) {
     // Set the value of the Phone and Country fields
     form.vals({ "Phone":"555-555-1234", "Country":"USA"});
 });
-
 ```
 
 ## Read Form Field Values on Form Submit
 
-This example reads form fields on form submit. [[View Example](form-examples/example4.html)]
+This example reads form fields on form submit.
 
 ```javascript
 MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function(form) {
@@ -69,12 +67,11 @@ MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function(form
         alert("Submitted values: " + JSON.stringify(vals));
     });
 }); 
-
 ```
 
 ## Form Submit on Non-Form Click Event
 
-This example submits a form based on a click event on some other element or event that is not part of the form.  [[View Example](form-examples/example5.html)]
+This example submits a form based on a click event on some other element or event that is not part of the form.
 
 ```javascript
 // Load the form normally
@@ -88,12 +85,11 @@ btn.onclick = function() {
         form.submit();
     });
 };
-
 ```
 
 ## Prevent a User From Submitting a Form
 
-For the purpose of this example, you must click the click counter button at least three times before the submit button on the form will function.  [[View Example](form-examples/example6.html)]
+For the purpose of this example, you must click the click counter button at least three times before the submit button on the form will function.
 
 ```javascript
 MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function (form) { 
@@ -119,12 +115,11 @@ clickCounterBtn.onclick = function() {
         });
     }
 };
-
 ```
 
 ## Set Values on Hidden Fields on the Form
 
-This example sets values on hidden fields.  [[View Example](form-examples/example7.html)]
+This example sets values on hidden fields.
 
 ```javascript
 MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function (form) { 
@@ -132,12 +127,11 @@ MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function (for
     // Note that these fields were configured in the form editor as hidden fields already
     form.vals({"userIsAwesome":"true", "enrollDate":"2014-01-01"});
 });
-
 ```
 
 ## Show Form in LightBox
 
-This example shows the form in a lightbox style dialog if the url contains a parameter `lightboxForm=true`.  [[View Example](form-examples/example8.html)]
+This example shows the form in a lightbox style dialog if the url contains a parameter `lightboxForm=true`.
 
 ```javascript
 MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function (form) { 
@@ -145,12 +139,11 @@ MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function (for
         MktoForms2.lightbox(form).show();
     }
 });
-
 ```
 
 ## Show Custom Error Message
 
-This example shows a custom error message on submit based on custom business logic.  [[View Example](form-examples/example9.html)]
+This example shows a custom error message on submit based on custom business logic.
 
 ```javascript
 MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function (form) { 
@@ -172,5 +165,4 @@ MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function (for
         }
   });
 });
-
 ```

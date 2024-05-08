@@ -29,11 +29,11 @@ Installation instructions for Marketo Mobile SDK. The steps below are required t
 
 1. Select project from the Project Navigator and under "Add Package Dependency", click '+' as shown below :
 
-![Add Dependency](assets/dependency-manager-add.png)
+    ![Add Dependency](assets/dependency-manager-add.png)
 
 1. Add Marketo package from this Repo. Add this URL for this repository: https://github.com/Marketo/ios-sdk.
 
-![Repo URL](assets/dependency-manager-url.png)
+    ![Repo URL](assets/dependency-manager-url.png)
 
 1. Now add the Resource bundle as shown: Locate `MarketoFramework.XCframework` in project navigator and open it in Finder. Drag and drop `MKTResources.bundle` to Copy Bundle Resources.
 
@@ -41,7 +41,7 @@ Installation instructions for Marketo Mobile SDK. The steps below are required t
 
 1. Go to File > New > File and Select "Header File".
 
-![Select "Header File"](assets/choose-header-file.png)
+    ![Select "Header File"](assets/choose-header-file.png)
 
 1. Name the file "<_ProjectName_>-Bridging-Header".
 
@@ -49,7 +49,7 @@ Installation instructions for Marketo Mobile SDK. The steps below are required t
 
     `$(PODS_ROOT)/<_ProjectName_>-Bridging-Header.h`
 
-![Build Phases](assets/build-phases.png)
+    ![Build Phases](assets/build-phases.png)
 
 ## Initialize SDK
 
@@ -57,33 +57,33 @@ Before you can use the Marketo iOS SDK, you must initialize it with your Munchki
 
 1. Open your AppDelegate.m file (Objective-C) or Bridging file (Swift) and import the Marketo.h header file.
 
-```
-#import <MarketoFramework/MarketoFramework.h>
-```
+    ```
+    #import <MarketoFramework/MarketoFramework.h>
+    ```
 
 1. Paste the following code inside the `application:didFinishLaunchingWithOptions`: function.
 
-Note that we must pass "native" as framework type for Native Apps.
+    Note that we must pass "native" as framework type for Native Apps.
 
->[!BEGINTABS]
+    >[!BEGINTABS]
 
->[!TAB Objective C]
+    >[!TAB Objective C]
 
-```
-Marketo *sharedInstance = [Marketo sharedInstance];
+    ```
+    Marketo *sharedInstance = [Marketo sharedInstance];
 
-[sharedInstance initializeWithMunchkinID:@"munchkinAccountId" appSecret:@"secretKey" mobileFrameworkType:@"native" launchOptions:launchOptions];
-```
+    [sharedInstance initializeWithMunchkinID:@"munchkinAccountId" appSecret:@"secretKey" mobileFrameworkType:@"native" launchOptions:launchOptions];
+    ```
 
->[!TAB Swift]
+    >[!TAB Swift]
 
-```
-let sharedInstance: Marketo = Marketo.sharedInstance()
+    ```
+    let sharedInstance: Marketo = Marketo.sharedInstance()
 
-sharedInstance.initialize(withMunchkinID: "munchkinAccountId", appSecret: "secretKey", mobileFrameworkType: "native", launchOptions: launchOptions)
-```
+    sharedInstance.initialize(withMunchkinID: "munchkinAccountId", appSecret: "secretKey", mobileFrameworkType: "native", launchOptions: launchOptions)
+    ```
 
->[!ENDTABS]
+    >[!ENDTABS]
 
 1. Replace `munkinAccountId` and `secretKey` above using your "Munchkin Account ID" and "Secret Key" which are found in the Marketo **Admin** > **Mobile Apps and Devices** section.
 
@@ -135,7 +135,7 @@ private func application(_ app: UIApplication, open url: URL, options: [UIApplic
 
 1. In the application level build.gradle file, under the dependencies section add
 
-`implementation 'com.marketo:MarketoSDK:0.8.9'`
+    `implementation 'com.marketo:MarketoSDK:0.8.9'`
 
 1. The root `build.gradle` file should have
 
@@ -162,21 +162,21 @@ Open `AndroidManifest.xml` and add following permissions. Your app must request 
 
 1. Open the Application or Activity class in your app and import the Marketo SDK into your Activity before setContentView or in Application Context.
 
-```java
-// Initialize Marketo
-Marketo marketoSdk = Marketo.getInstance(getApplicationContext());
-marketoSdk.initializeSDK("native","munchkinAccountId","secretKey");
-```
+    ```java
+    // Initialize Marketo
+    Marketo marketoSdk = Marketo.getInstance(getApplicationContext());
+    marketoSdk.initializeSDK("native","munchkinAccountId","secretKey");
+    ```
 
 1. ProGuard Configuration (Optional)
 
-If you are using ProGuard for your app, then add the following lines in your proguard.cfg file. The file is located within your project folder. Adding this code excludes the Marketo SDK from the obfuscation process.
+    If you are using ProGuard for your app, then add the following lines in your proguard.cfg file. The file is located within your project folder. Adding this code excludes the Marketo SDK from the obfuscation process.
 
-```
--dontwarn com.marketo.*
--dontnote com.marketo.*
--keep class com.marketo.`{ *; }
-```
+    ```
+    -dontwarn com.marketo.*
+    -dontnote com.marketo.*
+    -keep class com.marketo.`{ *; }
+    ```
 
 ## Android Test Devices
 

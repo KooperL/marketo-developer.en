@@ -42,218 +42,218 @@ Add the following code to `AppDelegate.m` file to deliver push notifications to 
 
 1. Import following in `AppDelegate.h`.
 
->[!BEGINTABS]
+    >[!BEGINTABS]
 
->[!TAB Objective C]
+    >[!TAB Objective C]
 
-```
-#import <UserNotifications/UserNotifications.h>
-```
+    ```
+    #import <UserNotifications/UserNotifications.h>
+    ```
 
->[!TAB Swift]
+    >[!TAB Swift]
 
-```
-import UserNotifications
-```
+    ```
+    import UserNotifications
+    ```
 
->[!ENDTABS]
+    >[!ENDTABS]
 
 1. Add `UNUserNotificationCenterDelegate` to `AppDelegate` as shown below.
 
->[!BEGINTABS]
+    >[!BEGINTABS]
 
->[!TAB Objective C]
+    >[!TAB Objective C]
 
-```
-@interface AppDelegate : UIResponder <UIApplicationDelegate, UNUserNotificationCenterDelegate>
-```
+    ```
+    @interface AppDelegate : UIResponder <UIApplicationDelegate, UNUserNotificationCenterDelegate>
+    ```
 
->[!TAB Swift]
+    >[!TAB Swift]
 
-```
-class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenterDelegate
-```
+    ```
+    class AppDelegate: UIResponder, UIApplicationDelegate , UNUserNotificationCenterDelegate
+    ```
 
->[!ENDTABS]
+    >[!ENDTABS]
 
 1. Initiate Push notification Service
 
-To enable push notification add below code.
+    To enable push notification add below code.
 
->[!BEGINTABS]
+    >[!BEGINTABS]
 
->[!TAB Objective C]
+    >[!TAB Objective C]
 
-```objectivec
-BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-  UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
-        center.delegate = self;
-        [center requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error){
-            if(!error){
-                dispatch_async(dispatch_get_main_queue(), ^{
-                    [[UIApplication sharedApplication] registerForRemoteNotifications];
-                });
-            }
-        }];
-   
-    return YES;
-}
+    ```objectivec
+    BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+            center.delegate = self;
+            [center requestAuthorizationWithOptions:(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge) completionHandler:^(BOOL granted, NSError * _Nullable error){
+                if(!error){
+                    dispatch_async(dispatch_get_main_queue(), ^{
+                        [[UIApplication sharedApplication] registerForRemoteNotifications];
+                    });
+                }
+            }];
+    
+        return YES;
+    }
 
-```
+    ```
 
->[!TAB Swift]
+    >[!TAB Swift]
 
-```
-func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-              
-     UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound,    .badge]) { granted, error in
-            if let error = error {
-                print("\(error.localizedDescription)")
-            } else {
-                DispatchQueue.main.async {
-                    application.registerForRemoteNotifications()
+    ```
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+                
+        UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .sound,    .badge]) { granted, error in
+                if let error = error {
+                    print("\(error.localizedDescription)")
+                } else {
+                    DispatchQueue.main.async {
+                        application.registerForRemoteNotifications()
+                    }
                 }
             }
-        }
-        
-        return true
- }
-```
+            
+            return true
+    }
+    ```
 
->[!ENDTABS]
+    >[!ENDTABS]
 
 Call this method to initiate the registration process with Apple Push Service. If registration succeeds, the app calls your App delegate object's `application:didRegisterForRemoteNotificationsWithDeviceToken:` method and passes it a device token.
 
 If registration fails, the app calls its App delegate's `application:didFailToRegisterForRemoteNotificationsWithError:` method instead.
 
-4 Register Push Token with Marketo
+1. Register Push Token with Marketo
 
-To receive push notifications from Marketo you must register the device token with Marketo.
+    To receive push notifications from Marketo you must register the device token with Marketo.
 
->[!BEGINTABS]
+    >[!BEGINTABS]
 
->[!TAB Objective C]
+    >[!TAB Objective C]
 
-```
-- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
-    // Register the push token with Marketo
-    [[Marketo sharedInstance] registerPushDeviceToken:deviceToken];
-}
-```
+    ```
+    - (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+        // Register the push token with Marketo
+        [[Marketo sharedInstance] registerPushDeviceToken:deviceToken];
+    }
+    ```
 
->[!TAB Swift]
+    >[!TAB Swift]
 
-```
-func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-    // Register the push token with Marketo
-    Marketo.sharedInstance().registerPushDeviceToken(deviceToken)
-}
-```
+    ```
+    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+        // Register the push token with Marketo
+        Marketo.sharedInstance().registerPushDeviceToken(deviceToken)
+    }
+    ```
 
->[!ENDTABS]
+    >[!ENDTABS]
 
-The token can also be unregistered when user logs out.
+    The token can also be unregistered when user logs out.
 
->[!BEGINTABS]
+    >[!BEGINTABS]
 
->[!TAB Objective C]
+    >[!TAB Objective C]
 
-```
-[[Marketo sharedInstance] unregisterPushDeviceToken];
-```
+    ```
+    [[Marketo sharedInstance] unregisterPushDeviceToken];
+    ```
 
->[!TAB Swift]
+    >[!TAB Swift]
 
-```
-Marketo.sharedInstance().unregisterPushDeviceToken
-```
+    ```
+    Marketo.sharedInstance().unregisterPushDeviceToken
+    ```
 
->[!ENDTABS]
+    >[!ENDTABS]
 
-Note To re-register the push token extract the code from step 3 into an AppDelegate method and call form the ViewController login method.
+    Note To re-register the push token extract the code from step 3 into an AppDelegate method and call form the ViewController login method.
 
 1. Handle push notification
 
-To receive push notifications from Marketo you must register the device token with Marketo.
+    To receive push notifications from Marketo you must register the device token with Marketo.
 
->[!BEGINTABS]
+    >[!BEGINTABS]
 
->[!TAB Objective C]
+    >[!TAB Objective C]
 
-```
-- (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
-{
-    [[Marketo sharedInstance] handlePushNotification:userInfo];
-}
-```
+    ```
+    - (void)application:(UIApplication *)application didReceiveRemoteNotification:(NSDictionary *)userInfo
+    {
+        [[Marketo sharedInstance] handlePushNotification:userInfo];
+    }
+    ```
 
->[!TAB Swift]
+    >[!TAB Swift]
 
-```
-func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
-    Marketo.sharedInstance().handlePushNotification(userInfo)
-}
+    ```
+    func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable : Any]) {
+        Marketo.sharedInstance().handlePushNotification(userInfo)
+    }
 
-```
+    ```
 
->[!ENDTABS]
+    >[!ENDTABS]
 
 1. Add the following method in AppDelegate
 
-By using this method you can either present alert, sound or increase badge while the app is in foreground. You must call completionHandler of your choice in this Method.
+    By using this method you can either present alert, sound or increase badge while the app is in foreground. You must call completionHandler of your choice in this Method.
 
->[!BEGINTABS]
+    >[!BEGINTABS]
 
->[!TAB Objective C]
+    >[!TAB Objective C]
 
-```
--(void)userNotificationCenter:(UNUserNotificationCenter *)center
-      willPresentNotification:(UNNotification *)notification
-        withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
+    ```
+    -(void)userNotificationCenter:(UNUserNotificationCenter *)center
+        willPresentNotification:(UNNotification *)notification
+            withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
 
-    completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
-}
-```
+        completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
+    }
+    ```
 
->[!TAB Swift]
+    >[!TAB Swift]
 
-```
-func userNotificationCenter(_ center: UNUserNotificationCenter, 
-            willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (
-    UNNotificationPresentationOptions) -> Void) {
-       completionHandler([.alert, .sound,.badge])
-}
-```
+    ```
+    func userNotificationCenter(_ center: UNUserNotificationCenter, 
+                willPresent notification: UNNotification, withCompletionHandler completionHandler: @escaping (
+        UNNotificationPresentationOptions) -> Void) {
+        completionHandler([.alert, .sound,.badge])
+    }
+    ```
 
->[!ENDTABS]
+    >[!ENDTABS]
 
 1. Handle newly received Push notification in AppDelegate
 
-The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
+    The method will be called on the delegate when the user responded to the notification by opening the application, dismissing the notification or choosing a UNNotificationAction. The delegate must be set before the application returns from applicationDidFinishLaunching:.
 
->[!BEGINTABS]
+    >[!BEGINTABS]
 
->[!TAB Objective C]
+    >[!TAB Objective C]
 
-```
-- (void)userNotificationCenter:(UNUserNotificationCenter *)center
-didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler {
-    [[Marketo sharedInstance] userNotificationCenter:center didReceiveNotificationResponse:response withCompletionHandler:completionHandler];
-}
-```
+    ```
+    - (void)userNotificationCenter:(UNUserNotificationCenter *)center
+    didReceiveNotificationResponse:(UNNotificationResponse *)response withCompletionHandler:(void(^)(void))completionHandler {
+        [[Marketo sharedInstance] userNotificationCenter:center didReceiveNotificationResponse:response withCompletionHandler:completionHandler];
+    }
+    ```
 
->[!TAB Swift]
+    >[!TAB Swift]
 
-```
-func userNotificationCenter(_ center: UNUserNotificationCenter,
-                                didReceive response: UNNotificationResponse,
-                                withCompletionHandler
-                                completionHandler: @escaping () -> Void) {
-        Marketo.sharedInstance().userNotificationCenter(center, didReceive: response, withCompletionHandler: completionHandler)
-}
-```
+    ```
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                    didReceive response: UNNotificationResponse,
+                                    withCompletionHandler
+                                    completionHandler: @escaping () -> Void) {
+            Marketo.sharedInstance().userNotificationCenter(center, didReceive: response, withCompletionHandler: completionHandler)
+    }
+    ```
 
->[!ENDTABS]
+    >[!ENDTABS]
 
 1. Track push notifications
 
@@ -271,21 +271,21 @@ The following is a Marketo activity log from Marketo that shows app events, and 
 
 1. Add following permission inside application tag.
 
-Open `AndroidManifest.xml` and add following permissions. Your app must request the "INTERNET" and "ACCESS_NETWORK_STATE" permissions. If your app already requests these permissions, then skip this step.
+    Open `AndroidManifest.xml` and add following permissions. Your app must request the "INTERNET" and "ACCESS_NETWORK_STATE" permissions. If your app already requests these permissions, then skip this step.
 
-```xml
-<uses‐permission android:name="android.permission.INTERNET"/>
-<uses‐permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
-   
-<!‐‐Following permissions are required for push notification.‐‐>
-<uses-permission android:name="android.permission.GET_ACCOUNTS"/>
-<!‐‐Keeps the processor from sleeping when a message is received.‐‐>
-<uses-permission android:name="android.permission.WAKE_LOCK"/>
-<permission android:name="<PACKAGE_NAME>.permission.C2D_MESSAGE" android:protectionLevel="signature" />
-<uses-permission android:name="<PACKAGE_NAME>.permission.C2D_MESSAGE" />
-<!-- This app has permission to register and receive data message. -->
-<uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
-```
+    ```xml
+    <uses‐permission android:name="android.permission.INTERNET"/>
+    <uses‐permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    
+    <!‐‐Following permissions are required for push notification.‐‐>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS"/>
+    <!‐‐Keeps the processor from sleeping when a message is received.‐‐>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <permission android:name="<PACKAGE_NAME>.permission.C2D_MESSAGE" android:protectionLevel="signature" />
+    <uses-permission android:name="<PACKAGE_NAME>.permission.C2D_MESSAGE" />
+    <!-- This app has permission to register and receive data message. -->
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+    ```
 
 1. Setting up FCM with HTTPv1 (Google has [deprecated XMPP protocol](https://firebase.google.com/docs/cloud-messaging/xmpp-server-ref) on 12th June, 2023 and will be removed in June 2024) 
 
@@ -296,7 +296,7 @@ Open `AndroidManifest.xml` and add following permissions. Your app must request 
 
 ## Android Test Devices
 
-1. Add Marketo Activity in manifest file inside application tag.
+Add Marketo Activity in manifest file inside application tag.
 
 ```xml
 <activity android:name="com.marketo.MarketoActivity"  android:configChanges="orientation|screenSize">
@@ -307,72 +307,71 @@ Open `AndroidManifest.xml` and add following permissions. Your app must request 
         <data android:host="add_test_device" android:scheme="mkto"/>
     </intent-filter/>
 </activity/>
-
 ```
 
 ## Register Marketo Push Service
 
 1. To receive push notifications from Marketo, you must add the Firebase messaging service to your `AndroidManifest.xml`. Add before the closing application tag.
 
-```xml
-<meta-data
-      android:name="com.google.android.gms.version"
-      android:value="@integer/google_play_services_version" />
-<service android:name=".MyFirebaseMessagingService">
-  <intent-filter>
-  <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
-  <action android:name="com.google.firebase.MESSAGING_EVENT"/>
-  </intent-filter>
-</service>
-```
+    ```xml
+    <meta-data
+        android:name="com.google.android.gms.version"
+        android:value="@integer/google_play_services_version" />
+    <service android:name=".MyFirebaseMessagingService">
+    <intent-filter>
+    <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+    <action android:name="com.google.firebase.MESSAGING_EVENT"/>
+    </intent-filter>
+    </service>
+    ```
 
-Add Marketo SDK methods in the file `MyFirebaseMessagingService` as follows
+1. Add Marketo SDK methods in the file `MyFirebaseMessagingService` as follows
 
-```java
-import com.marketo.Marketo;
+    ```java
+    import com.marketo.Marketo;
 
-public class MyFirebaseMessagingService extends FirebaseMessagingService {
+    public class MyFirebaseMessagingService extends FirebaseMessagingService {
 
-    @Override
-    public void onNewToken(String s) {
-        super.onNewToken(s);
-        Marketo marketoSdk = Marketo.getInstance(this.getApplicationContext());
-        marketoSdk.setPushNotificaitonToken(s);
-        // Add your code here...
+        @Override
+        public void onNewToken(String s) {
+            super.onNewToken(s);
+            Marketo marketoSdk = Marketo.getInstance(this.getApplicationContext());
+            marketoSdk.setPushNotificaitonToken(s);
+            // Add your code here...
+        }
+
+        @Override
+        public void onMessageReceived(RemoteMessage remoteMessage) {
+            Marketo marketoSdk = Marketo.getInstance(this.getApplicationContext());
+            marketoSdk.showPushNotificaiton(remoteMessage);
+            // Add your code here...
+        }
+
     }
+    ```
 
-    @Override
-    public void onMessageReceived(RemoteMessage remoteMessage) {
-        Marketo marketoSdk = Marketo.getInstance(this.getApplicationContext());
-        marketoSdk.showPushNotificaiton(remoteMessage);
-        // Add your code here...
+    **Note** - If using the Adobe extension, add as below
+
+    ```java
+    import com.marketo.Marketo;
+
+    public class MyFirebaseMessagingService extends FirebaseMessagingService {
+
+        @Override
+        public void onNewToken(String token) {
+            super.onNewToken(token);
+            ALMarketo.setPushNotificationToken(token);
+            // Add your code here...
+        }
+
+        @Override
+        public void onMessageReceived(RemoteMessage remoteMessage) {
+            ALMarketo.showPushNotification(remoteMessage);
+            // Add your code here...
+        }
+
     }
-
-}
-```
-
-**Note** - If using Adobe extension, add as below
-
-```java
-import com.marketo.Marketo;
-
-public class MyFirebaseMessagingService extends FirebaseMessagingService {
-
-    @Override
-    public void onNewToken(String token) {
-        super.onNewToken(token);
-        ALMarketo.setPushNotificationToken(token);
-        // Add your code here...
-    }
-
-    @Override
-    public void onMessageReceived(RemoteMessage remoteMessage) {
-        ALMarketo.showPushNotification(remoteMessage);
-        // Add your code here...
-    }
-
-}
-```
+    ```
 
 **NOTE**: The FCM SDK automatically adds all required permissions as well as the required receiver functionality. Make sure to remove the following obsolete (and potentially harmful, as they may cause message duplication) elements from your app's manifest if you used previous versions of SDK
 
@@ -395,53 +394,53 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
 1. Initialize Marketo Push After saving the configuration above, you must initialize Marketo Push Notification. Create or open your Application class and copy/paste the code below. You can get your sender ID from the Firebase console.
 
 
-```java
-Marketo marketoSdk = Marketo.getInstance(getApplicationContext());
+    ```java
+    Marketo marketoSdk = Marketo.getInstance(getApplicationContext());
 
-// Enable push notification here. The push notification channel name can by any string
-marketoSdk.initializeMarketoPush(SENDER_ID,"ChannelName");
-```
+    // Enable push notification here. The push notification channel name can by any string
+    marketoSdk.initializeMarketoPush(SENDER_ID,"ChannelName");
+    ```
 
-If using Adobe Launch Extension, use these instructions
+    If using Adobe Launch Extension, use these instructions
 
-```java
-// Enable push notification here. The push notification channel name can by any string
-ALMarketo.initializeMarketoPush(SENDER_ID,"ChannelName");
-```
+    ```java
+    // Enable push notification here. The push notification channel name can by any string
+    ALMarketo.initializeMarketoPush(SENDER_ID,"ChannelName");
+    ```
 
-If you do not have a SENDER_ID, then enable Google Cloud Messaging Service by completing the steps detailed in [this tutorial](https://developers.google.com/cloud-messaging/).
+    If you do not have a SENDER_ID, then enable Google Cloud Messaging Service by completing the steps detailed in [this tutorial](https://developers.google.com/cloud-messaging/).
 
-The token can also be unregistered when user logs out.
+    The token can also be unregistered when user logs out.
 
-```java
-marketoSdk.uninitializeMarketoPush();
-```
+    ```java
+    marketoSdk.uninitializeMarketoPush();
+    ```
 
-If using Adobe Launch extension, use the instruction below
+    If using Adobe Launch extension, use the instruction below
 
-```java
-ALMarketo.uninitializeMarketoPush();
-```
+    ```java
+    ALMarketo.uninitializeMarketoPush();
+    ```
 
-Note: To re-register the push token extract the code from step 3 into an AppDelegate method and call form the ViewController login method.
+    Note: To re-register the push token extract the code from step 3 into an AppDelegate method and call form the ViewController login method.
 
 1. Set Notification Icon (Optional) To configure a custom notification icon the following method should be called.
 
-```java
-MarketoConfig.Notification config = new MarketoConfig.Notification();
-// Optional bitmap for honeycomb and above
-config.setNotificationLargeIcon(bitmap);
+    ```java
+    MarketoConfig.Notification config = new MarketoConfig.Notification();
+    // Optional bitmap for honeycomb and above
+    config.setNotificationLargeIcon(bitmap);
 
-// Required icon Resource ID
-config.setNotificationSmallIcon(R.drawable.notification_small_icon); 
+    // Required icon Resource ID
+    config.setNotificationSmallIcon(R.drawable.notification_small_icon); 
 
-// Set the configuration 
-//Use the static methods on ALMarketo class when using Adobe Extension
-Marketo.getInstance(context).setNotificationConfig(config); 
+    // Set the configuration 
+    //Use the static methods on ALMarketo class when using Adobe Extension
+    Marketo.getInstance(context).setNotificationConfig(config); 
 
-// Get the configuration set 
-Marketo.getInstance(context).getNotificationConfig();
-```
+    // Get the configuration set 
+    Marketo.getInstance(context).getNotificationConfig();
+    ```
 
 ## Troubleshooting
 

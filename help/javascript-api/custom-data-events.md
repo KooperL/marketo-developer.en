@@ -17,14 +17,14 @@ You must become a Web Personalization customer and have the [RTP tag deployed](h
 
 ## Examples
 
-Send Event using String for Custom Data:
+### Send Event using String for Custom Data
 
 ```javascript
 var customData = {value: 'MyEvent'};
 rtp('send', 'event', customData);
 ```
 
-Send Event using Array of Strings for Custom Data:
+### Send Event using Array of Strings for Custom Data
 
 The custom data array can contain a maximum of four elements.  If you must send more than four elements, then call Send Event API repeatedly (with a maximum of four items) until all items are sent.
 
@@ -33,7 +33,7 @@ var customData = {value: ['MyEvent', 'download - example whitepaper']};
 rtp('send', 'event', customData);
 ```
 
-Send Event Based on Button Click:
+### Send Event Based on Button Click
 
 Marketo personalizes content on their website to web visitors who download a specific white paper. They do this by capturing the visitor's click the white paper download button, which sends a custom data event. RTP segments in real-time all visitors who clicked the download white paper button, showing each visitor a personalized campaign offering 2 clicks later. This is achieved by displaying another piece of content related to the white paper downloaded.
 

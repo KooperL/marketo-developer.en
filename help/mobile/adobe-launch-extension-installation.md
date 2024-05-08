@@ -25,7 +25,7 @@ Installation instructions for Adobe Launch Marketo extension. The steps below ar
 
 1. Go to Project > Target > Build Settings > Swift Compiler > Code Generation. Add the following path to Objective-Bridging Header:
 
-`$(PODS_ROOT)/<_ProjectName_>-Bridging-Header.h`
+  `$(PODS_ROOT)/<_ProjectName_>-Bridging-Header.h`
 
 ## Initialize Extension
 
@@ -60,7 +60,7 @@ func applicationDidBecomeActive(_ application: UIApplication)
 1. Select Project > Target > Info > URL Types.
 1. Add identifier: ${PRODUCT_NAME}
 1. Set URL Schemes: mkto-<S_ecret Key_> 
-1. Include application:openURL:sourceApplication:annotation: to AppDelegate.m file (Objective-C)
+1. Include `application:openURL:sourceApplication:annotation:` to `AppDelegate.m file` (Objective-C)
 
 ### Handle Custom Url Type in AppDelegate
 
@@ -121,7 +121,7 @@ Open `AndroidManifest.xml` and add following permissions. Your app must request 
 
 ProGuard Configuration (Optional)
 
-If you are using ProGuard for your app, then add the following lines in your proguard.cfg file. The file is located within your project folder. Adding this code excludes the Marketo SDK from the obfuscation process.
+If you are using ProGuard for your app, then add the following lines in your `proguard.cfg` file. The file is located within your `project` folder. Adding this code excludes the Marketo SDK from the obfuscation process.
 
 ```
 -dontwarn com.marketo.*
@@ -149,10 +149,6 @@ Add "MarketoActivity" to `AndroidManifest.xml` inside the application tag.
 The MME Software Development Kit (SDK) for Android has been updated to a more modern, stable, and scalable framework that contains more flexibility and new engineering features for your Android app developer.
 
 Android app developers can now directly use Google's [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/) (FCM) with this SDK.
-
-IMPORTANT: This exciting update will not require your current mobile app users to download a new version of your app, BUT any new app users who download your app after March 31, 2018 will not be able to receive push notifications until you update to the latest version of the SDK.
-
-We will continue to support the previous SDK version until March 31, 2019.  Instructions for your Android App Developer: [HERE](installation.md#android_sdk_installation)
 
 ### Adding FCM to your Application
 

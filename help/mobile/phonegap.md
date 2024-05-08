@@ -18,17 +18,17 @@ Integration of Marketo PhoneGap Plugin
 
 1. Setup Marketo PhoneGap Plugin
 
-- Assuming the Cordova CLI is installed, go to your PhoneGap application directory and run the following command to add the Marketo Plugin into your application:
+  - Assuming the Cordova CLI is installed, go to your PhoneGap application directory and run the following command to add the Marketo Plugin into your application:
 
-`$ cordova plugin add https://github.com/Marketo/PhoneGapPlugin.git --variable APPLICATION_SECRET_KEY="YOUR_APPLICATION_SECRET"`
+  `$ cordova plugin add https://github.com/Marketo/PhoneGapPlugin.git --variable APPLICATION_SECRET_KEY="YOUR_APPLICATION_SECRET"`
 
-Install the FCM plugin
+1. Install the FCM plugin
 
-`$ cordova plugin add cordova-plugin-fcm`
+  `$ cordova plugin add cordova-plugin-fcm`
 
-- To confirm that the plugin has been added to the application, run following command and verify
+  - To confirm that the plugin has been added to the application, run following command and verify
 
-`$ cordova plugin ls com.marketo.plugin 0.X.0 "MarketoPlugin" cordova-plugin-fcm 2.1.2 "FCMPlugin"`
+  `$ cordova plugin ls com.marketo.plugin 0.X.0 "MarketoPlugin" cordova-plugin-fcm 2.1.2 "FCMPlugin"`
 
 **Migrate to Newer Version (Optional)**
 

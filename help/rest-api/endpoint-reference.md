@@ -1,7 +1,7 @@
 ---
 title: "Endpoint Reference"
 feature: REST API
-description: "Marketo API endpoint references."
+description: "Marketo API endpoint references"
 ---
 
 # Endpoint Reference
@@ -9,6 +9,7 @@ description: "Marketo API endpoint references."
 - [Asset](https://developer.adobe.com/marketo-apis/api/asset/)
 - [Identity](https://developer.adobe.com/marketo-apis/api/identity/)
 - [Lead Database](https://developer.adobe.com/marketo-apis/api/mapi/)
+- [User Management](https://developer.adobe.com/marketo-apis/api/user/)
 
 ## Endpoint Reference
 

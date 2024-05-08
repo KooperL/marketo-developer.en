@@ -16,19 +16,19 @@ Installation instructions for Marketo Mobile SDK extension in Adobe Launch. The 
 
 ## iOS
 
-## Setup Swift Bridging Header
+### Setup Swift Bridging Header
 
 1. Go to File > New > File and Select "Header File".
 1. Name the file "<_ProjectName_>-Bridging-Header".
 1. Go to Project > Target > Build Phases > Swift Compiler > Code Generation. Add the following path to Objective-Bridging Header:
 
-`$(PODS_ROOT)/<_ProjectName_>-Bridging-Header.h`
+    `$(PODS_ROOT)/<_ProjectName_>-Bridging-Header.h`
 
 For Swift users: Remove the following import statement, as the bridging header is added in the above steps.
 
 `import Marketo/ALMarketo`
 
-## iOS Test Devices
+### iOS Test Devices
 
 Follow instructions at [Adding iOS Test Devices](installation.md#ios_test_devices)
 
@@ -36,13 +36,13 @@ Follow instructions at [Adding iOS Test Devices](installation.md#ios_test_devic
 
 Follow instructions [here](installation.md#ios_test_devices)
 
-## Set up push notifications on iOS
+### Set up push notifications on iOS
 
 Follow instructions [here](push-notifications.md) and use the class name "ALMarketo" instead of "Marketo"
 
 ## Android
 
-## Configure Permissions
+### Configure Permissions
 
 Open `AndroidManifest.xml` and add following permissions. Your app must request the "INTERNET" and "ACCESS_NETWORK_STATE" permissions. If your app already requests these permissions, then skip this step.
 
@@ -61,7 +61,7 @@ If you are using ProGuard for your app, then add the following lines in your `pr
 -keep class com.marketo.**{ *; }
 ```
 
-## Android  Test Devices
+### Android Test Devices
 
 Follow instructions [here](installation.md#android_test_devices)
 

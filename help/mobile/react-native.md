@@ -51,27 +51,27 @@ Download [CocoaPods](https://cocoapods.org/) - Distributed as a Ruby gem, it is 
 
 To download and install it, launch a command-line terminal on your Mac and run the following command on it:
 
- Install CocoaPods.
+1. Install CocoaPods.
 
-`$ sudo gem install cocoapods`
+  `$ sudo gem install cocoapods`
 
-Open your Podfile. (Inside iOS folder of the ReactNative project)
+1. Open your Podfile. (Inside iOS folder of the ReactNative project)
 
-`$ open -a Xcode Podfile`
+  `$ open -a Xcode Podfile`
 
- Add the following line to your Podfile.
+1. Add the following line to your Podfile.
 
-`$ pod 'Marketo-iOS-SDK'`
+  `$ pod 'Marketo-iOS-SDK'`
 
-Save and close your Podfile.
+1. Save and close your Podfile.
 
-Download and install Marketo iOS SDK.
+1. Download and install Marketo iOS SDK.
 
 `$ pod install`
 
-Open workspace in Xcode.
+1. Open workspace in Xcode.
 
-`$ open App.xcworkspace`
+  `$ open App.xcworkspace`
 
 ## Native Module Installation Instructions
 
@@ -229,25 +229,25 @@ In the following guide you will create a native module, _RNMarketoModule_, that 
 
 1. Create our main custom native module header and implementation files. Create a new file called `MktoBridge.h` and add the following to it:
 
-```
-//
-//  MktoBridge.h
-//
-//  Created by Marketo, An Adobe company.
-//
+  ```
+  //
+  //  MktoBridge.h
+  //
+  //  Created by Marketo, An Adobe company.
+  //
 
-#import <Foundation/Foundation.h>
-#import <React/RCTBridgeModule.h>
+  #import <Foundation/Foundation.h>
+  #import <React/RCTBridgeModule.h>
 
-NS_ASSUME_NONNULL_BEGIN
+  NS_ASSUME_NONNULL_BEGIN
 
-@interface MktoBridge : NSObject 
+  @interface MktoBridge : NSObject 
 
-@end
+  @end
 
-NS_ASSUME_NONNULL_END
+  NS_ASSUME_NONNULL_END
 
-```
+  ```
 
 Next up, let's start implementing the native module. Create the corresponding implementation file, MktoBridge.m, in the same folder and include the following content:
 
