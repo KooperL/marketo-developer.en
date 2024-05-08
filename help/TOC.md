@@ -11,7 +11,7 @@ hide: yes
 
 - [Home](home.md)
 - [Getting Started](getting-started.md)
-- [Javascript API] {#javascriptapi}
+- Javascript API {#javascriptapi}
    - [Configuration](javascript-api/configuration.md)
    - [Custom Data Events](javascript-api/custom-data-events.md)
    - [Examples](javascript-api/examples.md)
@@ -26,7 +26,7 @@ hide: yes
    - [Social](javascript-api/social.md)
    - [Triggers](javascript-api/triggers.md)
    - [Web Personalization](javascript-api/web-personalization.md)
-- [Mobile]{#mobile}
+- Mobile {#mobile}
    - [Install Adobe Launch Extension](mobile/adobe-launch-extension-installation.md)
    - [Adobe Launch Extension](mobile/adobe-launch-extension.md)
    - [Advanced Security Mode](mobile/advanced-security-access-mode.md)
@@ -41,7 +41,7 @@ hide: yes
    - [React Native](mobile/react-native.md)
    - [User Profiles](mobile/user-profiles.md)
 - REST{#rest}
-   - [Assets]{#assets}
+   - Assets {#assets}
       - [Dynamic Content](rest-api/dynamic-content.md)
       - [Emails](rest-api/emails.md)
       - [Email Templates](rest-api/email-templates.md)
@@ -62,13 +62,13 @@ hide: yes
    - [Authentication](rest-api/authentication.md)
    - [Authentication Signature](rest-api/authentication-signature.md)
    - [Base URL](rest-api/base-url.md)
-   - [Bulk Extract]{#bulk-extract}
+   - Bulk Extract {#bulk-extract}
       - [Bulk Activity](rest-api/bulk-activity-extract.md)
       - [Bulk Custom Object](rest-api/bulk-custom-object-extract.md)
       - [Bulk Extract](rest-api/bulk-extract.md)
       - [Bulk Lead](rest-api/bulk-lead-extract.md)
       - [Bulk Program Member](rest-api/bulk-program-member-extract.md)
-   - [Bulk Import]{#bulk-import}
+   - Bulk Import {#bulk-import}
       - [Bulk Custom Object](rest-api/bulk-custom-object-import.md)
       - [Bulk Import](rest-api/bulk-import.md)
       - [Bulk Lead](rest-api/bulk-lead-import.md)
@@ -76,7 +76,7 @@ hide: yes
    - [Custom Services](rest-api/custom-services.md)
    - [Endpoint Reference](rest-api/endpoint-reference.md)
    - [Error Codes](rest-api/error-codes.md)
-   - [Lead Database]{#lead-database}
+   - Lead Database {#lead-database}
       - [Companies](rest-api/companies.md)
       - [Field List](rest-api/fields.md)
       - [Field Types](rest-api/field-types.md)
@@ -92,40 +92,40 @@ hide: yes
    - [Sample Code](https://github.com/Marketo/REST-Sample-Code)
    - [User Management](rest-api/user-management.md)
 - SOAP {#soap}
-   - [Activities]{#activities}
+   - Activities {#activities}
       - [Activities](soap-api/activities.md)
       - [getLeadActivity](soap-api/getleadactivity.md)
       - [getLeadChanges](soap-api/getleadchanges.md)
    - [Activity Type Filters](soap-api/activity-type-filters.md)
-   - [Campaigns]{#campaigns}
+   - Campaigns {#campaigns}
       - [getCampaignsForSource](soap-api/getcampaignsforsource.md)
       - [requestCampaign](soap-api/requestcampaign.md)
       - [scheduleCampaign](soap-api/schedulecampaign.md)
-   - [Custom Objects]{#custom-objects}
+   - Custom Objects {#custom-objects}
       - [Custom Objects](soap-api/custom-objects.md)
       - [deleteCustomObjects](soap-api/deletecustomobjects.md)
       - [getCustomObjects](soap-api/getcustomobjects.md)
       - [syncCustomObjects](soap-api/synccustomobjects.md)
    - [Error Codes](soap-api/error-codes.md)
-   - [Leads]{#leads}
+   - Leads {#leads}
       - [getLead](soap-api/getlead.md)
       - [getMultipleLeads](soap-api/getmultipleleads.md)
       - [mergeLeads](soap-api/mergeleads.md)
       - [Leads](soap-api/leads.md)
       - [syncLead](soap-api/synclead.md)
       - [syncMultipleLeads](soap-api/syncmultipleleads.md)
-   - [Marketo Objects]{#marketo-objects}
+   - Marketo Objects {#marketo-objects}
       - [deleteMObjects](soap-api/deletemobjects.md)
       - [describeMObjects](soap-api/describemobject.md)
       - [getMObjects](soap-api/getmobjects.md)
       - [listMObjects](soap-api/listmobjects.md)
       - [Marketo Objects](soap-api/marketo-objects.md)
       - [syncMObjects](soap-api/syncmobjects.md)
-   - [Programs]{#programs}
+   - Programs {#programs}
       - [getChannels](soap-api/getchannels.md)
       - [getTags](soap-api/gettags.md)
    - [SOAP FAQ](soap-api/soap-faq.md)
-   - [Static Lists]{#static-lists}
+   - Static Lists {#static-lists}
       - [getImportToListStatus](soap-api/getimporttoliststatus.md)
       - [importToList](soap-api/importtolist.md)
       - [listOperation](soap-api/listoperation.md)

@@ -20,21 +20,21 @@ This topic describes how to integrate the Marketo Cordova Plugin. Ionic capacito
 
 1. Assuming the Cordova CLI is installed, go to your Ionic application directory and run the following command to add the Marketo Plugin into your application:
 
-`$ ionic plugin add https://github.com/Marketo/PhoneGapPlugin.git --variable APPLICATION_SECRET_KEY="YOUR_APPLICATION_SECRET"`
+  `$ ionic plugin add https://github.com/Marketo/PhoneGapPlugin.git --variable APPLICATION_SECRET_KEY="YOUR_APPLICATION_SECRET"`
 
 1. To confirm that the plugin has been added to the application, run following command:
 
-`$ ionic plugin list com.marketo.plugin 0.X.0 "MarketoPlugin"`
+  `$ ionic plugin list com.marketo.plugin 0.X.0 "MarketoPlugin"`
 
 ### Migrate to Newer Version (Optional)
 
-1 To remove an existing plugin, run the following command:
+1. To remove an existing plugin, run the following command:
 
-`$ ionic plugin remove com.marketo.plugin`
+  `$ ionic plugin remove com.marketo.plugin`
 
-1 To readd the plugin, run the following command:
+1. To readd the plugin, run the following command:
 
-`$ ionic plugin add https://github.com/Marketo/PhoneGapPlugin.git --variable APPLICATION_SECRET_KEY="YOUR_APPLICATION_SECRET"`
+  `$ ionic plugin add https://github.com/Marketo/PhoneGapPlugin.git --variable APPLICATION_SECRET_KEY="YOUR_APPLICATION_SECRET"`
 
 ### Enable Push Notifications in xCode
 

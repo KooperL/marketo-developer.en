@@ -14,16 +14,28 @@ Custom actions can be used as triggers and filters in Smart Campaigns. For more 
 
 1. Send custom action.
 
+>[!BEGINTABS]
+
+>[!TAB Objective C]
+
 ```
 Marketo *sharedInstance = [Marketo sharedInstance];
 [sharedInstance reportAction:@"Login" withMetaData:nil];
 ```
 
+>[!TAB Swift]
+
 ```
 sharedInstance.reportAction("Login", withMetaData:nil);
 ```
 
+>[!ENDTABS]
+
 1. Send custom action with metadata.
+
+>[!BEGINTABS]
+
+>[!TAB Objective C]
 
 ```
 MarketoActionMetaData *meta = [[MarketoActionMetaData alloc] init];
@@ -35,6 +47,8 @@ MarketoActionMetaData *meta = [[MarketoActionMetaData alloc] init];
 [sharedInstance reportAction:@"Bought Shirt" withMetaData:meta];
 ```
 
+>[!TAB Swift]
+
 ```
 let meta = MarketoActionMetaData()
 meta.setType("Shopping");
@@ -45,41 +59,51 @@ meta.setMetric(30);
 sharedInstance.reportAction("Bought Shirt", withMetaData:meta);
 ```
 
+>[!ENDTABS]
+
 1. Report all actions immediately (send all saved actions).
+
+>[!BEGINTABS]
+
+>[!TAB Objective C]
 
 ```
 [sharedInstance reportAll];
 ```
 
+>[!TAB Swift]
+
 ```
 sharedInstance.reportAll();
 ```
+
+>[!ENDTABS]
 
 ## Sending Custom Actions on Android
 
 1. Send custom action.
 
-```
-Marketo.reportAction("Login", null);
-```
+    ```
+    Marketo.reportAction("Login", null);
+    ```
 
 1. Send custom action with metadata.
 
-```
-MarketoActionMetaData meta = new MarketoActionMetaData();
-meta.setActionType("Shopping");
-meta.setActionDetails("RedShirt");
-meta.setActionLength("20");
-meta.setActionMetric("30");
+    ```
+    MarketoActionMetaData meta = new MarketoActionMetaData();
+    meta.setActionType("Shopping");
+    meta.setActionDetails("RedShirt");
+    meta.setActionLength("20");
+    meta.setActionMetric("30");
 
-Marketo.reportAction("Bought Shirt", meta);
-```
+    Marketo.reportAction("Bought Shirt", meta);
+    ```
 
 1. Report all custom actions immediately (send all saved actions).
 
-```
-Marketo.reportAll();
-```
+    ```
+    Marketo.reportAll();
+    ```
 
 ## Troubleshooting Custom Actions
 

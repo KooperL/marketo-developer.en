@@ -7,11 +7,62 @@ description: "Marketo API homepage"
 
 Detailed documentations that help you master Marketo API
 
-- [![Getting Started](assets/getting-started.png)Getting Started](getting-started.md)
-- [![REST API](assets/rest-api.png)REST API](https://developer.adobe.com/marketo-apis/)
-- [![Lead Tracking](assets/lead-tracking.png)Lead Tracking (Munchkin)](javascript-api/lead-tracking.md)
-- [![Webhooks](assets/webhooks.png)Webhooks](webhooks/webhooks.md)
-- [![Web Personalization](assets/personalization.png)Web Personalization (RTP)](javascript-api/web-personalization.md)
-- [![Mobile](assets/mobile.png)Mobile (MME)](mobile/mobile.md)
-- [![Email Scripting](assets/email-scripting.png)Email Scripting](rest-api/emails.md)
-- [![Client Libraries](assets/more-docs.png)Client Libraries](https://github.com/Marketo/Community-Supported-Client-Libraries)
+<table>
+<tr>
+  <td valign="top" width="200">
+      <img alt="Getting Started" src="assets/getting-started.png" width="170px"/></td>
+   <td valign="top"><a href="getting-started.md"><strong>Getting Started</strong></a>  
+    <div>Get familiar with Marketo APIs.</div>
+  </td>
+   </tr>
+<tr>
+   <td valign="top" width="200">
+       <img alt="REST API" src="assets/rest-api.png" width="170px"/></td>
+   <td valign="top">
+   <a href="https://developer.adobe.com/marketo-apis/"><strong>REST API</strong></a>
+    <div>Read, write and update your Marketo data through the REST API.</div>
+  </td>
+   </tr>
+<tr>
+    <td valign="top" width="200px">
+       <img alt="Lead Tracking" src="assets/lead-tracking.png" width="170px"></td>
+   <td valign="top"><a href="javascript-api/lead-tracking.md"> <strong>Lead Tracking</strong></a> <br>
+    <div>Manage your customer leads.</div>
+  </td>
+   </tr>
+<tr>
+  <td valign="top" width="200px">
+    <img alt="Webhooks" src="assets/webhooks.png" width="170px"/></td>
+   <td valign="top"><a href="webhooks/webhooks.md"><strong>Webhooks</strong></a> 
+    <div>Communicate with third-party web services with Webhooks.</div>
+  </td>
+    </tr>
+<tr>
+  <td valign="top" width="200px">
+    <img alt="Mobile Marketo" src="assets/mobile.png" width="170px"/></td>
+   <td valign="top"><a href="mobile/mobile.md"><strong>Mobile Marketo</strong></a> 
+    <div>Use Marketo Mobile to listen and respond to customers on their mobile devices.</div>
+  </td>
+    </tr>
+<tr>
+    <td valign="top" width="200px">
+       <img alt="Email Scripting" src="assets/email-scripting.png" width="170px"/></td>
+   <td valign="top"><a href="rest-api/emails.md"> <strong>Email Scripting</strong></a></br>
+    <div>Use Marketo APIs to create and edit emails and email templates.</div>
+  </td>
+   </tr>
+<tr>
+    <td valign="top" width="200px">
+       <img alt="Web Personalization" src="assets/personalization.png" width="170px"></td>
+   <td valign="top"><a href="javascript-api/web-personalization.md"> <strong>Amazon sales channel</strong></a>
+    <div>Use the javascript API for event tracking and dynamic customization of a webpage.</div>
+  </td>
+   </tr>
+<tr>
+    <td valign="top">
+       <img alt="Client Libraries" src="assets/more-docs.png" width="170px"></td>
+   <td valign="top"><a href="https://github.com/Marketo/Community-Supported-Client-Libraries"> <strong>Client Libraries</strong></a>
+    <div>Use open source code to exapand the capabilities of Marketo.</div>
+  </td>
+   </tr>
+</table>
