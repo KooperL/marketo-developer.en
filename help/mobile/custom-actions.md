@@ -31,7 +31,7 @@ sharedInstance.reportAction("Login", withMetaData:nil);
 
 >[!ENDTABS]
 
-1. Send custom action with metadata.
+2. Send custom action with metadata.
 
 >[!BEGINTABS]
 
@@ -61,7 +61,7 @@ sharedInstance.reportAction("Bought Shirt", withMetaData:meta);
 
 >[!ENDTABS]
 
-1. Report all actions immediately (send all saved actions).
+3. Report all actions immediately (send all saved actions).
 
 >[!BEGINTABS]
 
