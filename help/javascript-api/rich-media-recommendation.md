@@ -1,6 +1,7 @@
 ---
 title: "Rich Media Recommendation"
 description: "Rich Media Recommendation"
+feature: Javascript
 ---
 
 # Rich Media Recommendation

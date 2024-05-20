@@ -25,7 +25,7 @@ email,firstName,lastName
 test@example.com,John,Doe
 ```
 
-The call itself is made using the multipart/form-data content-type.
+The call itself is made using the `multipart/form-data` content-type.
 
 This request type can be difficult to implement, so it is highly recommended that you use an existing library implementation.
 
@@ -174,7 +174,7 @@ GET /bulk/v1/program/members/import/{batchId}/status.json
 }
 ```
 
-You then retrieve the failures file for additional details about the failure:
+Then retrieve the failures file for additional details about the failure:
 
 ```
 GET /bulk/v1/program/members/import/{batchId}/failures.json
@@ -187,7 +187,7 @@ Aerys,Targaryen,Aerys@Targaryen.com,Targaryen,House Targaryen,TEXT_VALUE_IN_INTE
 
 ## Warnings
 
-Warnings are indicated by the `numOfRowsWithWarning` attribute in [Get Import Program Member Status](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Bulk-Import-Program-Members/operation/getImportProgramMemberStatusUsingGET) response. If numOfRowsWithWarning is greater than zero, then that value indicates the number of warnings that occurred.
+Warnings are indicated by the `numOfRowsWithWarning` attribute in [Get Import Program Member Status](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Bulk-Import-Program-Members/operation/getImportProgramMemberStatusUsingGET) response. If `numOfRowsWithWarning` is greater than zero, then that value indicates the number of warnings that occurred.
 
 Use the [Get Import Program Member Warnings](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Bulk-Import-Program-Members/operation/getImportProgramMemberWarningsUsingGET) endpoint to retrieve records and causes of warning rows by passing the `batchId` path parameter.
 
@@ -204,7 +204,7 @@ firstName,lastName,email,title,company,leadScore
 Aerys,Targaryen,INVALID_EMAIL,Targaryen,House Targaryen,0
 ```
 
-When you check the job status, you see numOfRowsWithWarning is 1 which indicates that a warning occurred:
+When you check the job status, you see `numOfRowsWithWarning` is 1 which indicates that a warning occurred:
 
 ```
 GET /bulk/v1/program/members/import/{batchId}/status.json

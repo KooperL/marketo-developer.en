@@ -8,7 +8,7 @@ description: "Configuring Channels data with Marketo APIs."
 
 [Channels Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Channels)
 
-Channels are a standard and required field for all program types. Each type of channel can only be used with the given "applicableProgramType" and provides the list of available program statuses which are valid for program members in each program. If a channel's program statuses are changed after a program is created, then the list of program statuses which a lead may be changed to will match the list given by the channel at that time, but it will not retroactively change the program status for any existing program membership records.
+Channels are a standard and required field for all program types. Each type of channel can only be used with the given `applicableProgramType` and provides the list of available program statuses which are valid for program members in each program. If a channel's program statuses are changed after a program is created, then the list of program statuses which a lead may be changed to will match the list given by the channel at that time, but it will not retroactively change the program status for any existing program membership records.
 
 ## Query
 

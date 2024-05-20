@@ -1,6 +1,6 @@
 ---
 title: "syncLead"
-feature: Reporting
+feature: SOAP
 description: "syncLead SOAP calls"
 ---
 

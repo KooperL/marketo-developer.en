@@ -33,7 +33,7 @@ GET /rest/v1/activities/pagingtoken.json?sinceDatetime=2014-10-06T13:22:17-08:00
 }
 ```
 
-The format of the sinceDateTime parameter must conform to [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard date notation. For best results, use a full datetime that includes the time zone. The time zone can be represented as either an offset from GMT using the following format:
+The format of the `sinceDateTime` parameter must conform to [ISO 8601](https://en.wikipedia.org/wiki/ISO_8601) standard date notation. For best results, use a full datetime that includes the time zone. The time zone can be represented as either an offset from GMT using the following format:
 
 `yyyy-mm-ddThh:mm:ss+|-hh:mm`
 
@@ -47,9 +47,9 @@ Examples
 
 `2016-09-15T10:53:00Z`
 
-Because sinceDateTime is a query parameter, it must be URL encoded.
+Because `sinceDateTime` is a query parameter, it must be URL encoded.
 
-The nextPageToken string is then provided to a [Get Lead Activities](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Activities/operation/getLeadActivitiesUsingGET), [Get Lead Changes](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Activities/operation/getLeadChangesUsingGET), or [Get Deleted Leads](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Activities/operation/getDeletedLeadsUsingGET) call, and activities are retrieved from after the datetime provided to the Get Paging Token API.
+The `nextPageToken` string is then provided to a [Get Lead Activities](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Activities/operation/getLeadActivitiesUsingGET), [Get Lead Changes](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Activities/operation/getLeadChangesUsingGET), or [Get Deleted Leads](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Activities/operation/getDeletedLeadsUsingGET) call, and activities are retrieved from after the datetime provided to the Get Paging Token API.
 
 ```
 GET /rest/v1/activities.json?nextPageToken=GIYDAOBNGEYS2MBWKQYDAORQGA5DAMBOGAYDAKZQGAYDALBQ&activityTypeIds=1&activityTypeIds=12
@@ -57,4 +57,4 @@ GET /rest/v1/activities.json?nextPageToken=GIYDAOBNGEYS2MBWKQYDAORQGA5DAMBOGAYDA
 
 ## Position-Based
 
-The second type of paging token may be returned by any batch retrieval call to a Lead Database API. This type of paging token is similar in concept to a database cursor which enables traversal of records. For example, a Get Leads By Filter Type call may represent a set greater than the given batch size, usually the max and default of 300. When there are more results, the moreResult field is true in the response, and a nextPageToken is returned. To retrieve the additional records in the result set, an additional call including nextPageToken with the received value from the previous response in the new call. The resulting response will return the next page in the result set.
+The second type of paging token may be returned by any batch retrieval call to a Lead Database API. This type of paging token is similar in concept to a database cursor which enables traversal of records. For example, a Get Leads By Filter Type call may represent a set greater than the given batch size, usually the max and default of 300. When there are more results, the moreResult field is true in the response, and a `nextPageToken` is returned. To retrieve the additional records in the result set, an additional call including `nextPageToken` with the received value from the previous response in the new call. The resulting response will return the next page in the result set.

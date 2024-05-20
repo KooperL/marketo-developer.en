@@ -1,6 +1,6 @@
 ---
 title: "Stream Position"
-feature: Reporting
+feature: SOAP
 description: "Steam Position overview"
 ---
 

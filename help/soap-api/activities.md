@@ -1,6 +1,6 @@
 ---
 title: "Activities"
-feature: Reporting
+feature: SOAP
 description: "SOAP calls for Activities"
 ---
 

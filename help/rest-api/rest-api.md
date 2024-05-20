@@ -20,7 +20,7 @@ The size of standard calls is limited to a URI length of 8KB, and a body size of
 
 The following steps require admin privileges in your Marketo instance.
 
-For your first call to Marketo, you'll simply retrieve a lead record. To begin working with Marketo, you must obtain API credentials so that you can make authenticated calls to your instance. Login to your instance and go to the **Admin** -> **Users and Roles**.
+For your first call to Marketo, you'll retrieve a lead record. To begin working with Marketo, you must obtain API credentials for making authenticated calls to your instance. Login to your instance and go to the **Admin** -> **Users and Roles**.
 
 ![Admin Users and Roles](assets/admin-users-and-roles.png)
 

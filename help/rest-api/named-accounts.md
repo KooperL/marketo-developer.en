@@ -14,7 +14,7 @@ Currently, the only ABM-related functions available via Marketo's APIs are the C
 
 ## Describe
 
-Describing Named Accounts returns metadata related to the usage of named accounts via Marketo's APIs, including a list of valid searchable fields when querying, and a list of all fields available for API usage. The idField of a named account is always marketoGUID, and the only available dedupeField, and key for creation is the name field of the object.
+Describing Named Accounts returns metadata related to the usage of named accounts via Marketo's APIs, including a list of valid searchable fields when querying, and a list of all fields available for API usage. The `idField` of a named account is always `marketoGUID`, and the only available `dedupeField`, and key for creation is the `name` field of the object.
 
 ```
 GET /rest/v1/namedaccounts/describe.json

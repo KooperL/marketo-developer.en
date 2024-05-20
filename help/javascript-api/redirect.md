@@ -1,6 +1,7 @@
 ---
 title: "Redirect"
 description: "Redirect"
+feature: Javascript
 ---
 
 # Redirect

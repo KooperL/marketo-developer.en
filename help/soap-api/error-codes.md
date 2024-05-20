@@ -1,6 +1,6 @@
 ---
 title: "Error Codes"
-feature: Reporting
+feature: SOAP
 description: "Error codes for SOAP calls"
 ---
 

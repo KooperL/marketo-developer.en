@@ -1,6 +1,6 @@
 ---
 title: "syncCustomObjects"
-feature: Reporting
+feature: SOAP
 description: "syncCustomObjects SOAP calls"
 ---
 

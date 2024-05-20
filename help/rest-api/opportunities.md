@@ -8,7 +8,7 @@ description: " Configure opportunities with the Marketo API."
 
 [Opportunity Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Opportunities)
 
-Marketo exposes APIs for reading, writing, creating and updating opportunity records.  In Marketo, opportunity records are linked to lead and contact records through the intermediate Opportunity Role object, so an opportunity may be linked to many individual leads.  Both of these object types are exposed through the API, and like most of the Lead Database object types, they both have a corresponding Describe call, which returns metadata about the object types.
+Marketo exposes APIs for reading, writing, creating and updating opportunity records. In Marketo, opportunity records are linked to lead and contact records through the intermediate Opportunity Role object, so an opportunity may be linked to many individual leads.  Both of these object types are exposed through the API, and like most of the Lead Database object types, they both have a corresponding Describe call, which returns metadata about the object types.
 
 Opportunity APIs are read-only access for subscriptions which have [SFDC Sync](https://experienceleague.adobe.com/docs/marketo/using/product-docs/crm-sync/salesforce-sync/sfdc-sync-details/sfdc-sync-field-sync.html?lang=en) or [Microsoft Dynamics Sync](https://experienceleague.adobe.com/docs/marketo/using/product-docs/crm-sync/microsoft-dynamics/microsoft-dynamics-sync-details/microsoft-dynamics-sync-user-sync.html?lang=en) are enabled.
 

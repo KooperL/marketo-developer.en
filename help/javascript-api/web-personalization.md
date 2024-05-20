@@ -1,7 +1,7 @@
 ---
 title: "Web Personalization"
 description: "Web Personalization"
-feature: "Web Personalization"
+feature: Web Personalization, Javascript
 ---
 
 # Web Personalization

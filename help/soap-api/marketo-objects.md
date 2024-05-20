@@ -1,6 +1,6 @@
 ---
 title: "Marketo Objects"
-feature: Reporting
+feature: SOAP
 description: "Marketo Objects overview"
 ---
 

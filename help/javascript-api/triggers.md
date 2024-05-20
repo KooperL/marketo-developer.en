@@ -1,6 +1,7 @@
 ---
 title: "Triggers"
 description: "Triggers"
+feature: Javascript
 ---
 
 # Triggers

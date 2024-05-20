@@ -1,6 +1,6 @@
 ---
 title: "getLeadChanges"
-feature: Reporting
+feature: SOAP
 description: "getLeadChanges SOAP calls"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "mergeLeads"
-feature: Reporting
+feature: SOAP
 description: "mergeLeads SOAP calls"
 ---
 

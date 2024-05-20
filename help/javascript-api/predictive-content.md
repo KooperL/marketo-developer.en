@@ -1,7 +1,7 @@
 ---
 title: "Predictive Content"
 description: "Predictive Content"
-feature: "Predictive Content"
+feature: Predictive Content, Javascript
 ---
 
 # Predictive Content

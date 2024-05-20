@@ -1,7 +1,7 @@
 ---
 title: "Lead Tracking"
 description: "Lead Tracking API"
-feature: "Munchkin Tracking Code"
+feature: Munchkin Tracking Code, Javascript
 ---
 
 # Lead Tracking API

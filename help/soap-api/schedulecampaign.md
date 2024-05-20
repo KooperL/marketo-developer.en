@@ -1,6 +1,6 @@
 ---
 title: "scheduleCampaign"
-feature: Reporting, Smart Campaigns
+feature: SOAP, Smart Campaigns
 description: "scheduleCampaign SOAP calls"
 ---
 

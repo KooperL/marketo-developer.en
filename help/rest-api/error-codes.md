@@ -10,7 +10,7 @@ Below are lists of REST API error codes, and an explanation of how errors are re
 
 ## Handling and Logging Exceptions
 
-When developing for Marketo, it's very important that requests and responses get logged when an unexpected exception is encountered. While certain types of exceptions, such as expired authentication, can be safely handled by re-authentication, others may require support interactions, and requests and responses will always be requested in this scenario.
+When developing for Marketo, it's important that requests and responses get logged when an unexpected exception is encountered. While certain types of exceptions, such as expired authentication, can be safely handled by re-authentication, others may require support interactions, and requests and responses will always be requested in this scenario.
 
 ## Error Types
 
@@ -28,7 +28,7 @@ Under normal operating circumstances Marketo should only return two HTTP status 
 
 Marketo will return 413 if the Request Payload exceeds 1MB, or 10MB in the case of Import Lead. In most scenarios it is unlikely to hit these limits, but adding a check to the size of the request and moving any records, which cause the limit to be exceeded to a new request should prevent any circumstances, which lead to this error being returned by any endpoints.
 
-414 will be returned when the URI of a GET request exceeds 8KB. To avoid it, check against the length of your query string to see if it exceeds this limit. If it does change your request to a POST method, then input your query string as the request body with the additional parameter '_method=GET'. This forgoes the limitation on URIs. It's rare to hit this limit in most cases, but it is somewhat common when retrieving large batches of records with long individual filter values such as a GUID.
+414 will be returned when the URI of a GET request exceeds 8KB. To avoid it, check against the length of your query string to see if it exceeds this limit. If it does change your request to a POST method, then input your query string as the request body with the additional parameter `_method=GET`. This forgoes the limitation on URIs. It's rare to hit this limit in most cases, but it is somewhat common when retrieving large batches of records with long individual filter values such as a GUID.
 The [Identity](https://developer.adobe.com/marketo-apis/api/identity/) endpoint can return a 401 Unauthorized error. This is typically due to an invalid Client Id or invalid Client Secret. HTTP-Level Error Codes
 
 <table>
@@ -48,7 +48,7 @@ The [Identity](https://developer.adobe.com/marketo-apis/api/identity/) endpoint 
     <tr>
       <td><a name="414"></a>414</td>
       <td>Request-URI Too Long</td>
-      <td>The URI of the request exceeded 8k. The request should be retried as a POST with param _method=GET in the URL, and the rest of the query string in the body of the request.</td>
+      <td>The URI of the request exceeded 8k. The request should be retried as a POST with param `_method=GET` in the URL, and the rest of the query string in the body of the request.</td>
     </tr>
   </tbody>
 </table>
@@ -56,7 +56,7 @@ The [Identity](https://developer.adobe.com/marketo-apis/api/identity/) endpoint 
 
 #### Response-Level errors
 
-Response level errors are present when the "success" parameter of the response is set to false, and are structured like:
+Response level errors are present when the `success` parameter of the response is set to false, and are structured like:
 
 ```json
 {
@@ -71,7 +71,7 @@ Response level errors are present when the "success" parameter of the response i
 }
 ```
 
-Each object in the "errors" array has two members, "code," which is a quoted integer from 601 to 799 and a "message" giving the plaintext reason for the error. 6xx codes always indicate that a request failed completely and were not executed. An example is a 601, "Access token invalid," which is recoverable by re-authenticating and passing the new access token with the request. 7xx errors indicate that the request failed, either because no data was returned, or the request was incorrectly parameterized, such as including an invalid date, or missing a required parameter.
+Each object in the "errors" array has two members, `code`, which is a quoted integer from 601 to 799 and a `message` giving the plaintext reason for the error. 6xx codes always indicate that a request failed completely and were not executed. An example is a 601, "Access token invalid," which is recoverable by re-authenticating and passing the new access token with the request. 7xx errors indicate that the request failed, either because no data was returned, or the request was incorrectly parameterized, such as including an invalid date, or missing a required parameter.
 
 #### Response-Level Error Codes
 

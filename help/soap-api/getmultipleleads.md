@@ -1,6 +1,6 @@
 ---
 title: "getMultipleLeads"
-feature: Reporting
+feature: SOAP
 description: "getMultipleLeads SOAP calls"
 ---
 

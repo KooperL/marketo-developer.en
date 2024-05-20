@@ -139,7 +139,7 @@ Request Body
 |---|---|---|---|---|
 | priority | String | No | Priority of the request:normalhigh | normal |
 | partitionName | String | No | Name of person partition | Default |
-| dedupeFields | Object | No | Attributes to deduplicate on.One or two attribute names are allowed. Two attributes are used in an AND operation.For example, if both email and firstName are specified, they will both be used to look up a person using the AND operation.Supported attributes are:`idemail`, `sfdcAccountId`, `sfdcContactId`, `sfdcLeadId`, `sfdcLeadOwnerIdCustom` attributes ("string" and "integer" type only) | email |
+| dedupeFields | Object | No | Attributes to deduplicate on. One or two attribute names are allowed. Two attributes are used in an AND operation. For example, if both `email` and `firstName` are specified, they are both be used to look up a person using the AND operation. Supported attributes are:`idemail`, `sfdcAccountId`, `sfdcContactId`, `sfdcLeadId`, `sfdcLeadOwnerIdCustom` attributes ("string" and "integer" type only) | email |
 | persons | Array of Object | Yes | List of attribute name-value pairs for the person | - |
 
 | Permission |

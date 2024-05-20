@@ -1,6 +1,6 @@
 ---
 title: "importToList"
-feature: Reporting
+feature: SOAP
 description: "importToList SOAP calls"
 ---
 

@@ -8,7 +8,7 @@ description: "Create and edit program information."
 
 [Programs Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Programs)
 
-Programs are a core organizational component of Marketo Marketing Activities. They can be a parent to most types of assets, and allow for tracking of membership and success of leads within the context of individual marketing initiatives. Programs can be parents to all type of records except for LP and Email Templates, and Files.
+Programs are a core organizational component of Marketo Marketing Activities. They can be a parent to most types of assets, and allow for tracking of membership and success of leads within the context of individual marketing initiatives. Programs can be parents to all type of records except for LP, Email Templates, and Files.
 
 ## Program Types
 
@@ -22,7 +22,7 @@ There are five core types of programs within Marketo:
 
 Engagement programs may be parents to each other type of program, while Default, Event and Event with Webinar may only be parents to Email programs.
 
-Programs will always have a channel, and will derive the possible set up Program Member Statuses from the channel which they were created with, which can be retrieved with the Get Channels API. A program may also have a set of associated tags. Tags are customizable fields which can be configured to be optional or required for any given type of program, which will have a value selected from a list configured in Marketo Admin.
+Programs always have a channel, They derive the possible set up Program Member Statuses from the channel which they were created with, which can be retrieved with the Get Channels API. A program may also have a set of associated tags. Tags are customizable fields which can be configured to be optional or required for any given type of program, which will have a value selected from a list configured in Marketo Admin.
 
 ## Query
 
@@ -38,7 +38,7 @@ The Program Id can be obtained from the URL of the program in the UI, where the 
 GET /rest/asset/v1/program/{id}.json
 ```
 
-```
+```json
 {
     "success": true,
     "warnings": [],
@@ -82,7 +82,7 @@ The [Get Program by Name](https://developer.adobe.com/marketo-apis/api/asset/) e
 GET /rest/asset/v1/program/byName.json?name=TestProgramName&includeTags=true
 ```
 
-```
+```json
 {
     "success": true,
     "warnings": [],
@@ -132,7 +132,7 @@ Note that tags associated with a program are not returned by this endpoint. Prog
 GET /rest/asset/v1/programs.json
 ```
 
-```
+```json
 {
     "success": true,
     "warnings": [],
@@ -187,7 +187,7 @@ The `earliestUpdatedAt` and `latestUpdatedAt` parameters to our [Get Programs](h
 GET /rest/asset/v1/programs.json?earliestUpdatedAt=2017-01-01T00:00:00-05:00&latestUpdatedAt=2017-01-30T00:00:00-05:00
 ```
 
-```
+```json
 {
     "success": true,
     "errors": [],

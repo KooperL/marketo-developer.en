@@ -1,6 +1,6 @@
 ---
 title: "deleteMObjects"
-feature: Reporting
+feature: SOAP
 description: "deleteMObjects SOAP calls"
 ---
 

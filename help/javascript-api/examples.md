@@ -1,6 +1,7 @@
 ---
 title: "Examples"
-description: "Examples"
+description: "Examples of Marketo code"
+feature: Javascript
 ---
 
 # Examples

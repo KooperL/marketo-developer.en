@@ -96,7 +96,7 @@ From here, you can edit the name of the token, and open the editor via the Click
 
 ![Edit Script](assets/script-edit.png)
 
-Once you are in the editor, you can create a script and will have access to all variables in script-accessible objects. To get a field reference from an object, drag it from the right-hand tree into your script:
+Once you are in the editor, you can create a script with access to all variables in script-accessible objects. To get a field reference from an object, drag it from the right-hand tree into your script:
 
 ![Edit Script Token](assets/edit-script-token.png)
 

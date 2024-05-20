@@ -1,6 +1,6 @@
 ---
 title: "getImportToListStatus"
-feature: Reporting
+feature: SOAP
 description: "getImportToListStatus SOAP calls"
 ---
 

@@ -243,7 +243,7 @@ Program Members support various filter options. Multiple filter types can be spe
     <tr>
       <td>statusNames</td>
       <td>Array[String]</td>
-      <td>Accepts an array of program member status names. Multiple status names are ORed together.Jobs with this filter type return all accessible records whose program member status matches any of the specified status names. Both default and user-defined status names may be used.If the statusNames filter is used with programIds filter, then each program is checked for membership records whose status matches any of the status names. If a status name is not found in any of the programs, "1003, Invalid Data" error is returned.Default Status Name Examples
+      <td>Accepts an array of program member status names. Multiple status names are ORed together.Jobs with this filter type return all accessible records whose program member status matches any of the specified status names. Both default and user-defined status names may be used.If the statusNames filter is used with `programIds` filter, then each program is checked for membership records whose status matches any of the status names. If a status name is not found in any of the programs, "1003, Invalid Data" error is returned.
         <table>
           <tbody>
             <tr>

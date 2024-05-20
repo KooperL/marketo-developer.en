@@ -48,7 +48,7 @@ GET /rest/asset/v1/file/{id}.json
 
 ### By Name
 
-Specify the name of the file using the required "name" parameter.
+Specify the name of the file using the required `name` parameter.
 
 ```
 GET /rest/asset/v1/file/byName.json?name=foo.png

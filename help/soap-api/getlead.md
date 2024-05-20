@@ -1,6 +1,6 @@
 ---
 title: "getLead"
-feature: Reporting
+feature: SOAP
 description: "getLead SOAP calls"
 ---
 

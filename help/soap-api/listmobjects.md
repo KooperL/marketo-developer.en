@@ -1,6 +1,6 @@
 ---
 title: "listMObjects"
-feature: Reporting
+feature: SOAP
 description: "listMObjects SOAP calls"
 ---
 

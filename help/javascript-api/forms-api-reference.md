@@ -1,7 +1,7 @@
 ---
 title: "Forms API Reference"
 description: "Forms API Reference"
-feature: "Forms"
+feature: Forms, Javascript
 ---
 
 # Forms API Reference
@@ -57,7 +57,7 @@ There are two main objects that you will interact with using the Forms 2.0 API. 
     <tr>
       <td></td>
       <td></td>
-      <td>onSuccess(Function) - A callback that will be triggered when the form is submitted.</td>
+      <td>onSuccess(Function) - A callback that is triggered when the form is submitted.</td>
       <td></td>
     </tr>
     <tr>
@@ -68,14 +68,14 @@ There are two main objects that you will interact with using the Forms 2.0 API. 
     </tr>
     <tr valign="top">
       <td>.newForm(formData, callback)</td>
-      <td>Creates a new Form object from a Form Descriptor JS object. Adds a callback function that will be called once all stylesheets and known lead information has been fetched and the Form object has been created.</td>
+      <td>Creates a new Form object from a Form Descriptor JS object. Adds a callback function that is called once all stylesheets and known lead information has been fetched and the Form object has been created.</td>
       <td>formData (Form Descriptor Object) - A form descriptor object, as created by the Marketo Forms V2 Editor</td>
       <td>undefined</td>
     </tr>
     <tr>
       <td></td>
       <td></td>
-      <td>callback (optional)(Function) - This callback will be called with a single argument, a newly created instance of Form object.</td>
+      <td>callback (optional)(Function) - This callback is called with a single argument, a newly created instance of Form object.</td>
       <td></td>
     </tr>
     <tr valign="top">
@@ -98,20 +98,20 @@ There are two main objects that you will interact with using the Forms 2.0 API. 
     </tr>
     <tr valign="top">
       <td>.whenReady(callback)</td>
-      <td>Adds a callback that will be called exactly once for each form on the page that becomes "ready". Readiness means that the form exists, has been initially rendered and had its initial callbacks called. If there is already a form that is ready at the time this function is called, the passed callback will be called immediately.</td>
+      <td>Adds a callback that is called exactly once for each form on the page that becomes "ready". Readiness means that the form exists, has been initially rendered and had its initial callbacks called. If there is already a form that is ready at the time this function is called, the passed callback is called immediately.</td>
       <td>callback(Function) - The callback is passed a single argument, a form object.</td>
       <td>MktoForms2 Object</td>
     </tr>
     <tr valign="top">
       <td>.onFormRender(callback)</td>
-      <td>Adds a callback that will be called every time any form on the page renders. Forms are rendered when initially created, then again every time that visibility rules alter the structure of the form.</td>
-      <td>callback (Function) - The callback will be passed a single argument, the form object of the form that was rendered.</td>
+      <td>Adds a callback that is called every time any form on the page renders. Forms are rendered when initially created, then again every time that visibility rules alter the structure of the form.</td>
+      <td>callback (Function) - The callback is passed a single argument, the form object of the form that was rendered.</td>
       <td>MktoForms2 Object</td>
     </tr>
     <tr valign="top">
       <td>.whenRendered(callback)</td>
-      <td>Like onFormRender, this adds a callback that will be called every time a form is rendered. Additionally, this will also call the callback immediately for all forms that have already been rendered.</td>
-      <td>callback(Function) - The callback will be passed a single argument, the form object of the rendered form.</td>
+      <td>Like onFormRender, this adds a callback that is called every time a form is rendered. Additionally, this also calls the callback immediately for all forms that have already been rendered.</td>
+      <td>callback(Function) - The callback is passed a single argument, the form object of the rendered form.</td>
       <td></td>
     </tr>
 </table>

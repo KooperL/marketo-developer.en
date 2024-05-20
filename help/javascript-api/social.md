@@ -1,7 +1,7 @@
 ---
 title: Social
 description: "Social"
-feature: "Social"
+feature: Social, Javascript
 ---
 
 # Social

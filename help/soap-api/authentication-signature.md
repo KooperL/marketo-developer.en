@@ -1,6 +1,6 @@
 ---
 title: "Authentication Signature"
-feature: Reporting
+feature: SOAP
 description: "API security with Authentication Signatures"
 ---
 

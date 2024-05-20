@@ -20,22 +20,6 @@ Unlike other Marketo REST APIs, when using the User Management APIs:
 - The format of datetime strings is "yyyyMMdd'T'HH:mm:ss.SSS't'+|-hhmm". This applies to the following attributes: createdAt, updatedAt, expiresAt.
 - User Management API endpoints are not prefixed with "/rest" like other endpoints.
 
-1. [Query](#query)
-    1. [User by Id](#user_by_id)
-    1. [Invited User by Id](#invited_user_by_id)
-    1. [Roles and Workspaces by Id](#roles_and_workspaces_by_id)
-    1. [Browse Users](#browse_users)
-    1. [Browse Roles](#browse_roles)
-    1. [Browse Workspaces](#browse_workspaces)
-1. [Invite User](#invite_user)
-1. [Update User](#update_user)
-    1. [Update User Attributes](#update_user_attributes)
-    1. [Delete User](#delete_user)
-    1. [Delete Invited User](#delete_invited_user)
-1. [Update Roles](#update_roles)
-    1. [Add Roles](#add_roles)
-    1. [Delete Roles](#delete_roles)
-
 ## Query
 
 Query support for user management includes ability to retrieve all users, roles, and workspaces. Also, you can retrieve a single user record by user id, or role/wordspace record by user id.

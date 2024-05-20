@@ -18,7 +18,7 @@ Querying smart lists follows the standard query types for assets of [by id](http
 
 ### By Id
 
-[Query by id]https://developer.adobe.com/marketo-apis/api/asset/#tag/Smart-Lists/operation/getSmartListByIdUsingGET) takes a single smart list `id` as a path parameter and returns a single smart list record. Optionally you may pass the `includeRules` boolean parameter to include smart list rules in the response.
+[Query by id](https://developer.adobe.com/marketo-apis/api/asset/#tag/Smart-Lists/operation/getSmartListByIdUsingGET) takes a single smart list `id` as a path parameter and returns a single smart list record. Optionally you may pass the `includeRules` boolean parameter to include smart list rules in the response.
 
 ![Smartlist Rules](assets/smartlist-rules.png)
 

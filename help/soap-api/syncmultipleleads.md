@@ -1,6 +1,6 @@
 ---
 title: "syncMultipleLeads"
-feature: Reporting
+feature: SOAP
 description: "syncMultipleLeads SOAP calls"
 ---
 

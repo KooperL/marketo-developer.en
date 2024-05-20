@@ -214,7 +214,7 @@ The [Get Program Members](https://developer.adobe.com/marketo-apis/api/mapi/#tag
 
 To query a program whose membership count is exceeds the limit, use the [Bulk Program Member Extract API](bulk-program-member-extract.md) instead.
 
-`filterValues` is used to specify which values to search for, and accepts up to 300 values in comma-separated format. The call searches for records where the program member's field matches one of the included filterValues.
+`filterValues` is used to specify which values to search for, and accepts up to 300 values in a comma-separated format. The call searches for records where the program member's field matches one of the included filterValues.
 
 Alternatively, you can filter by date range by specifying `updatedAt` as filterType with `startAt` and `endAt` datetime parameters. The range must be seven days or fewer. Datetimes should be in an ISO-8601 format, without milliseconds.
 

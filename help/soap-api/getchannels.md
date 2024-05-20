@@ -1,6 +1,6 @@
 ---
 title: "getChannels"
-feature: Reporting
+feature: SOAP
 description: "getChannels SOAP calls"
 ---
 

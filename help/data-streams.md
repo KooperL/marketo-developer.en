@@ -168,12 +168,12 @@ The Lead Activity Stream provides near real-time streaming of Marketo Lead Activ
 
 - Frequency of data pushes every 2 seconds by default.
 - Batches from 100 to 500 per subscription.
-- Timeout for customer REST service 20 seconds with 3 retries every 3 minutes and auto enabled upon success, otherwise after which will be paused. Once its paused, the service retries every 3 minutes in an attempt to re-enable unless de-provisioned manually.
+- Timeout for customer REST service is 20 seconds with 3 retries every 3 minutes, and auto enabled upon success. Otherwise after this, they are paused. Once its paused, the service retries every 3 minutes in an attempt to re-enable unless de-provisioned manually.
 - Data retention in a queue for up to 7 days.
 
 To implement the Lead Activity Data Stream, here are the steps for customers to follow:
 
-1. Expose an HTTP endpoint that can receive POST requests with a JSON body from the public internet, that the Activity Push Data Stream will send requests to
+1. Expose an HTTP endpoint that can receive POST requests with a JSON body from the public internet. The Activity Push Data Stream sends requests to:
 1. Provide Adobe with the following:
     1. Marketo Munchkin ID for their subscription
     1. The URL of the endpoint in step 1
@@ -182,7 +182,7 @@ To implement the Lead Activity Data Stream, here are the steps for customers to 
         1. An identity provider URL, Client ID, and Client Secret for OAuth [Client Credentials Authentication](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/)
         1. An API token, which can be included in requests sent by the Lead Activity Datastream either in query parameters, or in an Authorization header (customer's choice)
 
-Adobe will then enable the datastream, at which point customers begin to receive data.
+Adobe then enables the datastream, at which point customers begin to receive data.
 
 UML diagram of a typical Lead Activity Data Stream call:
 
@@ -243,8 +243,8 @@ User Audit events are sent to Adobe IO and can be consumed by logging in with an
     1. Adobe ID
     1. Marketo Munchkin ID for their subscription
 1. Customer exposes a REST endpoint to consume events normally in the form of a webhook.
-1. Once that is provided, Adobe will enable the stream for the customer's subscription.
-1. Customer will then setup the stream in Adobe IO (instructions to be provided)
+1. Once that is provided, Adobe enables the stream for the customer's subscription.
+1. Customer then sets up the stream in Adobe IO (instructions to be provided)
     1. This step requires an Adobe Org
     1. Requires Adobe Org User to have Developer or System Admin Role
 
