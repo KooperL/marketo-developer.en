@@ -38,7 +38,7 @@ Turn on push notification capability in xCode project.![](assets/push-xcode.png)
 
 Add the following code to `AppDelegate.m` file to deliver push notifications to your customer's devices.
 
-**Note** - If using Adobe Launch extension, use `ALMarketo` as classname
+**Note** - If using the [!DNL Adobe Launch] extension, use `ALMarketo` as classname
 
 Import following in `AppDelegate.h`.
 
@@ -395,7 +395,7 @@ Add Marketo Activity in manifest file inside application tag.
     marketoSdk.initializeMarketoPush(SENDER_ID,"ChannelName");
     ```
 
-    If using Adobe Launch Extension, use these instructions
+    If using [!DNL Adobe Launch] Extension, use these instructions
 
     ```java
     // Enable push notification here. The push notification channel name can by any string
@@ -410,7 +410,7 @@ Add Marketo Activity in manifest file inside application tag.
     marketoSdk.uninitializeMarketoPush();
     ```
 
-    If using Adobe Launch extension, use the instruction below
+    If using [!DNL Adobe Launch] extension, use the instruction below
 
     ```java
     ALMarketo.uninitializeMarketoPush();

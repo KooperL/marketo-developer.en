@@ -27,8 +27,8 @@ hide: yes
    - [Triggers](javascript-api/triggers.md)
    - [Web Personalization](javascript-api/web-personalization.md)
 - Mobile {#mobile}
-   - [Install Adobe Launch Extension](mobile/adobe-launch-extension-installation.md)
-   - [Adobe Launch Extension](mobile/adobe-launch-extension.md)
+   - [Install [!DNL Adobe Launch] Extension](mobile/adobe-launch-extension-installation.md)
+   - [[!DNL Adobe Launch] Extension](mobile/adobe-launch-extension.md)
    - [Advanced Security Mode](mobile/advanced-security-access-mode.md)
    - [Custom Actions](mobile/custom-actions.md)
    - [Deep Links](mobile/enabling-deep-links-in-your-app.md)

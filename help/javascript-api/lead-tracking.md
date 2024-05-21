@@ -90,7 +90,7 @@ Munchkin cookies are specific to each second-level domain, that is, `example.com
 
 ## Beta
 
-To opt in to the Munchkin beta channel for your landing pages, go to your [Admin -> Treasure Chest](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/settings/enable-or-disable-treasure-chest-features) menu and enable the "Munchkin Beta on Landing Pages" setting. This provides new code snippets in the **Admin** ->  **Munchkin** menu to allow you to use the beta version on external sites.
+To opt in to the Munchkin beta channel for your landing pages, go to your [Admin -> Treasure Chest](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/settings/enable-or-disable-treasure-chest-features) menu and enable the "Munchkin Beta on Landing Pages" setting. This provides new code snippets in the **[!UICONTROL Admin]** ->  **[!UICONTROL Munchkin]** menu to allow you to use the beta version on external sites.
 
 ## Opt-Out
 

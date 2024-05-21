@@ -66,13 +66,13 @@ sharedInstance.trackPushNotfication(launchOptions)
 
 ### Initialize Marketo Framework
 
-To ensure that the Marketo framework is initiated on app startup, add the following code under the onDeviceReady function in your main JavaScript file.
+To ensure that the Marketo framework is initiated on app startup, add the following code under the `onDeviceReady` function in your main JavaScript file.
 
 You must pass `ionicCordova` as framework type for Ionic Cordova Apps.
 
 #### Syntax
 
-```
+```javascript
 // This method will Initialize the Marketo Framework using Your MunchkinId and Secret Key
 marketo.initialize(
   function() { console.log("MarketoSDK Init done."); },
@@ -102,7 +102,7 @@ To make sure that Marketo push notification gets initiated add the following cod
 
 #### Syntax
 
-```
+```javascript
 // This function will Enable user notifications (prompts the user to accept push notifications in iOS)
 marketo.initializeMarketoPush(
     function() { console.log("Marketo push successfully initialized."); },
@@ -119,8 +119,8 @@ marketo.initializeMarketoPush(
 
 The token can also be unregistered on logout.
 
-```
-marketo. uninitializeMarketoPush(
+```javascript
+marketo.uninitializeMarketoPush(
   function() { console.log("Marketo push successfully uninitialized."); } ,
   function(error) { console.log("an error occurred:" + error); }
 );
@@ -132,7 +132,7 @@ You can create a Marketo Lead by calling the associateLead function.
 
 ### Syntax
 
-```
+```javascript
 marketo.associateLead(
   function(){ console.log("MarketoSDK : Lead Added"); },
   function(error){ console.log("an error occurred:" + error); },
@@ -148,7 +148,7 @@ marketo.associateLead(
 
 ### Example
 
-```
+```javascript
 // First create a lead as shown below
 var lead = {};
 lead[marketo.KEY_FIRST_NAME] = "Ionic";
@@ -175,7 +175,7 @@ You can report any user performed action by calling the `reportaction` function.
 
 ### Syntax
 
-```
+```javascript
 marketo.reportaction(
   function(){ console.log("MarketoSDK : New event sent "); },
   function(error){ console.log("an error occurred:" + error); },
@@ -193,7 +193,7 @@ marketo.reportaction(
 
 ### Example
 
-```
+```javascript
 // First create an event as below
 var event = {
     "Action Type":"Add To Cart",

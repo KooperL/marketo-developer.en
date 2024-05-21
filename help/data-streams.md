@@ -5,7 +5,7 @@ description: "Data Steams overview"
 
 # Data Streams
 
-Our customer's marketing organizations rely on timely and focused Marketing Campaigns to stay on top of their business and be competitive. In order to support fast paced decisions and enable strategic change at speed, it's important to have data to support and drive those key decisions that deliver focused and targeted Campaigns. There are also some customers that perform Marketing efforts at levels of their customer segments both inside and outside of Marketo Engage. To support these different efforts, Adobe Marketo has created the ability to acquire large volumes of data in near real-time thru Data Streams.
+Our customer's marketing organizations rely on timely and focused Marketing Campaigns to stay on top of their business and be competitive. In order to support fast paced decisions and enable strategic change at speed, it's important to have data to support and drive those key decisions that deliver focused and targeted Campaigns. There are also some customers that perform Marketing efforts at levels of their customer segments both inside and outside of Marketo Engage. To support these different efforts, Marketo has created the ability to acquire large volumes of data in near real-time thru Data Streams.
 
 Aside from the benefit of near real-time data, there are product-related benefits:
 
@@ -134,7 +134,7 @@ List of Notification Events:
 
 Example of Notification Event:
 
-```
+```json
 {
     "event_id": "a1b2c3d4-zyxw-9876-9z8y-a1b2c3d4e5f6",
     "event": {
@@ -182,7 +182,7 @@ To implement the Lead Activity Data Stream, here are the steps for customers to 
         1. An identity provider URL, Client ID, and Client Secret for OAuth [Client Credentials Authentication](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/)
         1. An API token, which can be included in requests sent by the Lead Activity Datastream either in query parameters, or in an Authorization header (customer's choice)
 
-Adobe then enables the datastream, at which point customers begin to receive data.
+Adobe then enables the data stream, at which point customers begin to receive data.
 
 UML diagram of a typical Lead Activity Data Stream call:
 
@@ -190,7 +190,7 @@ UML diagram of a typical Lead Activity Data Stream call:
 
 Example of URL Endpoint Creation:
 
-```
+```javascript
 /*
 Copyright 2022 Adobe
 All Rights Reserved.
@@ -248,7 +248,7 @@ User Audit events are sent to Adobe IO and can be consumed by logging in with an
     1. This step requires an Adobe Org
     1. Requires Adobe Org User to have Developer or System Admin Role
 
-To setup Adobe IO follow the instructions on page _Setting up Marketo User Audit Data Streams with Adobe IO_ in the Public Documentation section.
+To setup Adobe IO, see [Setting up Marketo User Audit Data Streams with Adobe IO](https://developer.adobe.com/events/docs/guides/using/marketo/marketo-user-audit-data-stream-setup/) in the Public Documentation section.
 
 ### Setting Up The User Audit Data Stream in Marketo
 
@@ -260,15 +260,11 @@ The User Audit Data Stream is currently available as part of the Performance pac
 
 For basic instructions for this use case, starting from [console.adobe.io](https://developer.adobe.com/console):
 
-When prompted, click the designated button to proceed either
-
-Select  _Create New Project_ Or
-
-Select ->  _Add Event._
+When prompted, select either **[!UICONTROL Create New Project]** or **[!UICONTROL Add Event]**.
 
 ### Get started with your new project
 
-Welcome to your new empty project. To start using Adobe services, add an API, events or runtime. For further guidance on projects and available services, view our [documentation](https://developer.adobe.com/runtime/docs/).
+To start using Adobe services, add an API, events or runtime, view our [documentation](https://developer.adobe.com/runtime/docs/).
 
 ## Public Documentation
 

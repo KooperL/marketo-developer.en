@@ -515,7 +515,7 @@ GET /rest/v1/programs/members/schema/fields/{fieldApiName}.json
 
 #### Browse
 
-The [Get Program Member Fields](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Program-Members/operation/getProgramMemberFieldsUsingGET) endpoint retrieves metadata for all fields on the program member object. By default, a maximum of 300 records are returned. You can use the `batchSize` query parameter to reduce this number. If the **moreResult** attribute is true, this means more results are available. Continue to call this endpoint until the moreResult attribute returns false, which means there are no results available. The `nextPageToken` returned from this API should always be reused for the next iteration of this call.
+The [Get Program Member Fields](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Program-Members/operation/getProgramMemberFieldsUsingGET) endpoint retrieves metadata for all fields on the program member object. By default, a maximum of 300 records are returned. You can use the `batchSize` query parameter to reduce this number. If the `moreResult` attribute is true, this means more results are available. Continue to call this endpoint until the moreResult attribute returns false, which means there are no results available. The `nextPageToken` returned from this API should always be reused for the next iteration of this call.
 
 ```
 GET /rest/v1/programs/members/schema/fields.json?batchSize=5

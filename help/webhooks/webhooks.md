@@ -31,11 +31,11 @@ All outgoing fields in a Webhook (URL, Template, and Custom Headers) populate th
 - [System Tokens Glossary](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/email-marketing/general/using-tokens/system-tokens-glossary)
 - [Tokens for Interesting Moments](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/marketo-sales-insight/msi-for-salesforce/features/tabs-in-the-msi-panel/interesting-moments/trigger-tokens-for-interesting-moments)
 
-A common case for this is when a Program or Campaign is explicitly mapped to a third-party resource. An ID can be set at the program level as a My Token, and then passed into the Webhook request as a token.
+A common case for this is when a Program or Campaign is explicitly mapped to a third-party resource. An ID can be set at the program level as a `My Token`, and then passed into the Webhook request as a token.
 
 ## Custom Headers
 
-Webhooks allow the usage of any number of Custom Header fields to be sent along with the outgoing request. These can be added through Webhooks Actions > Set Custom Header. Each header is recorded as a simple Key-Value pair. Tokens can be used in this area.
+Webhooks allow the usage of any number of Custom Header fields to be sent along with the outgoing request. These can be added through **[!UICONTROL Webhooks Actions]** > **[!UICONTROL Set Custom Header]**. Each header is recorded as a simple Key-Value pair. Tokens can be used in this area.
 
 ![Custom Headers](assets/custom-headers.png)
 

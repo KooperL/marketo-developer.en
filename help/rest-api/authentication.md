@@ -10,13 +10,13 @@ Marketo's REST APIs are authenticated with 2-legged OAuth 2.0. Client IDs and Cl
 
 ## Creating an Access Token
 
-The `Client ID` and `Client Secret` are found in the **Admin** > **Integration** > **LaunchPoint** menu by selecting the custom service, and clicking **View Details**.
+The `Client ID` and `Client Secret` are found in the **[!UICONTROL Admin]** > **[!UICONTROL Integration]** > **[!UICONTROL LaunchPoint]** menu by selecting the custom service, and clicking **[!UICONTROL View Details]**.
 
 ![Get REST Service Details](assets/authentication-service-view-details.png)
 
 ![Launchpoint Credentials](assets/admin-launchpoint-credentials.png)
 
-The `Identity URL` is found in the **Admin** > **Integration** > **Web Services** menu in the REST API section.
+The `Identity URL` is found in the **[!UICONTROL Admin]** > **[!UICONTROL Integration]** > **[!UICONTROL Web Services]** menu in the REST API section.
 
 Create an access token using an HTTP GET (or POST) request like so:
 

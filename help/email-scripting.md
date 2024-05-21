@@ -11,19 +11,19 @@ NOTE: It is highly recommended that you read the [Velocity User Guide](https://v
 [Apache Velocity](https://velocity.apache.org/) is a language built on Java which is designed for templating and scripting HTML content. Marketo allows it to be used in the context of Emails by using scripting tokens. This gives access to data stored in Opportunities and Custom Objects, and allowing the creation of dynamic content in emails. Velocity offers standard high-level control flow with if/else, for, and for each to allow conditional and iterative manipulation of content. Here's a simple example to print a greeting with the correct salutation:
 
 ```java
-##check if the lead is male
-#if(${lead.MarketoSocialGender} == "Male")
-    ##if the lead is male, use the salutation 'Mr.'
-    #set($greeting = "Dear Mr. ${lead.LastName},")
-##check is the lead is female
-#elseif(${lead.MarketoSocialGender} == "Female")
-    ##if female, use the salutation 'Ms.'
-    #set($greeting = "Dear Ms. ${lead.LastName},")
-#else
-    ##otherwise, use the first name
-    #set($greeting = "Dear ${lead.FirstName},")
-#end
-##print the greeting and some content
+//check if the lead is male
+if(${lead.MarketoSocialGender} == "Male")
+    if the lead is male, use the salutation 'Mr.'
+    set($greeting = "Dear Mr. ${lead.LastName},")
+//check is the lead is female
+elseif(${lead.MarketoSocialGender} == "Female")
+    if female, use the salutation 'Ms.'
+    set($greeting = "Dear Ms. ${lead.LastName},")
+else
+    //otherwise, use the first name
+    set($greeting = "Dear ${lead.FirstName},")
+end
+print the greeting and some content
 ${greeting}
 
     Lorem ipsum dolor sit amet...
@@ -78,7 +78,7 @@ The Apache Velocity Project makes functionality available through the use of [Ve
 - [EscapeTool](https://velocity.apache.org/tools/devel/apidocs/org/apache/velocity/tools/generic/EscapeTool.html)
 - [LoopTool](https://velocity.apache.org/tools/devel/apidocs/org/apache/velocity/tools/generic/LoopTool.html)
 
-For example, to use a method from ComparisonDateTool, we access this from the $date variable in a script token:
+For example, to use a method from `ComparisonDateTool`, access if from the `$date` variable in a script token:
 
 ```
 #set($birthday = $convert.parseDate("2015-08-07","yyyy-MM-dd"))
@@ -128,7 +128,7 @@ The combined length of all Email Script Tokens in a given email may not exceed 1
 - If you include more than one Email Script within an email, they execute top to bottom. The scope of variables defined in the first script to execute will be available in subsequent scripts.
 - Tools Reference: [https://velocity.apache.org/tools/2.0/index.html](https://velocity.apache.org/tools/2.0/index.html)
 - A note regarding tokens that contain newline characters "\\n" or "\\r\\n". When an email is sent via Send Sample or via a Batch Campaign, newline characters in tokens are replaced with spaces. When email is sent via Trigger Campaign, newline characters are left untouched.
-- To ensure proper parsing of URLs, the whole path should be set as a variable and then printed, and variable should not be printed inside URL references.  The  protocol (http:// or https://) must be included and must be separate from the rest of the URL.  The URL must also be part of a fully formed anchor (<a>) tag. The script must output a fully formed anchor tag, in order for links to be tracked.  Links will not be tracked if they are outputted from within a for or foreach loop.
+- To ensure proper parsing of URLs, the whole path should be set as a variable and then printed, and variable should not be printed inside URL references. The protocol (http:// or https://) must be included and must be separate from the rest of the URL. The URL must also be part of a fully formed anchor (<a>) tag. The script must output a fully formed anchor tag, in order for links to be tracked. Links will not be tracked if they are outputted from within a for or foreach loop.
 
 ```html
 <!-- Correct -->

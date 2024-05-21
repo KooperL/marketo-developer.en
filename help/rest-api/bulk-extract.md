@@ -76,14 +76,14 @@ POST /bulk/v1/leads/export/create.json
    },
    "filter": {
       "createdAt": {
-         "startAt": "2017-01-01T00:00:00Z",
-         "endAt": "2017-01-31T00:00:00Z"
+         "startAt": "2023-01-01T00:00:00Z",
+         "endAt": "2023-01-31T00:00:00Z"
       }
    }
 }
 ```
 
-This simple request will construct a job that will return the values contained in the "firstName" and "lastName" fields, with the column headers "First Name" and "Last Name" as a CSV file, containing each lead created between January 1st 2017 and January 31st 2017.
+This simple request will construct a job that will return the values contained in the "firstName" and "lastName" fields, with the column headers "First Name" and "Last Name" as a CSV file, containing each lead created between January 1st 2023 and January 31st 2023.
 
 ```json
 {
@@ -93,8 +93,8 @@ This simple request will construct a job that will return the values contained i
       {
          "exportId": "ce45a7a1-f19d-4ce2-882c-a3c795940a7d",
          "status": "Created",
-         "createdAt": "2017-01-21T11:47:30-08:00",
-         "queuedAt": "2017-01-21T11:48:30-08:00",
+         "createdAt": "2023-01-21T11:47:30-08:00",
+         "queuedAt": "2023-01-21T11:48:30-08:00",
          "format": "CSV",
       }
    ]

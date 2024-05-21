@@ -10,7 +10,7 @@ The Marketo SDK exposes methods to set and remove the security signature. There 
 
 ## Secure Access Mode Setup
 
-This setup must be implemented before the Secure Access mode has been enabled via the Marketo Admin  > Mobile Apps & Devices page. The following further steps describe the process required to complete the security validation process:
+This setup must be implemented before the Secure Access mode has been enabled via the Marketo Admin > Mobile Apps & Devices page. The following further steps describe the process required to complete the security validation process:
 
 Secure Access mode requires implementing the signature algorithm on the customer server-side that will provide an endpoint to retrieve the access key, calculated signature, expiry timestamp, and email. This algorithm requires the user access key, access secret, email, timestamp, and device id to perform the calculation. The customer is responsible for setting up endpoint, implementing the algorithm to preform signature calculations, and also keep expiration timestamp fresh.
 

@@ -27,7 +27,7 @@ Installation instructions for Marketo Mobile SDK. The steps below are required t
 
 ### Install Framework using Swift Package Manager
 
-1. Select project from the Project Navigator and under "Add Package Dependency", click '+' as shown below :
+1. Select your project from the Project Navigator and under "Add Package Dependency", click '+' as shown below :
 
     ![Add Dependency](assets/dependency-manager-add.png)
 
@@ -85,13 +85,14 @@ sharedInstance.initialize(withMunchkinID: "munchkinAccountId", appSecret: "secre
 
 >[!ENDTABS]
 
-1. Replace `munkinAccountId` and `secretKey` above using your "Munchkin Account ID" and "Secret Key" which are found in the Marketo **Admin** > **Mobile Apps and Devices** section.
+1. Replace `munkinAccountId` and `secretKey` above using your "Munchkin Account ID" and "Secret Key" which are found in the Marketo **[!UICONTROL Admin]** > **[!UICONTROL Mobile Apps and Devices]** section.
 
 ## iOS Test Devices
 
 1. Select Project > Target > Info > URL Types.
 1. Add identifier: ${PRODUCT_NAME}
-1. Set URL Schemes: `mkto-<Secret Key_>` 4. Include application:openURL:sourceApplication:annotation: to AppDelegate.m file (Objective-C)
+1. Set URL Schemes: `mkto-<Secret Key_>` 
+1. Include application:openURL:sourceApplication:annotation: to AppDelegate.m file (Objective-C)
 
 ## Handle Custom Url Type in AppDelegate
 
@@ -135,7 +136,7 @@ private func application(_ app: UIApplication, open url: URL, options: [UIApplic
 
 1. In the application level build.gradle file, under the dependencies section add
 
-    `implementation 'com.marketo:MarketoSDK:0.8.9'`
+   `implementation 'com.marketo:MarketoSDK:0.8.9'`
 
 1. The root `build.gradle` file should have
 
@@ -170,7 +171,7 @@ Open `AndroidManifest.xml` and add following permissions. Your app must request 
 
 1. ProGuard Configuration (Optional)
 
-    If you are using ProGuard for your app, then add the following lines in your proguard.cfg file. The file is located within your project folder. Adding this code excludes the Marketo SDK from the obfuscation process.
+    If you are using ProGuard for your app, then add the following lines in your `proguard.cfg` file. The file is located within your project folder. Adding this code excludes the Marketo SDK from the obfuscation process.
 
     ```
     -dontwarn com.marketo.*
@@ -249,7 +250,7 @@ Android app developers can now directly use Google's [Firebase Cloud Messaging](
         <receiver>
           android:name="com.google.android.gms.gcm.GcmReceiver"
           android:exported="true"
-          android:permission="com.google.android.c2dm.permission.SEND">
+          android:permission="com.google.android.c2dm.permission.SEND"
           <intent-filter>
             <action android:name="com.google.android.c2dm.intent.RECEIVE" />
             <category android:name="<your-package-name> />

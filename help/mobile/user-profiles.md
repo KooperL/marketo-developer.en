@@ -13,8 +13,6 @@ How to Create User Profiles
 
 ## Creating User Profiles on iOS {#ios_user_profiles}
 
-Create User Profile.
-
 You can create rich profiles by sending the user fields as shown below.
 
 ```

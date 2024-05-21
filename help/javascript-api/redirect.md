@@ -11,8 +11,6 @@ The RTP Redirect API allows you to redirect segmented audiences to a target URL.
 - You must become a Web Personalization customer and have the [RTP tag deployed](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/web-personalization/rtp-tag-implementation/deploy-the-rtp-javascript) on your site prior to using the User Context API.
 - RTP does not support Account Based Marketing named account lists. ABM lists and code only pertain to the uploaded account lists (CSV files) managed within RTP.
 
- 
-
 ## Usage
 
 `rtp('send' , 'redirect' , 'field_name' , [ 'values_array' , '...' , '...' ] , 'www.redirect_url.com' , true/false )`
@@ -31,15 +29,15 @@ Organization, Industry, ABM Lists, Location, ISP, Matched Segments
 | Condition          | Data Hierarchy        | Example                   |
 |-------------------------------------------------|----------------------|------------------------------------------------------------------------------------------------------------------|
 | Matched Segments (Works only after first click) | matchedSegments.name | rtp( 'send', 'redirect' , 'matchedSegments.name' , ['Fortune 1,000' , 'Enterprise'] , 'http://www.marketo.com'); |
-| Matched Segments (Works only after first click) | matchedSegments.id   | rtp( 'send', 'redirect' , 'matchedSegments.id' , [ 106 , 107 , 190 ] , 'http://www.marketo.com');                |
-| ABM Lists          | abm.name             | rtp( 'send', 'redirect' , 'abm.name' , [ 'top_key_accounts', 'active_customers' ] , 'http://www.marketo.com');   |
-| ABM Lists          | abm.code             | rtp( 'send', 'redirect' , 'abm.code' , [ 13 , 15 ] , 'http://www.marketo.com');     |
-| Organizations      | org                  | rtp( 'send', 'redirect' , 'org', ['ebay'], 'http://www.marketo.com');               |
-| Location           | location.country     | rtp( 'send', 'redirect' , 'location.country' , ['United States'], 'http://www.marketo.com');                     |
-| Location           | location.state       | rtp( 'send', 'redirect' , 'location.state', ['ca'], 'http://www.marketo.com');      |
+| Matched Segments (Works only after first click) | matchedSegments.id   | rtp( 'send', 'redirect' , 'matchedSegments.id' , [ 106 , 107 , 190 ] , 'http://www.marketo.com');  |
+| ABM Lists          | abm.name             | rtp( 'send', 'redirect' , 'abm.name' , [ 'top_key_accounts', 'active_customers' ] , 'http://www.marketo.com');  |
+| ABM Lists          | abm.code             | rtp( 'send', 'redirect' , 'abm.code' , [ 13 , 15 ] , 'http://www.marketo.com'); |
+| Organizations      | org             | rtp( 'send', 'redirect' , 'org', ['ebay'], 'http://www.marketo.com');  |
+| Location           | location.country     | rtp( 'send', 'redirect' , 'location.country' , ['United States'], 'http://www.marketo.com');|
+| Location           | location.state       | rtp( 'send', 'redirect' , 'location.state', ['ca'], 'http://www.marketo.com'); |
 | Location           | location.city        | rtp( 'send', 'redirect' , 'location.city', ['San Mateo'], 'http://www.marketo.com');|
 | Industries         | industries           | rtp( 'send', 'redirect' , 'industries' , ['Education'], 'http://www.marketo.com');  |
-| ISP                | isp                  | rtp( 'send', 'redirect' , isp , ['False'], 'http://www.marketo.com');               |
+| ISP                | isp                  | rtp( 'send', 'redirect' , isp , ['False'], 'http://www.marketo.com'); |
 
 
 ## Notes

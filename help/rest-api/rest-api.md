@@ -20,7 +20,7 @@ The size of standard calls is limited to a URI length of 8KB, and a body size of
 
 The following steps require admin privileges in your Marketo instance.
 
-For your first call to Marketo, you'll retrieve a lead record. To begin working with Marketo, you must obtain API credentials for making authenticated calls to your instance. Login to your instance and go to the **Admin** -> **Users and Roles**.
+For your first call to Marketo, you'll retrieve a lead record. To begin working with Marketo, you must obtain API credentials for making authenticated calls to your instance. Login to your instance and go to the **[!UICONTROL Admin]** -> **[!UICONTROL Users and Roles]**.
 
 ![Admin Users and Roles](assets/admin-users-and-roles.png)
 
@@ -28,19 +28,19 @@ Click the [!UICONTROL Roles] tab, and then New Role and assign at least the "Rea
 
 ![New Role](assets/new-role.png)
 
-Now back to the Users tab and click Invite New User. Give your user a descriptive name that indicates that it is an API user, and an Email Address and click **Next**.
+Now back to the Users tab and click Invite New User. Give your user a descriptive name that indicates that it is an API user, and an Email Address and click **[!UICONTROL Next]**.
 
 ![New User Info](assets/new-user-info.png)
 
-Then, check the API Only option and award your user the API role that you created and click **Next**.
+Then, check the API Only option and award your user the API role that you created and click **[!UICONTROL Next]**.
 
 ![New User Permissions](assets/new-user-permissions.png)
 
-To complete the user creation process, click **Send**.
+To complete the user creation process, click **[!UICONTROL Send]**.
 
 ![New User Message](assets/new-user-message.png)
 
-Next, go to the Admin menu and click **LaunchPoint**.
+Next, go to the Admin menu and click **[!UICONTROL LaunchPoint]**.
 
 ![Launchpoint](assets/admin-launchpoint.png)
 
@@ -52,7 +52,7 @@ Click View Details for your new service to access the Client ID and Client Secre
 
 ![Get Token](assets/get-token.png)
 
-Next, go to the Admin menu, then to **Web Services**.
+Next, go to the Admin menu, then to **[!UICONTROL Web Services]**.
 
 ![Web Services](assets/admin-web-services.png)
 
@@ -88,4 +88,4 @@ If you don't have a lead record with your email address in your database, substi
 
 ## API Usage
 
-Each of your API users is reported individually in the API usage report, so splitting up your web services by user allows you to easily account for the usage of each of your integrations. If the number of API calls to your instance are exceeding the limit and causing subsequent calls to fail, using this practice allows you to account for the volume from each of your services and let you evaluate how to resolve the issue. See your usage by going to **Admin** -> **Integration** > **Web Services** and clicking the number of calls in the past seven days.
+Each of your API users is reported individually in the API usage report, so splitting up your web services by user allows you to easily account for the usage of each of your integrations. If the number of API calls to your instance are exceeding the limit and causing subsequent calls to fail, using this practice allows you to account for the volume from each of your services and let you evaluate how to resolve the issue. See your usage by going to **[!UICONTROL Admin]** -> **[!UICONTROL Integration]** > **[!UICONTROL Web Services]** and clicking the number of calls in the past seven days.

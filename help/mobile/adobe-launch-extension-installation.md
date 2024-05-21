@@ -1,18 +1,18 @@
 ---
-title: "Adobe Launch Extension Installation"
+title:  "[!DNLAdobe Launch] Extension Installation"
 feature: "Mobile Marketing"
-description: "Adobe Launch extension installation overview"
+description: "[!DNL Adobe Launch] extension installation overview"
 ---
 
-# Adobe Launch Extension Installation
+# [!DNL Adobe Launch] Extension Installation
 
-Installation instructions for Adobe Launch Marketo extension. The steps below are required to send Push Notifications and/or In-App Messages.
+Installation instructions for [!DNL Adobe Launch] Marketo extension. The steps below are required to send Push Notifications and/or In-App Messages.
 
 ## Prerequisites
 
 1. [Add an application in Marketo Admin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/mobile-marketing/admin/add-a-mobile-app) (obtain your application Secret Key and Munchkin Id)
-1. [Configure the property in Adobe Launch portal](https://experience.adobe.com/#/@amc/data-collection/home)
-1. Configure application secret key & Munchkin ID for the property in Adobe Launch portal
+1. [Configure the property in [!DNL Adobe Launch] portal](https://experience.adobe.com/#/@amc/data-collection/home)
+1. Configure application secret key & Munchkin ID for the property in the [!DNL Adobe Launch] portal
 1. [Setup Push Notifications](push-notifications.md) (optional)
 
 ## How to Install Marketo Extension on iOS
@@ -23,7 +23,7 @@ Installation instructions for Adobe Launch Marketo extension. The steps below ar
 
 1. Name the file "<_ProjectName_>-Bridging-Header".
 
-1. Go to Project > Target > Build Settings > Swift Compiler > Code Generation. Add the following path to Objective-Bridging Header:
+1. Go to Project > Target > Build Settings > Swift Compiler > Code Generation. Add the following path to the "Objective-Bridging" Header:
 
   `$(PODS_ROOT)/<_ProjectName_>-Bridging-Header.h`
 
@@ -57,7 +57,7 @@ func applicationDidBecomeActive(_ application: UIApplication)
 
 ## iOS Test Devices
 
-1. Select Project > Target > Info > URL Types.
+1. Select [!UICONTROL Project] > [!UICONTROL Target] > [!UICONTROL Info] > URL Types.
 1. Add identifier: ${PRODUCT_NAME}
 1. Set URL Schemes: mkto-<S_ecret Key_> 
 1. Include `application:openURL:sourceApplication:annotation:` to `AppDelegate.m file` (Objective-C)
@@ -106,7 +106,7 @@ func application(_ application: UIApplication, open url: URL, sourceApplication:
 
 ### Android Extension Setup
 
-Follow instructions in Adobe Launch portal
+Follow instructions in [!DNL Adobe Launch] portal
 
 ### Configure Permissions
 
@@ -187,7 +187,7 @@ Android app developers can now directly use Google's [Firebase Cloud Messaging](
                 apply plugin: 'com.google.gms.google-services'
                 ```
                 
-            1. Finally, click on "Sync now" in the bar that appears in the ID
+            1. Finally, click on "[!UICONTROL Sync now]" in the bar that appears in the ID
     1. Edit your app's manifest The FCM SDK automatically adds all required permissions and the required receiver functionality. Make sure to remove the following obsolete (and potentially harmful, as they may cause message duplication) elements from your app's manifest:
         
         ```xml
@@ -215,25 +215,15 @@ Frequently asked questions regarding Firebase Cloud Messaging support.
 
 **Q: Where can I find instructions to update to the latest version of the MME SDK?** Instructions can be found on the Marketo Developer Site [HERE](installation.md).
 
-**Q: Will updating to the latest version of the SDK require me to publish an updated version of my Android** **Application to my existing users?** No.
-
-**Q: What happens if I don't upgrade to the latest version of the MME SDK by March 31, 2019?** Existing App Users: Your existing app users will still receive push notifications. New App Users: Any new app user who downloads your application after March 31, 2019 will not receive push notifications until you update to the latest version of the SDK.
-
-**Q: Why do we must migrate from GCM to FCM for Android?** Google is investing in Firebase, making it our unified mobile platform. Since it was added to Firebase at Google I/O in 2016, FCM has been the recommended replacement for GCM.
-
-**Q: What are our target timelines for migration?** Google turns off GCM service in April 2019, so you should plan to have GCM service migrated by then. Note: Client SDKs and GCM tokens continue to work indefinitely.
+**Q: Will updating to the latest version of the SDK require me to publish an updated version of my Android Application to my existing users?** No.
 
 **Q: How does it impact the existing MME customers that have published Android Apps integrated with Marketo Android SDK?** They can migrate an existing GCM client app on Android to Firebase Cloud Messaging (FCM) as follows:
 
 1. In the [Firebase console](https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://console.firebase.google.com/&followup=https://console.firebase.google.com/), select [!UICONTROL Add Project].
-1. Select your GCM project from the list of existing Google Cloud projects, and select [!UICONTROL Add Firebase].
-1. In the Firebase welcome screen, select **Add Firebase to your Android App**.
-1. Provide your package name and SHA-1, and select [!UICONTROL Add App]. A new google-services.json file for your
+1. Select your GCM project from the list of existing Google Cloud projects, and select **[!UICONTROL Add Firebase]**.
+1. In the Firebase welcome screen, select **[!UICONTROL Add Firebase to your Android App]**.
+1. Provide your package name and SHA-1, and select **[!UICONTROL Add App]**. A new google-services.json file for your
 1. Firebase app is downloaded.
-1. Select [!UICONTROL Continue] and follow the detailed instructions for adding the Google Services plugin in Android Studio.
-
-**Q: Once the FCM support is released in Q4, till when can we continue to support existing Android Apps that have not upgraded to latest SDK?** We will continue to support till March 31, 2019. Then after you must must use latest SDK and must migrate from GCM to FCM.
-
-**Q: Can the Google GCM App Created on Google Cloud Console be used For FCM Push notification?** Yes, For now we can use the GCM App Created on Google Cloud Console. But As of April 10, 2018, Google will deprecate GCM. The GCM server and client APIs are deprecated and will be removed when April 11, 2019. Migrate GCM apps to [Firebase Cloud Messaging](https://firebase.google.com/docs/cloud-messaging/) (FCM), which inherits the reliable and scalable GCM infrastructure, plus many new features.
+1. Select **[!UICONTROL Continue]** and follow the detailed instructions for adding the Google Services plugin in Android Studio.
 
 **Q: Can we target the leads created using the old Marketo SDK which used GCM App ?** Yes. All the leads created using Marketo SDK can be targeted for sending the push notifications.

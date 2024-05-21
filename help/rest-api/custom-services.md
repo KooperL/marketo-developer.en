@@ -10,7 +10,7 @@ A Custom Service provides credentials to authenticate with Marketo. Credentials 
 
 ## Roles
 
-The first step in creating a Custom Service is to create a role that you can apply to the relevant API-Only user. This is done from the **Admin** > **Users & Roles** > **Roles** menu.
+The first step in creating a Custom Service is to create a role that you can apply to the relevant API-Only user. This is done from the **[!UICONTROL Admin]** > **[!UICONTROL Users & Roles]** > **[!UICONTROL Roles]** menu.
 
 Roles are containers for individual permissions which permit or restrict access to certain functions. In subscriptions which have Workspaces and Partitions enabled, permissions are awarded on a per workspace basis. If a user has a permission in one workspace but not another, then they will only be able to perform permitted actions in that workspace. To create a role, click the New Role button.
 
@@ -34,7 +34,10 @@ After creating a role, you must create an 'API-Only' user. API-Only users are a 
 - Scope permissions for those services
 - Access REST APIs
 
-To create an API-Only user, go to the **Admin** > **Users & Roles** > **Users** menu and click [!UICONTROL Invite New User].
+>[!MORELIKETHIS]
+>
+>To create an API-Only user, go to the **[!UICONTROL Admin]** > **[!UICONTROL Users & Roles]** > **[!UICONTROL Users]** menu and click [!UICONTROL Invite New User].
+
 
 ![New User Information](assets/new-user-info.png)
 
@@ -48,7 +51,7 @@ When provisioning a new application with credentials, strongly consider making a
 
 ## Custom Services
 
-Custom Services provide the actual credentials, the Client Id and the Client Secret, required to perform Authentication with a Marketo instance. To provision one, go to your **Admin** > **Integrations** > **LaunchPoint** menu, and select **New Service**.
+Custom Services provide the actual credentials, the Client Id and the Client Secret, required to perform Authentication with a Marketo instance. To provision one, go to your **[!UICONTROL Admin]** > **[!UICONTROL Integrations]** > **[!UICONTROL LaunchPoint]** menu, and select **[!UICONTROL New Service]**.
 
 Give your service a descriptive name and from the "Service" list select the "Custom". Give your service a verbose description and select an appropriate user from the API Only User list, then click [!UICONTROL Create].
 

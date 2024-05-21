@@ -19,10 +19,11 @@ In order for Marketo to map values back into a field, the webhook response code 
 
 ## Catching a Webhook Error
 
-Errors from Webhooks can be caught and handled by the Webhook is Called trigger:
+Errors from Webhooks can be caught and handled by the [!UICONTROL Webhook is Called] trigger:
 
 ![Webhook is Called](assets/webhook-called.png)
 
-Response - Response is the literal response payload which was received by the request. Error Type - This corresponds to the Reason-Phrase of the HTTP status message.
+* Response - Response is the literal response payload which was received by the request.
+* Error Type - This corresponds to the Reason-Phrase of the HTTP status message.
 
 These can be used to handle and react to predictable errors and exceptions. Depending upon what service you are integrating with, it may be possible to recover certain classes of errors automatically, while alerts can be created to notify users of unexpected errors.

@@ -14,7 +14,7 @@ Latest API Version: 3_1
 
 ## SOAP WSDL
 
-To retrieve the SOAP WSDL document, obtain your SOAP API Endpoint from your **Admin** > **Integration** > **Web Services** menu. 
+To retrieve the SOAP WSDL document, obtain your SOAP API Endpoint from your **[!UICONTROL Admin]** > **[!UICONTROL Integration]** > **[!UICONTROL Web Services]** menu. 
 
 ![SOAP Endpoint](assets/endpoint-soap.png)
 

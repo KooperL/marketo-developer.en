@@ -19,7 +19,7 @@ which is composed of the following parts:
 - Resource: `318582.json`
 - Query parameter: `fields=email,firstName,lastName`
 
-The base URL contains the account id (a.k.a. Munchkin id) and is therefore unique for each Marketo subscription. Your base URL is found by logging into Marketo and navigating to the **Admin** > **Integration** > **Web Services** menu. It is labeled as "Endpoint:" underneath the "REST API" section as shown in the following screenshots.
+The base URL contains the account id (a.k.a. Munchkin id) and is therefore unique for each Marketo subscription. Your base URL is found by logging into Marketo and navigating to the **[!UICONTROL Admin]** > **[!UICONTROL Integration]** > **[!UICONTROL Web Services]** menu. It is labeled as "Endpoint:" underneath the "REST API" section as shown in the following screenshots.
 
 ![Web Services Base URL Endpoint](assets/rest-api-base-url-web-services.png)
 
