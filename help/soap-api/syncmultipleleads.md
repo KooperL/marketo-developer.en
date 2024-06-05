@@ -1,9 +1,9 @@
 ---
-title: "syncMultipleLeads"
+title: syncMultipleLeads
 feature: SOAP
-description: "syncMultipleLeads SOAP calls"
+description: syncMultipleLeads SOAP calls
+exl-id: 91980b82-dff9-48a7-b03e-20dce9d0d046
 ---
-
 # syncMultipleLeads
 
 This function requests an insert or update (upsert) operation for _multiple_ lead records. When updating an existing lead, the lead can be identified with one of the following keys:

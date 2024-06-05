@@ -1,9 +1,9 @@
 ---
-title: "Opportunities"
+title: Opportunities
 feature: REST API
-description: " Configure opportunities with the Marketo API."
+description: ' Configure opportunities with the Marketo API.'
+exl-id: 46451285-4125-4857-890a-575069a68288
 ---
-
 # Opportunities
 
 [Opportunity Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Opportunities)

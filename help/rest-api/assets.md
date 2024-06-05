@@ -1,9 +1,9 @@
 ---
-title: "Assets"
+title: Assets
 feature: REST API
-description: "An API for working with Marketo assets."
+description: An API for working with Marketo assets.
+exl-id: 4273a5b1-1904-46e8-b583-fc6f46b388d2
 ---
-
 # Assets
 
 Marketo provides APIs to interact with most marketing and organizational assets within Marketo.

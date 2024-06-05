@@ -1,9 +1,9 @@
 ---
-title: "SOAP FAQ"
+title: SOAP FAQ
 feature: SOAP
-description: "SOAP FAQ"
+description: SOAP FAQ
+exl-id: a2d8f144-cd5f-41bc-8231-29c42af935b8
 ---
-
 # SOAP FAQ
 
 **Q:** How can I get a list of all Programs within Marketo along with their meta data?

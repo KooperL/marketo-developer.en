@@ -1,9 +1,9 @@
 ---
-title: "SOAP API"
+title: SOAP API
 feature: SOAP
-description: "Marketo SOAP overview"
+description: Marketo SOAP overview
+exl-id: 6618cc82-15ae-4030-aa00-438e635d8369
 ---
-
 # SOAP API
 
 The SOAP API is no longer under active development. The calls still function, but our development is focused on [REST](https://developer.adobe.com/marketo-apis/) going forward.

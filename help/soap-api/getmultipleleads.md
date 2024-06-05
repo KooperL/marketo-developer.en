@@ -1,9 +1,9 @@
 ---
-title: "getMultipleLeads"
+title: getMultipleLeads
 feature: SOAP
-description: "getMultipleLeads SOAP calls"
+description: getMultipleLeads SOAP calls
+exl-id: db9aabec-8705-40c6-b264-740fdcef8a52
 ---
-
 # getMultipleLeads
 
 Like `getLead`, `getMultipleLeads` retrieves lead records from Marketo. Instead of data for a single lead, this call returns data for a batch of leads which match the criteria passed into the leadSelector parameter. The criteria can be a date range, such as the last updated date; an array of lead keys; or a static list.

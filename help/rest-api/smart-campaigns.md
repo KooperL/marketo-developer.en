@@ -1,9 +1,9 @@
 ---
-title: "Smart Campaigns"
+title: Smart Campaigns
 feature: REST API, Smart Campaigns
-description: "Smart campaign overview"
+description: Smart campaign overview
+exl-id: 540bdf59-b102-4081-a3d7-225494a19fdd
 ---
-
 # Smart Campaigns
 
 [Smart Campaigns Endpoint Reference (Asset)](https://developer.adobe.com/marketo-apis/api/asset/#tag/Smart-Campaigns)

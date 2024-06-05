@@ -1,9 +1,9 @@
 ---
-title: "getCampaignsForSource"
+title: getCampaignsForSource
 feature: SOAP
-description: "getCampaignsForSource SOAP calls"
+description: getCampaignsForSource SOAP calls
+exl-id: bd8803ef-f462-4346-a381-73f40dc5d9ee
 ---
-
 # getCampaignsForSource
 
 This function returns a list of eligible Marketo campaigns that can be used as input parameters into the requestCampaign function. Campaigns are categorized by the source of the request, which is counted in the WSDL.

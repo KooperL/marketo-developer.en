@@ -1,9 +1,9 @@
 ---
-title: "Channels"
+title: Channels
 feature: REST API
-description: "Configuring Channels data with Marketo APIs."
+description: Configuring Channels data with Marketo APIs.
+exl-id: ec6c279f-a7b4-4a7c-b980-1a68045f37ce
 ---
-
 # Channels
 
 [Channels Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Channels)

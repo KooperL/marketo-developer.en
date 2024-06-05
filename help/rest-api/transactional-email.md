@@ -1,9 +1,9 @@
 ---
-title: "Transactional Email"
+title: Transactional Email
 feature: REST API
-description: "Handle transactional emails for Request campaigns."
+description: Handle transactional emails for Request campaigns.
+exl-id: 057bc342-53f3-4624-a3c0-ae619e0c81a5
 ---
-
 # Transactional Email
 
 A common use case for the Marketo API is to trigger the sending of transactional emails to specific records via the [Request Campaign](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Campaigns/operation/triggerCampaignUsingPOST) API call. There are a few configuration requirements within Marketo to execute the required call with the Marketo REST API.

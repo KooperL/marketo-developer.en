@@ -1,9 +1,9 @@
 ---
-title: "requestCampaign"
+title: requestCampaign
 feature: SOAP, Smart Campaigns
-description: "requestCampaign SOAP calls"
+description: requestCampaign SOAP calls
+exl-id: b5367eb9-4f4c-4e1d-8b6d-36de8f134f0e
 ---
-
 # requestCampaign
 
 This function runs an existing Marketo lead in a Marketo Smart Campaign. The Smart Campaign must have a "Campaign is Requested" trigger with Web Service API source (see below).

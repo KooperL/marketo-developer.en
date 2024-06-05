@@ -1,9 +1,9 @@
 ---
-title: "getImportToListStatus"
+title: getImportToListStatus
 feature: SOAP
-description: "getImportToListStatus SOAP calls"
+description: getImportToListStatus SOAP calls
+exl-id: 17a62f65-dfa0-4f40-89b2-154f7734a2dc
 ---
-
 # getImportToListStatus
 
 This function checks on the status of a specific `importToList` function call.

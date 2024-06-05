@@ -1,9 +1,9 @@
 ---
-title: "Mobile"
-feature: "Mobile Marketing"
-description: "Using Marketo Mobile"
+title: Mobile
+feature: Mobile Marketing
+description: Using Marketo Mobile
+exl-id: d5fa5640-01f5-49a1-944a-9f81a1f83617
 ---
-
 # Mobile
 
 Marketo Mobile Engagement enables marketers to listen and respond to customers on their mobile devices to easily deliver compelling mobile experiences.

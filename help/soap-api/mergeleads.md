@@ -1,9 +1,9 @@
 ---
-title: "mergeLeads"
+title: mergeLeads
 feature: SOAP
-description: "mergeLeads SOAP calls"
+description: mergeLeads SOAP calls
+exl-id: a667cb76-525d-4583-b26a-1181d320a68c
 ---
-
 # mergeLeads
 
 Accepts a winning lead's key and multiple losing lead's keys to perform a merge operation. Returns the ID of the leads and status.

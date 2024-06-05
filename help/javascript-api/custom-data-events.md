@@ -1,9 +1,9 @@
 ---
-title: "Custom Data Events"
-description: "Custom Data Events API"
+title: Custom Data Events
+description: Custom Data Events API
 feature: Javascript
+exl-id: ef7cab9c-3bd0-450e-9247-9324b1e6f9ab
 ---
-
 # Custom Data Events
 
 This method sends custom events for tracking and real-time personalization. It can be used to send third-party data, or to trigger your own custom event based on the visitor behavior. Custom data events are counted once in a visitor's session.

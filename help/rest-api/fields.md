@@ -1,9 +1,9 @@
 ---
-title: "Fields"
+title: Fields
 feature: REST API, Field Management
-description: "A list of supported field names."
+description: A list of supported field names.
+exl-id: 9033f32a-c7cb-4bbf-abcf-38ca4112139f
 ---
-
 # Fields
 
 The REST API and SOAP API use different naming conventions for lead fields.

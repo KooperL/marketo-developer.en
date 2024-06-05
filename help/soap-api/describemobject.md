@@ -1,9 +1,9 @@
 ---
-title: "describeMObject"
+title: describeMObject
 feature: SOAP
-description: "describeMObjects SOAP calls"
+description: describeMObjects SOAP calls
+exl-id: a5ee60c4-b0ec-49a2-9a9d-22806ddde8f7
 ---
-
 # describeMObject
 
 This function returns the metadata for Standard and Virtual MObjects. It takes in the Marketo object as input and returns the field attributes that are associated to that object.

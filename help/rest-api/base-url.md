@@ -1,9 +1,9 @@
 ---
-title: "Base URL"
+title: Base URL
 feature: REST API
-description: "Describes how to URLs for Marketo."
+description: Describes how to URLs for Marketo.
+exl-id: 6c3f122c-3ace-4ed3-bed0-a6b89cedc99a
 ---
-
 # Base URL
 
 The [Endpoint Reference](endpoint-reference.md) documentation for each API call shows the REST method, path, resource, and parameters that must be appended to the base URL to form a request.

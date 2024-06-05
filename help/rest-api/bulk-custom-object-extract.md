@@ -1,9 +1,9 @@
 ---
-title: "Bulk Custom Object Extract"
+title: Bulk Custom Object Extract
 feature: REST API, Custom Objects
-description: "Batch processing custom Marketo objects."
+description: Batch processing custom Marketo objects.
+exl-id: 86cf02b0-90a3-4ec6-8abd-b4423cdd94eb
 ---
-
 # Bulk Custom Object Extract
 
 [Bulk Custom Object Extract Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Bulk-Export-Custom-Objects)

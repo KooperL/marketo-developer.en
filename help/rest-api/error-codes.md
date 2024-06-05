@@ -1,9 +1,9 @@
 ---
-title: "Error Codes"
+title: Error Codes
 feature: REST API
-description: "Marketo error code descriptions."
+description: Marketo error code descriptions.
+exl-id: a923c4d6-2bbc-4cb7-be87-452f39b464b6
 ---
-
 # Error Codes
 
 Below are lists of REST API error codes, and an explanation of how errors are returned back to applications.

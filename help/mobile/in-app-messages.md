@@ -1,9 +1,9 @@
 ---
-title: "In-App Messages"
-feature: "Mobile Marketing"
-description: "Overview of In-App Messages"
+title: In-App Messages
+feature: Mobile Marketing
+description: Overview of In-App Messages
+exl-id: 73c9f862-d154-4b37-94ce-92311aa756e8
 ---
-
 # In-App Messages
 
 To use the In-App messaging capabilities from Marketo, you must perform the following steps:

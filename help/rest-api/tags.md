@@ -1,9 +1,9 @@
 ---
-title: "Tags"
+title: Tags
 feature: REST API, Tags
-description: "Manage tags for programs in Marketo."
+description: Manage tags for programs in Marketo.
+exl-id: 64731d1a-a749-4d6f-b336-16c733d002f0
 ---
-
 # Tags
 
 [Tags Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Tags)

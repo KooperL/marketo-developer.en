@@ -1,9 +1,9 @@
 ---
-title: "Paging Tokens"
+title: Paging Tokens
 feature: REST API
-description: "View paging tokens data."
+description: View paging tokens data.
+exl-id: 63fbbf03-8daf-4add-85b0-a8546c825e5b
 ---
-
 # Paging Tokens
 
 To page through results, or retrieve data updated relative to a given data, Marketo provides paging tokens.

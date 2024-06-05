@@ -1,9 +1,9 @@
 ---
-title: "Authentication Signature"
+title: Authentication Signature
 feature: REST API
-description: "Using secure authentication for sending messages."
+description: Using secure authentication for sending messages.
+exl-id: dda9d81b-0a77-4a99-916b-bf21319fd26d
 ---
-
 # Authentication Signature
 
 Marketo API security uses a simple yet highly secure model, based on HMAC-SHA1 signatures with messages transmitted over HTTPS. A key advantage of this model is that it provides stateless authentication.

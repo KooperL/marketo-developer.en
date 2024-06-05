@@ -1,9 +1,9 @@
 ---
-title: "Sales Persons"
+title: Sales Persons
 feature: REST API
-description: "Read data around sales persons."
+description: Read data around sales persons.
+exl-id: f8ed5aa5-63c1-4c5b-8683-bf47eed1ea18
 ---
-
 # Sales Persons
 
 [Sales Person Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Sales-Persons)

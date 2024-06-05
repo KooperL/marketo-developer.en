@@ -1,9 +1,9 @@
 ---
-title: "Performance"
+title: Performance
 feature: REST API
-description: "Performance tips for working with the Marketo API."
+description: Performance tips for working with the Marketo API.
+exl-id: 173a398a-9d36-4e8d-9dd3-7d0d375b085a
 ---
-
 # Performance
 
 This page contains a list of performance-related topics that you can use to increase the performance of your integration.

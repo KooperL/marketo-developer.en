@@ -1,9 +1,9 @@
 ---
-title: "Smart Lists"
+title: Smart Lists
 feature: REST API
-description: "Create and edit smart lists."
+description: Create and edit smart lists.
+exl-id: 4ba37e57-ee56-48c3-bb2b-b4ec8e907911
 ---
-
 # Smart Lists
 
 [Smart Lists Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Smart-Lists)

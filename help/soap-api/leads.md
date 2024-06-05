@@ -1,9 +1,9 @@
 ---
-title: "Leads"
+title: Leads
 feature: SOAP
-description: "Leads SOAP calls"
+description: Leads SOAP calls
+exl-id: 412fa16c-bd6e-4344-83ed-33dd5381fda4
 ---
-
 # Leads
 
 The following SOAP calls can be used to interact with Leads.

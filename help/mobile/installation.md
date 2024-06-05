@@ -1,9 +1,9 @@
 ---
-title: "Installation"
-feature: "Mobile Marketing"
-description: "How to install SDKs for Mobile Marketo"
+title: Installation
+feature: Mobile Marketing
+description: How to install SDKs for Mobile Marketo
+exl-id: e0b79d85-3509-46d2-a77d-cee211c5ec7f
 ---
-
 # Installation
 
 Installation instructions for Marketo Mobile SDK. The steps below are required to send Push Notifications and/or In-App Messages.

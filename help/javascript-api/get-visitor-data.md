@@ -1,9 +1,9 @@
 ---
-title: "Get Visitor Data"
-description: "Get Visitor Data"
+title: Get Visitor Data
+description: Get Visitor Data
 feature: Javascript
+exl-id: 39a2446d-8a31-461e-bbe6-a7edf24b4d52
 ---
-
 # Get Visitor Data
 
 This method is used to get real-time visitor identification data.

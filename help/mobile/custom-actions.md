@@ -1,9 +1,9 @@
 ---
-title: "Custom Actions"
-feature: "Mobile Marketing"
-description: "Custom Actions overview"
+title: Custom Actions
+feature: Mobile Marketing
+description: Custom Actions overview
+exl-id: 8c2698ce-4e39-4b2b-9d36-0864c55be17a
 ---
-
 # Custom Actions
 
 You can track user interaction by sending custom actions. When your mobile app calls into the Marketo SDK to send a custom action, the custom action is initially saved to the device. The Marketo SDK then checks to see if there is adequate internet connectivity before sending out the custom action. As a result, there can be a delay between the time the custom action is sent, and the time it is received by Marketo.

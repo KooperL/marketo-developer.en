@@ -1,9 +1,9 @@
 ---
-title: "Tokens"
+title: Tokens
 feature: REST API, Tokens
-description: "Manage tokens in Marketo."
+description: Manage tokens in Marketo.
+exl-id: 4f8d87d7-ba2a-4c90-8b39-4d20679d404a
 ---
-
 # Tokens
 
 [Token Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Tokens)

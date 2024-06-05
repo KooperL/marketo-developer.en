@@ -1,8 +1,8 @@
 ---
-title: "Partner Sandbox"
-description: "Partner Sandbox overview"
+title: Partner Sandbox
+description: Partner Sandbox overview
+exl-id: a8f36cb5-d288-4b8b-b4bf-037faa3fe73f
 ---
-
 # Partner Sandbox
 
 A partner sandbox is Marketo Engage instance that is used by partners during the software development lifecycle. Partners use their sandbox to learn the ins  and outs of the Marketo Engage UI, and to gain access to Marketo Engage API services.

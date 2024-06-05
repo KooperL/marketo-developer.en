@@ -1,9 +1,9 @@
 ---
-title: "Email Templates"
+title: Email Templates
 feature: REST API
-description: "Create email templates with Marketo APIs."
+description: Create email templates with Marketo APIs.
+exl-id: 0ecf4da6-eb7e-43c1-8d5c-0517c43b47c8
 ---
-
 # Email Templates
 
 [Email Template Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Email-Templates)

@@ -1,9 +1,9 @@
 ---
-title: "Ionic"
-feature: "Mobile Marketing"
-description: "Using Ionic with Marketo for mobile devices"
+title: Ionic
+feature: Mobile Marketing
+description: Using Ionic with Marketo for mobile devices
+exl-id: 204e5fb4-c9d6-43a6-9d77-0b2a67ddbed3
 ---
-
 # Ionic
 
 This topic describes how to integrate the Marketo Cordova Plugin. Ionic capacitor is not currently supported.

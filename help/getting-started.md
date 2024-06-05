@@ -1,8 +1,8 @@
 ---
-title: "Getting Started"
-description: "Getting started with Marketo APIs"
+title: Getting Started
+description: Getting started with Marketo APIs
+exl-id: 78c44c32-4e59-4d55-a45c-ef0d7dac814d
 ---
-
 # Getting Started
 
 Marketo is a marketing automation platform that enables marketers to manage personalized multi-channel programs and campaigns to prospects and customers. The Marketo platform can be extended using integration points. Below you find the core entities and their relationships.

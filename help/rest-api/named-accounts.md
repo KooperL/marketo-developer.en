@@ -1,9 +1,9 @@
 ---
-title: "Named Accounts"
+title: Named Accounts
 feature: REST API
-description: "Manipulate named accounts through the API."
+description: Manipulate named accounts through the API.
+exl-id: 2aa1d2a0-9e54-4a9a-abb1-0d0479ed3558
 ---
-
 # Named Accounts
 
 [Named Accounts Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Named-Accounts)

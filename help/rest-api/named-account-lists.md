@@ -1,9 +1,9 @@
 ---
-title: "Named Account Lists"
+title: Named Account Lists
 feature: REST API
-description: "Configure named account lists."
+description: Configure named account lists.
+exl-id: 98f42780-8329-42fb-9cd8-58e5dbea3809
 ---
-
 # Named Account Lists
 
 [Named Account Lists Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Named-Account-Lists)

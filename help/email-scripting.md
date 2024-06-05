@@ -1,9 +1,9 @@
 ---
-title: "Email Scripting"
+title: Email Scripting
 feature: Email Programs
-description: "Email Scripting overview"
+description: Email Scripting overview
+exl-id: ff396f8b-80c2-4c87-959e-fb8783c391bf
 ---
-
 # Email Scripting
 
 NOTE: It is highly recommended that you read the [Velocity User Guide](https://velocity.apache.org/engine/devel/user-guide.html) for a deep-dive into the behavior of the Velocity Template Language.

@@ -1,9 +1,9 @@
 ---
-title: "Authentication"
+title: Authentication
 feature: REST API
-description: "Authenticating Marketo users for API usage."
+description: Authenticating Marketo users for API usage.
+exl-id: f89a8389-b50c-4e86-a9e4-6f6acfa98e7e
 ---
-
 # Authentication
 
 Marketo's REST APIs are authenticated with 2-legged OAuth 2.0. Client IDs and Client Secrets are provided by custom services that you define. Each custom service is owned by an API-Only user which has a set of roles and permissions which authorize the service to perform specific actions. An access token is associated with a single custom service. Access token expiration is independent of tokens associated with other custom services that may be present in an instance.

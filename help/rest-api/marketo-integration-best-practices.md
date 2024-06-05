@@ -1,9 +1,9 @@
 ---
-title: "Marketo Integration Best Practices"
+title: Marketo Integration Best Practices
 feature: REST API
-description: "Best Practices for using Marketo APIs."
+description: Best Practices for using Marketo APIs.
+exl-id: 1e418008-a36b-4366-a044-dfa9fe4b5f82
 ---
-
 # Marketo Integration Best Practices
 
 ## API Limits

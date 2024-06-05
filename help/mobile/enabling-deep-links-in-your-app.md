@@ -1,9 +1,9 @@
 ---
-title: "Enabling Deep Links"
-feature: "Mobile Marketing"
-description: "Instructions for enabling Deep Links"
+title: Enabling Deep Links
+feature: Mobile Marketing
+description: Instructions for enabling Deep Links
+exl-id: c3647416-d81d-4f15-b660-bcb3e54cb9bc
 ---
-
 # Enabling Deep Links
 
 Deep linking allows you to redirect people to specific content (resources) within your app. For example, when a person clicks a mobile push message that advertises a purple t-shirt, you can open the app directly to the purple t-shirt content (rather than the home page).

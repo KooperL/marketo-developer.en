@@ -1,8 +1,8 @@
 ---
-title: "Self-Service Flow Steps"
-description: "Self-Service Flow steps overview"
+title: Self-Service Flow Steps
+description: Self-Service Flow steps overview
+exl-id: f4353692-9e6c-431c-b8b7-3ae96040cf3a
 ---
-
 # Self-service Flow Steps
 
 Self-Service Flow Steps is a set of features allowing an integrator to deploy a web API that can be used as a Flow Step in Marketo Smart Campaigns. A Flow Step Service can receive lead and other related data, do any necessary processing, including invocation of other web services, and subsequently write lead and activity data into Marketo through a callback. The developer documentation can be found on [GitHub](https://github.com/adobe/Marketo-SSFS-Service-Provider-Interface).

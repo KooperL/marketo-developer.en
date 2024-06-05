@@ -1,9 +1,9 @@
 ---
-title: "getLeadChanges"
+title: getLeadChanges
 feature: SOAP
-description: "getLeadChanges SOAP calls"
+description: getLeadChanges SOAP calls
+exl-id: 23445684-d8d9-407b-8f19-cb69e806795c
 ---
-
 # getLeadChanges
 
 This API is like `getLeadActivity` except that it operates on multiple leads at once. The operation checks for new leads created, lead field updates and other activities.

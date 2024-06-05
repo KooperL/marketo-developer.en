@@ -1,8 +1,8 @@
 ---
-title: "Home"
-description: "Marketo API homepage"
+title: Home
+description: Marketo API homepage
+exl-id: a249945b-12f3-4b41-badc-ee7a72d5e7eb
 ---
-
 # Marketo Developer Documentation
 
 Detailed documentations that help you master Marketo API

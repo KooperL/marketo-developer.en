@@ -1,9 +1,9 @@
 ---
-title: "Bulk Lead Import"
+title: Bulk Lead Import
 feature: REST API
-description: "Batch importing of lead data."
+description: Batch importing of lead data.
+exl-id: 615f158b-35f9-425a-b568-0a7041262504
 ---
-
 # Bulk Lead Import
 
 [Bulk Lead Import Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Bulk-Import-Leads)

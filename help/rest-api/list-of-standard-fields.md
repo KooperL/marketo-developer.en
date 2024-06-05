@@ -1,9 +1,9 @@
 ---
-title: "Standard Fields"
+title: Standard Fields
 feature: REST API, Field Management
-description: "A table of standard Marketo fields."
+description: A table of standard Marketo fields.
+exl-id: 147dbdff-4bc9-4ab3-8918-c4de3e1aa97a
 ---
-
 # Standard Fields
 
 Here is a list of standard fields available in Marketo that are accessible via the API.

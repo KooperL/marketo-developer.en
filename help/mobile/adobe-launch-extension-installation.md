@@ -1,9 +1,9 @@
 ---
-title:  "[!DNLAdobe Launch] Extension Installation"
-feature: "Mobile Marketing"
-description: "[!DNL Adobe Launch] extension installation overview"
+title: '[!DNLAdobe Launch] Extension Installation'
+feature: Mobile Marketing
+description: '[!DNL Adobe Launch] extension installation overview'
+exl-id: d71b7cd7-309b-4882-9bba-7daaaa5ef32d
 ---
-
 # [!DNL Adobe Launch] Extension Installation
 
 Installation instructions for [!DNL Adobe Launch] Marketo extension. The steps below are required to send Push Notifications and/or In-App Messages.

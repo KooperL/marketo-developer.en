@@ -1,9 +1,9 @@
 ---
-title: "Custom Services"
+title: Custom Services
 feature: REST API
-description: "Authentication credentials with Marketo."
+description: Authentication credentials with Marketo.
+exl-id: 38b05c4c-4404-4c30-a7cb-d31b28a3a72e
 ---
-
 # Custom Services
 
 A Custom Service provides credentials to authenticate with Marketo. Credentials are needed to obtain an access token from the Marketo [Identity service](https://developer.adobe.com/marketo-apis/api/identity/#tag/Identity/operation/identityUsingGET). Each Custom Service is scoped to a single API-Only user from which it derives its permissions.

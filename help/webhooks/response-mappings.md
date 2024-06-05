@@ -1,9 +1,9 @@
 ---
-title: "Response Mappings"
+title: Response Mappings
 feature: Webhooks
-description: "Response Mappings for Marketo"
+description: Response Mappings for Marketo
+exl-id: 95c6e33e-487c-464b-b920-3c67e248d84e
 ---
-
 # Response Mappings
 
 Marketo can translate data received by a Webhook from two content types and return these values back to a lead field: JSON and XML. The Marketo Field parameter will always use the [SOAP API name](../rest-api/fields.md) of the field. Each Webhook may have an unlimited number of response mappings, which are added and edited by clicking the [!UICONTROL Edit] button in the Response Mappings pane of your Webhook:

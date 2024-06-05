@@ -1,9 +1,9 @@
 ---
-title: "Companies"
+title: Companies
 feature: REST API
-description: "Configure company data with Marketo APIs."
+description: Configure company data with Marketo APIs.
+exl-id: 80e514a2-1c86-46a7-82bc-e4db702189b0
 ---
-
 # Companies
 
 [Companies Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Companies)

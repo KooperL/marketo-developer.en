@@ -1,9 +1,9 @@
 ---
-title: "syncCustomObjects"
+title: syncCustomObjects
 feature: SOAP
-description: "syncCustomObjects SOAP calls"
+description: syncCustomObjects SOAP calls
+exl-id: dbdd7ee6-f83f-4e20-b847-25a61f0f6046
 ---
-
 # syncCustomObjects
 
 Accepts an array of custom objects to be created or updated, up to a maximum of 100 per call. It returns the outcome (status) of the operation (CREATED, UPDATED, FAILED, UNCHANGED, SKIPPED) and the custom objects that were processed. The API is called in one of three operation modes:

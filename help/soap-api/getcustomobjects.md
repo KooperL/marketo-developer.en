@@ -1,9 +1,9 @@
 ---
-title: "getCustomObjects"
+title: getCustomObjects
 feature: SOAP, Custom Objects
-description: "getCustomObjects SOAP calls"
+description: getCustomObjects SOAP calls
+exl-id: 32ff208a-f824-4420-a26f-1fd969a2bc4c
 ---
-
 # getCustomObjects
 
 Retrieves one or more custom objects using a combination of criteria consisting of zero or one custom object key.

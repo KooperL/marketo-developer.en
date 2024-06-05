@@ -1,9 +1,9 @@
 ---
-title: "Emails"
+title: Emails
 feature: REST API
-description: "APIs for manipulating email assets."
+description: APIs for manipulating email assets.
+exl-id: 6875730d-c74a-42cf-a3d2-dad7a3ac535d
 ---
-
 # Emails
 
 [Email Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Emails) A full set of REST endpoints are provided for manipulating email assets.

@@ -1,9 +1,9 @@
 ---
 title: Static Lists
 feature: REST API, Static Lists
-description: "Perform CRUD operations on static lists."
+description: Perform CRUD operations on static lists.
+exl-id: 20679fd2-fae2-473e-84bc-cb4fdf2f5151
 ---
-
 # Static lists
 
 [Static Lists Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Static-Lists)

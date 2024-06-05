@@ -1,9 +1,9 @@
 ---
-title: "Bulk Program Member Extract"
+title: Bulk Program Member Extract
 feature: REST API
-description: "Batch processing of Member data extraction."
+description: Batch processing of Member data extraction.
+exl-id: 6e0a6bab-2807-429d-9c91-245076a34680
 ---
-
 # Bulk Program Member Extract
 
 [Bulk Program Member Extract Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Bulk-Export-Program-Members)

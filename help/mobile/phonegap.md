@@ -1,9 +1,9 @@
 ---
-title: "PhoneGap"
-feature: "Mobile Marketing"
-description: "Using PhoneGap with Marketo on mobile devices"
+title: PhoneGap
+feature: Mobile Marketing
+description: Using PhoneGap with Marketo on mobile devices
+exl-id: 99f14c76-9438-4942-9309-643bca434d07
 ---
-
 # PhoneGap
 
 Integration of Marketo PhoneGap Plugin

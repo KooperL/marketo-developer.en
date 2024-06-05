@@ -1,9 +1,9 @@
 ---
-title: "User Context"
+title: User Context
 feature: REST API
-description: "User context overview and API descriptions"
+description: User context overview and API descriptions
+exl-id: b8daace2-07a5-4621-aa3a-03fa9f66ea73
 ---
-
 # User Context
 
 User Context JavaScript API exposes user and visitor level data across multiple sessions to enable advanced personalization capability using historical user behavior and data. The API goes beyond data read and exposes custom variables that allow you to push meaningful data and events to the RTP backend for advanced segmentation and personalization purposes. Additional capabilities: [Triggers](../javascript-api/triggers.md), [Pattern Match](../javascript-api/pattern-match.md).

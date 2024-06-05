@@ -1,9 +1,9 @@
 ---
-title: "importToList"
+title: importToList
 feature: SOAP
-description: "importToList SOAP calls"
+description: importToList SOAP calls
+exl-id: 7e4930a9-a78f-44a3-9e8c-eeca908080c8
 ---
-
 # importToList
 
 This function lets you import a list of leads into an existing Static List in Marketo, similar to the import list function in the Marketo UI.

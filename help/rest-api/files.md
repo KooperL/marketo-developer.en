@@ -1,9 +1,9 @@
 ---
-title: "Files"
+title: Files
 feature: REST API
-description: "Storing and manipulating Marketo files."
+description: Storing and manipulating Marketo files.
+exl-id: 17361cdc-2309-442c-803c-34ce187aee1a
 ---
-
 # Files
 
 [Files Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Files)

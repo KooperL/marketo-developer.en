@@ -1,9 +1,9 @@
 ---
 title: Social
-description: "Social"
+description: Social
 feature: Social, Javascript
+exl-id: 82d2b86f-5efe-4434-b617-d27f76515a79
 ---
-
 # Social
 
 [Marketo Social Marketing](https://business.adobe.com/products/marketo/social-marketing.html) allows marketers to embed social widgets within websites and landing pages. Social widgets include polls, social share buttons, videos, sweepstakes, and promotions like referral offers.

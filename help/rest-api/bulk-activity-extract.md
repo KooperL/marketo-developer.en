@@ -1,9 +1,9 @@
 ---
-title: "Bulk Activity Extract"
+title: Bulk Activity Extract
 feature: REST API
-description: "Batch processing Activity data from Marketo."
+description: Batch processing Activity data from Marketo.
+exl-id: 6bdfa78e-bc5b-4eea-bcb0-e26e36cf6e19
 ---
-
 # Bulk Activity Extract
 
 [Bulk Activity Extract Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/)

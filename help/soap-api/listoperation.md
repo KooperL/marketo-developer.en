@@ -1,9 +1,9 @@
 ---
-title: "listOperation"
+title: listOperation
 feature: SOAP
-description: "listOperation SOAP calls"
+description: listOperation SOAP calls
+exl-id: 8332cc22-c5a9-43d6-9e92-8d62265cfab2
 ---
-
 # listOperation
 
 This method is used to perform operations on a static list defined within the Marketo lead database. To add, or remove members of a static list defined within a program, use [importToList](importtolist.md). Each call to this endpoint has a limit of 1000 leads per call.

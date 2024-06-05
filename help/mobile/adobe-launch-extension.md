@@ -1,9 +1,9 @@
 ---
-title: "Marketo Mobile Extension for [!DNL Adobe Launch]"
+title: Marketo Mobile Extension for [!DNL Adobe Launch]
 feature: Mobile Marketing
-description: "Marketo Mobile Extension for [!DNL Adobe Launch] overview"
+description: Marketo Mobile Extension for [!DNL Adobe Launch] overview
+exl-id: 2f8691ff-0442-45a5-aeba-c91c3af5c711
 ---
-
 # Marketo Mobile Extension for [!DNL Adobe Launch]
 
 Installation instructions for Marketo Mobile SDK extension in [!DNL Adobe Launch]. The steps below are required to send Push Notifications and/or In-App Messages.

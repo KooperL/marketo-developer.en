@@ -1,9 +1,9 @@
 ---
-title: "Webhooks"
+title: Webhooks
 feature: Webhooks
-description: "Overview of Webhooks"
+description: Overview of Webhooks
+exl-id: fd283c66-05a1-4aa4-8412-0d41b8d1e3c8
 ---
-
 # Webhooks
 
 Marketo allows the use of Webhooks to communicate with third-party web services. Webhooks support the use of the GET or POST HTTP verbs to push or retrieve data from a specific URL. For detailed instructions on in-application creation of Webhooks and how to add them to Smart Campaigns, refer to the following articles:

@@ -1,9 +1,9 @@
 ---
-title: "Bulk Import"
+title: Bulk Import
 feature: REST API
-description: "Batch importing person data."
+description: Batch importing person data.
+exl-id: f7922fd2-8408-4d04-8955-0f8f58914d24
 ---
-
 # Bulk Import
 
 Marketo provides interfaces for insertion of large sets of person and person related data, called Bulk Import. Currently, interfaces are offered for three object types:

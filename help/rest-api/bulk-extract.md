@@ -1,9 +1,9 @@
 ---
-title: "Bulk Extract"
+title: Bulk Extract
 feature: REST API
-description: "Batch operations for extracting Marketo data."
+description: Batch operations for extracting Marketo data.
+exl-id: 6a15c8a9-fd85-4c7d-9f65-8b2e2cba22ff
 ---
-
 # Bulk Extract
 
 Marketo provides interfaces for retrieval of large sets of person and person-related data, called Bulk Extract. Currently, interfaces are offered for three object types:

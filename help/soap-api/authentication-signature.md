@@ -1,9 +1,9 @@
 ---
-title: "Authentication Signature"
+title: Authentication Signature
 feature: SOAP
-description: "API security with Authentication Signatures"
+description: API security with Authentication Signatures
+exl-id: d6bed8ee-77fa-440c-8f35-a71cf77f45d3
 ---
-
 # Authentication Signature
     
 Marketo API security uses a simple yet highly secure model, based on HMAC-SHA1 signatures with messages transmitted over HTTPS. A key advantage of this model is that it provides stateless authentication.

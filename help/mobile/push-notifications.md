@@ -1,9 +1,9 @@
 ---
-title: "Push Notifications"
-feature: "Mobile Marketing"
-description: "Enabling Push Notifications for Marketo Mobile"
+title: Push Notifications
+feature: Mobile Marketing
+description: Enabling Push Notifications for Marketo Mobile
+exl-id: 41d657d8-9eea-4314-ab24-fd4cb2be7f61
 ---
-
 # Push Notifications
 
 How to enable Push Notifications.

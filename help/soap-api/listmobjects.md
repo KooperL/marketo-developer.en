@@ -1,9 +1,9 @@
 ---
-title: "listMObjects"
+title: listMObjects
 feature: SOAP
-description: "listMObjects SOAP calls"
+description: listMObjects SOAP calls
+exl-id: d8b32ba2-7c20-4611-9062-c3c5db2d2ccb
 ---
-
 # listMObjects
 
 This function returns the names of Marketo objects that can be used as input into the [describeMObjects](./describemobject.md) function for schema discovery operations.

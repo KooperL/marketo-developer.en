@@ -1,9 +1,9 @@
 ---
-title: "Stream Position"
+title: Stream Position
 feature: SOAP
-description: "Steam Position overview"
+description: Steam Position overview
+exl-id: c3a3fc1e-086b-4822-b2c7-2a7959db557c
 ---
-
 # Stream Position
 
 Stream position elements contain a position reference for one or more logical streams of time sequenced data. The position reference may be an approximate external specification like a timestamp, or an opaque internal specification of position returned by a previous API call. Stream positions may be defined as a complex, multi-element type or may be a string.

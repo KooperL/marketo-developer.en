@@ -1,9 +1,9 @@
 ---
-title: "syncMObjects"
+title: syncMObjects
 feature: SOAP
-description: "syncMObjects SOAP calls"
+description: syncMObjects SOAP calls
+exl-id: 68bb69ce-aa8c-40b7-8938-247f4fe97b5d
 ---
-
 # syncMObjects
 
 Accepts an array of [MObjects](marketo-objects.md) to be created or updated, up to a maximum to 100 per call, and returns the outcome (status) of the operation (CREATED, UPDATED, FAILED, UNCHANGED, SKIPPED) and the Marketo IDs of the MObject(s). The API can be called in one of three operation modes:

@@ -1,9 +1,9 @@
 ---
 title: Bulk Program Member Import
 feature: REST API
-description: "Batch importing of member data."
+description: Batch importing of member data.
+exl-id: b0e1039a-fe9b-4fb7-9aa6-9980a06da673
 ---
-
 # Bulk Program Member Import
 
 [Bulk Program Member Import Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Bulk-Import-Program-Members)

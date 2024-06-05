@@ -1,9 +1,9 @@
 ---
-title: "Endpoint Reference"
+title: Endpoint Reference
 feature: REST API
-description: "Marketo API endpoint references"
+description: Marketo API endpoint references
+exl-id: 27d16b6f-865a-4e40-ab9c-cbabe2927472
 ---
-
 # Endpoint Reference
 
 - [Asset](https://developer.adobe.com/marketo-apis/api/asset/)

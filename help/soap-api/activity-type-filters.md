@@ -1,9 +1,9 @@
 ---
-title: "Activity Type Filters"
+title: Activity Type Filters
 feature: SOAP
-description: "Activity Type filters for SOAP calls."
+description: Activity Type filters for SOAP calls.
+exl-id: d661bb41-5615-4394-ade0-29254e48f7eb
 ---
-
 # Activity Type Filters
 
 | Add to List                         |

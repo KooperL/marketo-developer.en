@@ -1,9 +1,9 @@
 ---
-title: "React Native"
-feature: "Mobile Marketing"
-description: "Installing React Native for Marketo"
+title: React Native
+feature: Mobile Marketing
+description: Installing React Native for Marketo
+exl-id: 462fd32e-91f1-4582-93f2-9efe4d4761ff
 ---
-
 # React Native
 
 This article provides information on how to install and set up Marketo's native SDK to integrate your mobile app with our platform.

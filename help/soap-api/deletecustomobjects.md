@@ -1,9 +1,9 @@
 ---
-title: "deleteCustomObjects"
+title: deleteCustomObjects
 feature: SOAP, Custom Objects
-description: "deleteCustomObjects SOAP calls."
+description: deleteCustomObjects SOAP calls.
+exl-id: 214b7cd1-dc4e-45dc-a29a-91518a275e61
 ---
-
 # deleteCustomObjects
 
 Deletes one or more custom objects and returns the outcome of the operation (DELETED, UNCHANGED, FAILED).

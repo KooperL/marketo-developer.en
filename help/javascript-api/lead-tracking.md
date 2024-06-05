@@ -1,9 +1,9 @@
 ---
-title: "Lead Tracking"
-description: "Lead Tracking API"
+title: Lead Tracking
+description: Lead Tracking API
 feature: Munchkin Tracking Code, Javascript
+exl-id: 7ece5133-9d32-4be3-a940-4ac0310c4d8b
 ---
-
 # Lead Tracking API
 
 Marketo's Munchkin JavaScript allows for tracking of end-user page visits and clicks to your Marketo landing pages and external web pages. These are recorded in Marketo as "Visit Web Page" and "Clicked Link on Web Page" activities, which can then be used in triggers and filters for Smart Campaigns and Smart Lists.

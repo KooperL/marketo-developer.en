@@ -1,9 +1,9 @@
 ---
-title: "Web Personalization"
-description: "Web Personalization"
+title: Web Personalization
+description: Web Personalization
 feature: Web Personalization, Javascript
+exl-id: b2c26b28-e9bf-4faf-8b6e-c102f41aeaa1
 ---
-
 # Web Personalization
 
 The Web Personalization JavaScript API extends the platform's automated personalization capability. It allows for event tracking and dynamic customization of a webpage. Additional capabilities: [Custom Data Events](custom-data-events.md), [Dynamic Content](web-personalization.md), [Get Visitor Data](get-visitor-data.md), [Exclude Tag for Specific Bots](#exclude_tag_for_specific_bots).
@@ -109,4 +109,3 @@ Description of JavaScript that is added to a website when using Web Personalizat
 | insightera-bar-2.1.js   | Used if predictive content recommendation bar is enabled              | Controlled by Marketo |
 | froogaloop2.min.js      | Used if content tracking is enabled and Vimeo player exists on page   | -                     |
 | iframe-api-v1.js        | Used if content tracking is enabled and YouTube player exists on page | -                     |
-                 

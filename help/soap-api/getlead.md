@@ -1,9 +1,9 @@
 ---
-title: "getLead"
+title: getLead
 feature: SOAP
-description: "getLead SOAP calls"
+description: getLead SOAP calls
+exl-id: 1a3eab26-7994-455d-bc7a-80e43e6ef4a7
 ---
-
 # getLead
 
 This function retrieves a single lead record from Marketo, with all field values for the built-in and custom fields, for a lead identified by the provided key (LeadKey). If the lead exists based on the input parameters, the lead record attributes will be returned in the result.

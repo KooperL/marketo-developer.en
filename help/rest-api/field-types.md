@@ -1,9 +1,9 @@
 ---
-title: "Field Types"
+title: Field Types
 feature: REST API
-description: "A list of Marketo field types"
+description: A list of Marketo field types
+exl-id: a0ba9e02-ed42-4be3-9cdd-a97fee9a726e
 ---
-
 # Field Types
 
 Here is a description of field types in Marketo. Additional information about field types can be found [here](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/field-management/custom-field-type-glossary). Additional information about field type limits can be found [here](https://nation.marketo.com/t5/knowledgebase/tkb-p/support_solutions-documents).

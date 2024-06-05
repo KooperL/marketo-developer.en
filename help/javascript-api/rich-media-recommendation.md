@@ -1,9 +1,9 @@
 ---
-title: "Rich Media Recommendation"
-description: "Rich Media Recommendation"
+title: Rich Media Recommendation
+description: Rich Media Recommendation
 feature: Javascript
+exl-id: ee92e46d-e529-40a2-a0d0-ee233916f004
 ---
-
 # Rich Media Recommendation
 
 The following tags and API calls must be set up on the page that you want to display the Rich Media Recommendation template.

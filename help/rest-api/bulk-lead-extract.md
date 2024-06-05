@@ -1,9 +1,9 @@
 ---
-title: "Bulk Lead Extract"
+title: Bulk Lead Extract
 feature: REST API
-description: "Batch extraction of lead data."
+description: Batch extraction of lead data.
+exl-id: 42796e89-5468-463e-9b67-cce7e798677b
 ---
-
 # Bulk Lead Extract
 
 [Bulk Lead Extract Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Bulk-Export-Leads)

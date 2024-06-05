@@ -1,9 +1,9 @@
 ---
-title: "Configuration"
-description: "Configuration API"
+title: Configuration
+description: Configuration API
 feature: Javascript
+exl-id: 4700ce7b-f624-4f27-871e-9a050f203973
 ---
-
 # Configuration
 
 Munchkin can accept various configuration settings to customize behavior. Configuration settings are properties of a JavaScript object that is passed as the second parameter when calling [Munchkin.init()](lead-tracking.md#munchkin-behavior)

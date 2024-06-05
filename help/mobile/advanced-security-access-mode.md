@@ -1,9 +1,9 @@
 ---
-title: "Advanced Security Access Mode"
-feature: "Mobile Marketing"
-description: "Details around Advanced Security Access Mode"
+title: Advanced Security Access Mode
+feature: Mobile Marketing
+description: Details around Advanced Security Access Mode
+exl-id: bd4730ff-708b-465e-b494-485a4dbf67ff
 ---
-
 # Advanced Security Access Mode
 
 The Marketo SDK exposes methods to set and remove the security signature. There is also a utility method to retrieve the device ID. The device ID should be passed along with the email, upon login, to the customer server for use in calculating the security signature. The SDK should the hit new endpoint, pointing to algorithm listed above, to retrieve the necessary fields to instantiate the signature object. Setting this signature in the SDK is a necessary step if the Security Access Mode has been enabled in Marketo Mobile Admin.

@@ -1,9 +1,9 @@
 ---
-title: "Landing Page Templates"
+title: Landing Page Templates
 feature: REST API, Landing Pages
-description: "Build and edit landing page templates."
+description: Build and edit landing page templates.
+exl-id: f9d1255e-ec13-4b75-96d5-b4cc9457a51b
 ---
-
 # Landing Page Templates
 
 [Landing Page Template Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Landing-Page-Templates)

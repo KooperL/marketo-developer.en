@@ -1,9 +1,9 @@
 ---
-title: "Landing Page Redirect Rules"
+title: Landing Page Redirect Rules
 feature: REST API, Landing Pages
-description: "Configure landing page redirect rules through the API."
+description: Configure landing page redirect rules through the API.
+exl-id: f63aa5ef-5872-4401-be75-6fb9b2977734
 ---
-
 # Landing Page Redirect Rules
 
 [Landing Page Redirect Rules Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Landing-Page-Redirect-Rules)

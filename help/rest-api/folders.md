@@ -1,9 +1,9 @@
 ---
-title: "Folders"
+title: Folders
 feature: REST API
-description: "Manipulating folders with the Marketo API."
+description: Manipulating folders with the Marketo API.
+exl-id: 4b55c256-ef0a-42b4-9548-ff8a4106f064
 ---
-
 # Folders
 
 [Folders Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Folders)

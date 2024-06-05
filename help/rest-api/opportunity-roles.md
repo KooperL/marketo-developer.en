@@ -1,9 +1,9 @@
 ---
-title: "Opportunity Roles"
+title: Opportunity Roles
 feature: REST API
-description: "Handling opportunity roles in Marketo."
+description: Handling opportunity roles in Marketo.
+exl-id: 2ba84f4d-82d0-4368-94e8-1fc6d17b69ed
 ---
-
 # Opportunity Roles
 
 [Opportunity Roles Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Opportunities/operation/getOpportunityRolesUsingGET)

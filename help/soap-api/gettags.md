@@ -1,9 +1,9 @@
 ---
-title: "getTags"
+title: getTags
 feature: SOAP, Tags
-description: "getTags SOAP calls"
+description: getTags SOAP calls
+exl-id: 4fd9de1a-9362-479a-afe1-09ef0aaf5e6e
 ---
-
 # getTags
 
 This function retrieves the following information about non-channel tags set up in Marketo.

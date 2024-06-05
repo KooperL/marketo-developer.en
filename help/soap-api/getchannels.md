@@ -1,9 +1,9 @@
 ---
-title: "getChannels"
+title: getChannels
 feature: SOAP
-description: "getChannels SOAP calls"
+description: getChannels SOAP calls
+exl-id: bcaef85b-154b-4571-ad24-07a36707a6ef
 ---
-
 # getChannels
 
 This function retrieves the following information about a channel set up in Marketo:

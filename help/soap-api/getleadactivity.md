@@ -1,9 +1,9 @@
 ---
-title: "getLeadActivity"
+title: getLeadActivity
 feature: SOAP
-description: "getLeadActivity SOAP calls"
+description: getLeadActivity SOAP calls
+exl-id: f38dee95-235f-4dc2-8839-61d6008132a5
 ---
-
 # getLeadActivity
 
 This function retrieves the activity history for a single lead identified by the provided key. You can specify which activity types you wish to be returned in the result. If you want all activity types, a blank value needs to be passed. For more than one activity type, pass in a list of activity types. When requesting multiple activities, the remaining count is not an accurate number, but should be treated as a flag which indicates that there are more activities when the remaining count > 0.

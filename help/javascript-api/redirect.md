@@ -1,9 +1,9 @@
 ---
-title: "Redirect"
-description: "Redirect"
+title: Redirect
+description: Redirect
 feature: Javascript
+exl-id: bbf91245-42e5-47ae-a561-e522cc65ff49
 ---
-
 # Redirect
 
 The RTP Redirect API allows you to redirect segmented audiences to a target URL.

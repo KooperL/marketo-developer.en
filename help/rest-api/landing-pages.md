@@ -1,9 +1,9 @@
 ---
-title: "Landing Pages"
+title: Landing Pages
 feature: REST API, Landing Pages
-description: "Query landing pages in Marketo."
+description: Query landing pages in Marketo.
+exl-id: 2f986fb0-0a6b-469f-b199-1c526cd5a882
 ---
-
 # Landing Pages
 
 [Landing Page Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Landing-Pages)

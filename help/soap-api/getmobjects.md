@@ -1,9 +1,9 @@
 ---
-title: "getMObjects"
+title: getMObjects
 feature: SOAP
-description: "getMObjects SOAP calls"
+description: getMObjects SOAP calls
+exl-id: 5cf18161-f590-4dc3-bba1-ee3ed9fd7e9f
 ---
-
 # getMObjects
 
 Retrieves one or more [MObjects](marketo-objects.md) using a combination of criteria consisting of:

@@ -1,9 +1,9 @@
 ---
-title: "deleteMObjects"
+title: deleteMObjects
 feature: SOAP
-description: "deleteMObjects SOAP calls"
+description: deleteMObjects SOAP calls
+exl-id: 31511584-5366-4af1-975b-94417680c4d9
 ---
-
 # deleteMObjects
 
 Deletes one or more [MObjects](marketo-objects.md) and returns the outcome of the operation (DELETED, UNCHANGED, FAILED).

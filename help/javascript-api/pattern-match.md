@@ -1,9 +1,9 @@
 ---
-title: "Pattern Match"
-description: "Pattern Match"
+title: Pattern Match
+description: Pattern Match
 feature: Javascript
+exl-id: 4ebd13e3-375b-449b-850f-3b18f570ca75
 ---
-
 # Pattern Match
 
 RTP exposes a utility function to check if the pattern matches certain string. The utility can not be used in async because it returns an indication if there is a match or not.

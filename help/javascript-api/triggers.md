@@ -1,9 +1,9 @@
 ---
-title: "Triggers"
-description: "Triggers"
+title: Triggers
+description: Triggers
 feature: Javascript
+exl-id: 588836fa-1e4d-41f3-aec5-5cd17eb16071
 ---
-
 # Triggers
 
 Adds the capability to trigger functions on certain state of the global rtp object.

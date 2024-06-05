@@ -1,9 +1,9 @@
 ---
-title: "Custom Objects"
+title: Custom Objects
 feature: SOAP
-description: "Creating custom objects."
+description: Creating custom objects.
+exl-id: 29d65841-4b44-4d94-b14e-c583d433d015
 ---
-
 # Custom Objects
 
 A Marketo Custom object allows for the creation of a one to many relationship between your Marketo leads and the custom object records. For example, you may want to track all the roadshows attended by a lead. As leads may attend a number of roadshows (over multiple years), custom objects are better suited to store this information.

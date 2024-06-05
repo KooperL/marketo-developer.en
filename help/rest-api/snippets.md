@@ -1,9 +1,9 @@
 ---
-title: "Snippets"
+title: Snippets
 feature: REST API, Snippets
-description: "Managing snippets through the Marketo API."
+description: Managing snippets through the Marketo API.
+exl-id: 87901c29-ee59-4224-848d-3bd6a6c52718
 ---
-
 # Snippets
 
 [Snippet Endpoint Reference](https://developer.adobe.com/marketo-apis/api/asset/#tag/Snippets)

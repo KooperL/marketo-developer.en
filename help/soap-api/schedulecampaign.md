@@ -1,9 +1,9 @@
 ---
-title: "scheduleCampaign"
+title: scheduleCampaign
 feature: SOAP, Smart Campaigns
-description: "scheduleCampaign SOAP calls"
+description: scheduleCampaign SOAP calls
+exl-id: a9ef2c16-34ef-4e0f-b765-e332335b0b81
 ---
-
 # scheduleCampaign
 
 This function sets the schedule of a batch Smart Campaign to run either immediately or at a future date. It requires an existing Smart Campaign to complete successfully. This can be used with importToList to upload a list of leads and then run a batch campaign against that newly created list.

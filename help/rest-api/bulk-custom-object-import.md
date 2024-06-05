@@ -1,9 +1,9 @@
 ---
-title: "Bulk Custom Object Import"
+title: Bulk Custom Object Import
 feature: Custom Objects
-description: "Batch importing of custom objects."
+description: Batch importing of custom objects.
+exl-id: e795476c-14bc-4e8c-b611-1f0941a65825
 ---
-
 # Bulk Custom Object Import
 
 [Bulk Custom Object Import Endpoint Reference](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Bulk-Import-Custom-Objects)
