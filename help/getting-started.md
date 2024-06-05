@@ -1,11 +1,11 @@
 ---
 title: Getting Started
-description: Getting started with Marketo APIs
+description: Getting started with Marketo Engage APIs
 exl-id: 78c44c32-4e59-4d55-a45c-ef0d7dac814d
 ---
 # Getting Started
 
-Marketo is a marketing automation platform that enables marketers to manage personalized multi-channel programs and campaigns to prospects and customers. The Marketo platform can be extended using integration points. Below you find the core entities and their relationships.
+Marketo Engage is a marketing automation platform that enables marketers to manage personalized multi-channel programs and campaigns to prospects and customers. The Marketo Engage platform can be extended using integration points. Below you find the core entities and their relationships.
 
 The following objects are not available via REST API when native sync is enabled: Company, Opportunity, Opportunity Role, Sales Person
 
@@ -13,7 +13,7 @@ The following objects are not available via REST API when native sync is enabled
 
 ## Person (Leads)
 
-People are the foundation of any marketing automation platform. Within Marketo, all non-sales person records are referred to as leads, regardless of whether they are designated as leads, prospects, suspects, contacts...and so forth, from a sales perspective. The lead object comes with a set of [standard fields](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/getLeadFieldsUsingGET) such as email, first name and last name. Additional fields can be added to the lead object type to extend the types of information associated with records in the system. Custom attributes can be read and written to just as the standard fields. A complete list of fields can be found within the Marketo **[!UICONTROL Admin]** > **[!UICONTROL Field Management]** menu. Leads are uniquely identified in Marketo by the id field. Other unique keys must be enforced externally from the system.
+People are the foundation of any marketing automation platform. Within Marketo, all non-sales person records are referred to as leads, regardless of whether they are designated as leads, prospects, suspects, contacts and so forth, from a sales perspective. The lead object comes with a set of [standard fields](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/getLeadFieldsUsingGET) such as email, first name and last name. Additional fields can be added to the lead object type to extend the types of information associated with records in the system. Custom attributes can be read and written to just as the standard fields. A complete list of fields can be found within the Marketo **[!UICONTROL Admin]** > **[!UICONTROL Field Management]** menu. Leads are uniquely identified in Marketo by the id field. Other unique keys must be enforced externally from the system.
 
 Related APIs: [REST](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads), [SOAP](soap-api/leads.md), [JavaScript](javascript-api/lead-tracking.md#lead-tracking-api)
 

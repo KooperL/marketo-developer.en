@@ -41,7 +41,8 @@ index: yes
    - [React Native](mobile/react-native.md)
    - [User Profiles](mobile/user-profiles.md)
 - REST{#rest}
-   - [REST API](rest-api/rest-api.md)
+   - [REST API overview](rest-api/rest-api.md)
+   - [REST API reference](https://developer.adobe.com/marketo-apis/)
    - Assets {#assets}
       - [Assets](rest-api/assets.md)
       - [Dynamic Content](rest-api/dynamic-content.md)
