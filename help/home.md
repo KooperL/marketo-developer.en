@@ -10,8 +10,8 @@ Detailed documentations that help you master Marketo Engage API
 <table>
 <tbody>
 <tr>
-<th><img src="assets/Smock_Book_18_N.svg" alt="Getting Started"></th>
-<th><a href="getting-started.md"><strong>Getting Started</strong></a>  Get familiar with Marketo Engage APIs.</th>
+<td><img src="assets/Smock_Book_18_N.svg" alt="Getting Started"></td>
+<td><a href="getting-started.md"><strong>Getting Started</strong></a>  Get familiar with Marketo Engage APIs.</td>
 </tr>
 <tr>
 <td><img src="assets/Smock_Code_18_N.svg" alt="Client Libraries"></td>
