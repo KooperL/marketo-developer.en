@@ -86,6 +86,7 @@ index: yes
       - [Field List](rest-api/fields.md)
       - [Field Types](rest-api/field-types.md)
       - [Lead Database](rest-api/lead-database.md)
+      - [Leads](rest-api/leads.md)
       - [Named Accounts](rest-api/named-accounts.md)
       - [Named Account Lists](rest-api/named-account-lists.md)
       - [Opportunities](rest-api/opportunities.md)
