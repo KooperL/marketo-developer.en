@@ -1,5 +1,5 @@
 ---
-title: '[!DNLAdobe Launch] Extension Installation'
+title: '[!DNL Adobe Launch] Extension Installation'
 feature: Mobile Marketing
 description: '[!DNL Adobe Launch] extension installation overview'
 exl-id: d71b7cd7-309b-4882-9bba-7daaaa5ef32d
