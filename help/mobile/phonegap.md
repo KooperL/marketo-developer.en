@@ -61,13 +61,13 @@ Check the list of platforms added `$cordova platform ls`
 
 1. Configure Firebase App on Firebase Console.
     1. Create/Add a Project on [](https://console.firebase.google.com/)Firebase Console.
-        1. In the [Firebase console](https://console.firebase.google.com/), select [!UICONTROL Add Project].
-        1. Select your GCM project from the list of existing Google Cloud projects, and select [!UICONTROL Add Firebase].
+        1. In the [Firebase console](https://console.firebase.google.com/), select **[!UICONTROL Add Project]**.
+        1. Select your GCM project from the list of existing Google Cloud projects, and select **[!UICONTROL Add Firebase]**.
         1. In the Firebase welcome screen, select 'Add Firebase to your Android App'.
-        1. Provide your package name and SHA-1, and select [!UICONTROL Add App]. A new `google-services.json` file for your Firebase app is downloaded.
-    1. Navigate to 'Project Settings' in Project Overview
-        1. Click on 'General' tab. Download the 'google-services.json' file.
-        1. Click on 'Cloud Messaging' tab. Copy 'Server Key' & 'Sender ID'. Provide these 'Server Key' & 'Sender ID' to Marketo.
+        1. Provide your package name and SHA-1, and select **[!UICONTROL Add App]**. A new `google-services.json` file for your Firebase app is downloaded.
+    1. Navigate to **[!UICONTROL Project Settings]** in [!UICONTROL Project Overview]
+        1. Click on **[!UICONTROL General]** tab. Download the 'google-services.json' file.
+        1. Click on **[!UICONTROL Cloud Messaging]** tab. Copy [!UICONTROL Server Key] & [!UICONTROL Sender ID]. Provide these [!UICONTROL Server Key] & [!UICONTROL Sender ID] to Marketo.
     1. Configure FCM changes in Phonegap App
         1. Move the downloaded 'google-services.json' file into your Phonegap app module root directory
         1. Remove the file 'MyFirebaseInstanceIDService' from location `platforms/android/app/src/main/java/com/gae/scaffolder/plugin` (Deprecated)

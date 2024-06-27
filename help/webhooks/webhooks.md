@@ -14,12 +14,12 @@ Marketo allows the use of Webhooks to communicate with third-party web services.
 
 Each individual webhook has the following properties:
 
-- URL - Enter the URL that you use to submit your request to the web service.
-- Request Type- The HTTP method.
-- Payload Template - If you wish to transmit information in the body of the POST, enter the template. Use any data format that supports HTTP POST, including XML, JSON, or SOAP. The serialization format must allow double quotes around strings. To insert a token in your template, click Insert Token.  String-type tokens are automatically enclosed in double quotes.
-- Request Token Encoding - If the token values include special characters (such as an ampersand, '&'), indicate the format of your request (JSON or Form/Url). The correct encoding should be selected for the body to ensure that the Webhook communicates with the web service correctly.
-- Response Type - Select the format of the response that you receive from the service (JSON or XML). The correct response type must be selected to map properties of the response back to lead fields in Marketo
-- Custom Headers - Accessed through Webhooks Actions -> Set Custom Header, this menu allows the addition of any number of custom Key-Value pairs as HTTP Headers.
+- [!UICONTROL URL] - Enter the URL that you use to submit your request to the web service.
+- [!UICONTROL Request Type] - The HTTP method.
+- [!UICONTROL Payload Template] - If you wish to transmit information in the body of the POST, enter the template. Use any data format that supports HTTP POST, including XML, JSON, or SOAP. The serialization format must allow double quotes around strings. To insert a token in your template, click **[!UICONTROL Insert Token]**.  String-type tokens are automatically enclosed in double quotes.
+- [!UICONTROL Request Token Encoding] - If the token values include special characters (such as an ampersand, '&'), indicate the format of your request (JSON or Form/Url). The correct encoding should be selected for the body to ensure that the Webhook communicates with the web service correctly.
+- [!UICONTROL Response Type] - Select the format of the response that you receive from the service (JSON or XML). The correct response type must be selected to map properties of the response back to lead fields in Marketo
+- [!UICONTROL Custom Headers] - Accessed through [!UICONTROL Webhooks Actions] -> [!UICONTROL Set Custom Header], this menu allows the addition of any number of custom Key-Value pairs as HTTP Headers.
 
 Data can be written back to leads from web-service responses by using [Response Mappings](response-mappings.md)
 

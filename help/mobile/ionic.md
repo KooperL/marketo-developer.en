@@ -1,24 +1,24 @@
 ---
-title: Ionic
+title: '[!DNL Ionic]'
 feature: Mobile Marketing
-description: Using Ionic with Marketo for mobile devices
+description: Using [!DNL Ionic] with Marketo for mobile devices
 exl-id: 204e5fb4-c9d6-43a6-9d77-0b2a67ddbed3
 ---
 # Ionic
 
-This topic describes how to integrate the Marketo Cordova Plugin. Ionic capacitor is not currently supported.
+This topic describes how to integrate the Marketo Cordova Plugin. [!DNL Ionic] capacitor is not currently supported.
 
 ## Prerequisites
 
 1. [Add an application in Marketo Admin](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/mobile-marketing/admin/add-a-mobile-app) (obtain your application Secret Key and Munchkin Id).
 1. Setup Push Notifications ([iOS](push-notifications.md) | [Android](push-notifications.md) ).
-1. Install [Ionic](https://ionicframework.com/getting-started/) & [Cordova CLI](https://cordova.apache.org/docs/en/latest/guide/cli/).
+1. Install [[!DNL Ionic]](https://ionicframework.com/getting-started/) & [Cordova CLI](https://cordova.apache.org/docs/en/latest/guide/cli/).
 
 ## Installation Instructions
 
-### Setup Marketo Ionic Plugin
+### Setup Marketo [!DNL Ionic] Plugin
 
-1. Assuming the Cordova CLI is installed, go to your Ionic application directory and run the following command to add the Marketo Plugin into your application:
+1. Assuming the Cordova CLI is installed, go to your [!DNL Ionic] application directory and run the following command to add the Marketo Plugin into your application:
 
    `$ ionic plugin add https://github.com/Marketo/PhoneGapPlugin.git --variable APPLICATION_SECRET_KEY="YOUR_APPLICATION_SECRET"`
 
@@ -68,7 +68,7 @@ sharedInstance.trackPushNotfication(launchOptions)
 
 To ensure that the Marketo framework is initiated on app startup, add the following code under the `onDeviceReady` function in your main JavaScript file.
 
-You must pass `ionicCordova` as framework type for Ionic Cordova Apps.
+You must pass `ionicCordova` as framework type for [!DNL Ionic] Cordova Apps.
 
 #### Syntax
 

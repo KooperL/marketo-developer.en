@@ -24,15 +24,15 @@ For your first call to Marketo, you'll retrieve a lead record. To begin working 
 
 ![Admin Users and Roles](assets/admin-users-and-roles.png)
 
-Click the [!UICONTROL Roles] tab, and then New Role and assign at least the "Read-Only Lead" (or "Read- Only Person") permission to the role in the Access API group. Be sure to give it a descriptive name and click [!UICONTROL Create].
+Click the **[!UICONTROL Roles]** tab, and then New Role and assign at least the "Read-Only Lead" (or "Read- Only Person") permission to the role in the Access API group. Be sure to give it a descriptive name and click **[!UICONTROL Create]**.
 
 ![New Role](assets/new-role.png)
 
-Now back to the Users tab and click Invite New User. Give your user a descriptive name that indicates that it is an API user, and an Email Address and click **[!UICONTROL Next]**.
+Now back to the [!UICONTROL Users] tab and click **[!UICONTROL Invite New User]**. Give your user a descriptive name that indicates that it is an API user, and an Email Address and click **[!UICONTROL Next]**.
 
 ![New User Info](assets/new-user-info.png)
 
-Then, check the API Only option and award your user the API role that you created and click **[!UICONTROL Next]**.
+Then, check the [!UICONTROL API Only] option and award your user the API role that you created and click **[!UICONTROL Next]**.
 
 ![New User Permissions](assets/new-user-permissions.png)
 
@@ -40,23 +40,23 @@ To complete the user creation process, click **[!UICONTROL Send]**.
 
 ![New User Message](assets/new-user-message.png)
 
-Next, go to the Admin menu and click **[!UICONTROL LaunchPoint]**.
+Next, go to the [!UICONTROL Admin] menu and click **[!UICONTROL LaunchPoint]**.
 
 ![Launchpoint](assets/admin-launchpoint.png)
 
-Click the New menu and select [!UICONTROL New Service]. Give your service a descriptive name and select "Custom" from the Service dropdown menu. Give it a description, then select your new user from the API Only User dropdown menu and click [!UICONTROL Create].
+Click the **[!UICONTROL New]** menu and select **[!UICONTROL New Service]**. Give your service a descriptive name and select **[!UICONTROL Custom]** from the [!UICONTROL Service] dropdown menu. Give it a description, then select your new user from the [!UICONTROL API Only User] dropdown menu and click **[!UICONTROL Create]**.
 
 ![New Launchpoint Service](assets/admin-launchpoint-new-service.png)
 
-Click View Details for your new service to access the Client ID and Client Secret. For now you can click the [!UICONTROL Get Token] button to generate an access token which is valid for one hour. Save the token in a note for now.
+Click **[!UICONTROL View Details]** for your new service to access the Client ID and Client Secret. For now you can click the **[!UICONTROL Get Token]** button to generate an access token which is valid for one hour. Save the token in a note for now.
 
 ![Get Token](assets/get-token.png)
 
-Next, go to the Admin menu, then to **[!UICONTROL Web Services]**.
+Next, go to the **[!UICONTROL Admin]** menu, then to **[!UICONTROL Web Services]**.
 
 ![Web Services](assets/admin-web-services.png)
 
-Find the Endpoint in the REST API box and save in a note for now.
+Find the [!UICONTROL Endpoint] in the REST API box and save in a note for now.
 
 ![REST Endpoint](assets/admin-web-services-rest-endpoint-1.png)
 

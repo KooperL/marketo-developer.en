@@ -126,7 +126,7 @@ Endpoint used to upsert person records.
 
 | Path |
 |---|
-| /subscriptions/{munchkinId}/persons |
+| `/subscriptions/{munchkinId}/persons` |
 
 | HeadersKey | Value |
 |---|---|
@@ -195,7 +195,7 @@ Endpoint used to upsert custom object records.
 
 | Path |
 |---|
-| /subscriptions/{munchkinId}/customobjects/{customObjectAPIName} |
+| `/subscriptions/{munchkinId}/customobjects/{customObjectAPIName}` |
 
 Headers
 
@@ -205,6 +205,7 @@ Headers
 | X-Mkto-User-Token | {accessToken} |
 
 Request body
+
 | Key | Data Type | Required | Value | Default Value |
 |---|---|---|---|---|
 | priority | String | No | Priority of the request:normalhigh | normal |

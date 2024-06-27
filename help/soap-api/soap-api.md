@@ -34,10 +34,10 @@ Our recommendation is that batch sizes are no larger than 300. Larger sizes are 
 
 ## SOAP API settings in Marketo
 
-1. Go to the Admin section and click Web Services.
+1. Go to the **[!UICONTROL Admin]** section and click **[!UICONTROL Web Services]**.
 
 ![admin-web-services2](assets/admin-web-services2.png)
 
-1. Set an appropriate Encryption Key, click "Save Changes" and use the SOAP API Endpoint, User ID, and Encryption Key values to generate the correct [authentication signature](authentication-signature.md) for each SOAP API call.
+1. Set an appropriate [!UICONTROL Encryption Key], click **[!UICONTROL Save Changes]** and use the SOAP API [!UICONTROL Endpoint], [!UICONTROL User ID], and [!UICONTROL Encryption Key] values to generate the correct [authentication signature](authentication-signature.md) for each SOAP API call.
 
 ![admin-web-services3](assets/admin-web-services3.png)

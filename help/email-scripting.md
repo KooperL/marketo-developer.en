@@ -92,7 +92,7 @@ Velocity script is included in emails by using Email Scripting Tokens. These can
 
 ![Script Token](assets/script-token.png)
 
-From here, you can edit the name of the token, and open the editor via the Click to Edit option:
+From here, you can edit the name of the token, and open the editor via the [!UICONTROL Click to Edit] option:
 
 ![Edit Script](assets/script-edit.png)
 
@@ -106,11 +106,11 @@ Once you have your script defined within a Program My Token, you can reference i
 
 ![Email Script](assets/email-script-marketo-email.png)
 
-You can test your script using the "Send Sample Email" email action within the Marketo email designer. For the script to process correctly, you must select an existing lead to impersonate in the Lead field. If you're testing with `$TriggerObject`, you can select the triggering object via the 'Trigger' param. This uses the data from the most recently updated object of that type as the `$TriggerObject` variable.
+You can test your script using the [!UICONTROL Send Sample Email] email action within the Marketo email designer. For the script to process correctly, you must select an existing lead to impersonate in the [!UICONTROL Lead] field. If you're testing with `$TriggerObject`, you can select the triggering object via the [!UICONTROL Trigger] param. This uses the data from the most recently updated object of that type as the `$TriggerObject` variable.
 
 ![Test Email Script](assets/velocity-test.png)
 
-You can also use the Email Preview to test your script. To do so, you must select View As: Lead Detail, and select a lead from an available static list. This has the added benefit of outputting any exceptions that may have occurred during script execution:
+You can also use the [!UICONTROL Email Preview] to test your script. To do so, you must select **[!UICONTROL View As: Lead Detail]**, and select a lead from an available static list. This has the added benefit of outputting any exceptions that may have occurred during script execution:
 
 ![View Email As](assets/view-as.png)
 

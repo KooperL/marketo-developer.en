@@ -19,11 +19,11 @@ Installation instructions for [!DNL Adobe Launch] Marketo extension. The steps b
 
 ### Setup Swift Bridging Header
 
-1. Go to File > New > File and Select "Header File".
+1. Go to [!UICONTROL File] > [!UICONTROL New] > [!UICONTROL File] and Select **[!UICONTROL Header File]**.
 
 1. Name the file "<_ProjectName_>-Bridging-Header".
 
-1. Go to Project > Target > Build Settings > Swift Compiler > Code Generation. Add the following path to the "Objective-Bridging" Header:
+1. Go to [!UICONTROL Project] > [!UICONTROL Target] > [!UICONTROL Build Settings] > [!UICONTROL Swift Compiler] > [!UICONTROL Code Generation]. Add the following path to the "Objective-Bridging" Header:
 
   `$(PODS_ROOT)/<_ProjectName_>-Bridging-Header.h`
 
@@ -57,7 +57,7 @@ func applicationDidBecomeActive(_ application: UIApplication)
 
 ## iOS Test Devices
 
-1. Select [!UICONTROL Project] > [!UICONTROL Target] > [!UICONTROL Info] > URL Types.
+1. Select **[!UICONTROL Project]** > **[!UICONTROL Target]** > **[!UICONTROL Info]** > **[!UICONTROL URL Types]**.
 1. Add identifier: ${PRODUCT_NAME}
 1. Set URL Schemes: mkto-<S_ecret Key_> 
 1. Include `application:openURL:sourceApplication:annotation:` to `AppDelegate.m file` (Objective-C)
@@ -155,15 +155,15 @@ Android app developers can now directly use Google's [Firebase Cloud Messaging](
 1. Integrate latest Marketo Android SDK in Android App.  Steps are available at [GitHub](https://github.com/Marketo/android-sdk).
 1. Configure Firebase App on Firebase Console.
     1. Create/Add a Project on [](https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://console.firebase.google.com/&followup=https://console.firebase.google.com/)Firebase Console.
-        1. In the [Firebase console](https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://console.firebase.google.com/&followup=https://console.firebase.google.com/), select [!UICONTROL Add Project].
-        1. Select your GCM project from the list of existing Google Cloud projects, and select [!UICONTROL Add Firebase].
-        1. In the Firebase welcome screen, select 'Add Firebase to your Android App'.
-        1. Provide your package name and SHA-1, and select [!UICONTROL Add App]. A new `google-services.json` file for your Firebase app is downloaded.
-        1. Select [!UICONTROL Continue] and follow the detailed instructions for adding the Google Services plugin in Android Studio.
+        1. In the [Firebase console](https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://console.firebase.google.com/&followup=https://console.firebase.google.com/), select **[!UICONTROL Add Project]**.
+        1. Select your GCM project from the list of existing Google Cloud projects, and select **[!UICONTROL Add Firebase]**.
+        1. In the Firebase welcome screen, select **[!UICONTROL Add Firebase to your Android App]**.
+        1. Provide your package name and SHA-1, and select **[!UICONTROL Add App]**. A new `google-services.json` file for your Firebase app is downloaded.
+        1. Select **[!UICONTROL Continue]** and follow the detailed instructions for adding the Google Services plugin in Android Studio.
             
-    1. Navigate to 'Project Settings' in Project Overview
-        1. Click 'General' tab. Download the `google-services.json` file.
-        1. Click on 'Cloud Messaging' tab. Copy 'Server Key' & 'Sender ID'. Provide these 'Server Key' & 'Sender ID' to Marketo.
+    1. Navigate to **[!UICONTROL Project Settings]** in [!UICONTROL Project Overview]
+        1. Click **[!UICONTROL General]** tab. Download the `google-services.json` file.
+        1. Click on **[!UICONTROL Cloud Messaging]** tab. Copy [!UICONTROL Server Key] & [!UICONTROL Sender ID]. Provide these [!UICONTROL Server Key] & [!UICONTROL Sender ID] to Marketo.
     1. Configure FCM changes in Android App
         1. Switch to the Project view in Android Studio to see your project root directory
             1. Move the downloaded `google-services.json` file into your Android app module root directory
@@ -187,7 +187,7 @@ Android app developers can now directly use Google's [Firebase Cloud Messaging](
                 apply plugin: 'com.google.gms.google-services'
                 ```
                 
-            1. Finally, click on "[!UICONTROL Sync now]" in the bar that appears in the ID
+            1. Finally, click on **[!UICONTROL Sync now]** in the bar that appears in the ID
     1. Edit your app's manifest The FCM SDK automatically adds all required permissions and the required receiver functionality. Make sure to remove the following obsolete (and potentially harmful, as they may cause message duplication) elements from your app's manifest:
         
         ```xml
@@ -219,7 +219,7 @@ Frequently asked questions regarding Firebase Cloud Messaging support.
 
 **Q: How does it impact the existing MME customers that have published Android Apps integrated with Marketo Android SDK?** They can migrate an existing GCM client app on Android to Firebase Cloud Messaging (FCM) as follows:
 
-1. In the [Firebase console](https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://console.firebase.google.com/&followup=https://console.firebase.google.com/), select [!UICONTROL Add Project].
+1. In the [Firebase console](https://accounts.google.com/ServiceLogin?passive=1209600&osid=1&continue=https://console.firebase.google.com/&followup=https://console.firebase.google.com/), select **[!UICONTROL Add Project]**.
 1. Select your GCM project from the list of existing Google Cloud projects, and select **[!UICONTROL Add Firebase]**.
 1. In the Firebase welcome screen, select **[!UICONTROL Add Firebase to your Android App]**.
 1. Provide your package name and SHA-1, and select **[!UICONTROL Add App]**. A new google-services.json file for your
