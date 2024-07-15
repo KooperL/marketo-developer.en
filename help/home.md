@@ -19,7 +19,7 @@ Detailed documentations that help you master Marketo Engage API
 </tr>
 <tr>
 <td><img src="assets/Smock_EmailGear_18_N.svg" alt="Email Scripting"></td>
-<td><a href="rest-api/emails.md"><strong>Email Scripting</strong></a> Use Marketo Engage APIs to create and edit emails and email templates.</td>
+<td><a href="email-scripting.md"><strong>Email Scripting</strong></a> Use Marketo Engage APIs to create and edit emails and email templates.</td>
 </tr>
 <tr>
 <td><img src="assets/Smock_PeopleGroup_18_N.svg" alt="Lead Tracking"></td>
