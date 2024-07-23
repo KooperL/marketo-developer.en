@@ -2,6 +2,7 @@
 title: Download Swagger Definitions
 feature: REST API, Programs
 description: Download Swagger definition files for local consumption.
+exl-id: c2bed094-36f9-47e7-a6d5-c237e425966a
 ---
 # Download Swagger Definitions
 
