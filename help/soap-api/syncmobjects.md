@@ -54,7 +54,8 @@ For OpportunityPersonRole MObject, you can supply all the fields from the output
 1. IsPrimary (Optional)
 1. Role (Optional)
 
- |
+| Field Name | Required/Optional | Description |
+| --- | --- | --- |
 | mObjAssociationList->mObjAssociation->mObjType | Optional | Used to update Opportunity/OpportunityPersonRole MObjects using the id or external key of an associated object. Associated objects can be one of: Company (to update Opportunity MObject), Lead (to update OpportunityPersonRole MObject), Opportunity (to update OpportunityPersonRole MObject)|
 | mObjAssociationList->mObjAssociation->id | Optional | The id of the associated object (Lead/Company/Opportunity) |
 | mObjAssociationList->mObjAssociation->externalKey | Optional | A custom attribute of the associated object |
