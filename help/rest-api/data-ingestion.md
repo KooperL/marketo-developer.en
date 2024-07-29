@@ -44,7 +44,7 @@ Data Ingestion makes use of the following custom HTTP headers.
 ### Response
 
 | Key   |  Value   |  Required  |
-| - | - |
+| - | - | - |
 | X-Request-Id   |   Unique request ID.  |  Yes   |
 
 ## Requests
