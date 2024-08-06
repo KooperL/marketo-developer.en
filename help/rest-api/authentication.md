@@ -57,6 +57,10 @@ There are two methods that you can use to include a token in your calls, as an H
 
    `access_token=cdf01657-110d-4155-99a7-f986b2ff13a0:int`
 
+   >[!IMPORTANT]
+   >
+   >Support for authentication using the **access_token** query parameter is being removed in a subsequent release. If your project uses a query parameter to pass the access token, it should be updated to use the **Authorization** header as soon as possible. New development should use the **Authorization** header exclusively.
+
 ## Tips and Best Practices
 
 Managing access token expiration is important to ensure that your integration works smoothly and prevents unexpected authentication errors from occurring during normal operation. When designing authentication for your integration, be sure to store the token and expiration period contained in the Identity response.
