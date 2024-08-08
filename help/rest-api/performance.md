@@ -10,9 +10,11 @@ This page contains a list of performance-related topics that you can use to incr
 
 ## HTTP Compression
 
-The Marketo REST API supports HTTP compression of response bodies using standards defined by the HTTP 1.1 specification.  Enabling compression is recommended because it reduces bandwidth usage, and time spent retrieving data.
+The Marketo REST API supports HTTP compression of response bodies using standards defined by the HTTP 1.1 specification. Enabling compression is recommended because it reduces bandwidth usage, and time spent retrieving data.
 
-**Note:**  Payloads less than 1024 bytes will not be compressed.
+>[!NOTE]
+>
+>Payloads less than 1024 bytes are not compressed and bulk APIs do not support compression.
 
 To enable compression, include the following HTTP header in the request:
 
