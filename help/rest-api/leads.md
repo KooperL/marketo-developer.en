@@ -146,11 +146,19 @@ Both the Get Lead by Id and Get Leads by Filter Type will also accept a fields q
 
 ## Adobe ECID
 
-When the Adobe Experience Cloud Audience Sharing feature is enabled, a cookie sync process occurs that associates Adobe Experience Cloud ID (ECID) with Marketo leads.  The lead retrieval methods mentioned above can be used to retrieve associated ECID values.  Do this by specifying "ecids" in the fields parameter. For example, "&fields=email,firstName,lastName,ecids".
+When the Adobe Experience Cloud Audience Sharing feature is enabled, a cookie sync process occurs that associates Adobe Experience Cloud ID (ECID) with Marketo leads.  The lead retrieval methods mentioned above can be used to retrieve associated ECID values.  Do this by specifying `ecids` in the fields parameter. For example, `&fields=email,firstName,lastName,ecids`.
 
 ## Create and Update
 
 In addition to retrieving lead data, you can create, update and delete lead record via the API. Creating and updating leads share the same endpoint with the operation type being defined in the request, and up to 300 records can be created or updated at the same time.
+
+>[!NOTE]
+>
+> Updating Company fields using [Sync Leads](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/syncLeadUsingPOST) endpoint is not supported. Use [Sync Companies](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Companies/operation/syncCompaniesUsingPOST) endpoint instead.
+
+>[!NOTE]
+>
+> When creating or updating the email value on a Person record, only ASCII characters are supported in the email address field.
 
 ### Request
 

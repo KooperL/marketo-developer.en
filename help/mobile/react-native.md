@@ -67,7 +67,7 @@ To download and install it, launch a command-line terminal on your Mac and run t
 
 1. Download and install Marketo iOS SDK.
 
-`$ pod install`
+  `$ pod install`
 
 1. Open workspace in Xcode.
 
@@ -166,7 +166,6 @@ public class RNMarketoModule extends ReactContextBaseJavaModule {
        Marketo.reportAction(action, marketoActionMetaData);
    }
 }
-
 ```
 
 **Register the Package**
@@ -192,7 +191,6 @@ public class MarketoPluginPackage implements ReactPackage {
        return Collections.emptyList();
    }
 }
-
 ```
 
 To complete the package registration, add the MarketoPluginPackage to the React package list in the Application Class:
@@ -216,7 +214,6 @@ public class MainApplication extends Application implements ReactApplication {
           return packages;
         }
 }
-
 ```
 
 ### iOS
@@ -373,21 +370,17 @@ RNMarketoModule.initializeMarketoPush("350312872033", "MKTO")
 
 //The token can also be unregistered on logout.
 RNMarketoModule.uninitializeMarketoPush()
-
 ```
 
 #### Configure Push Notifications
-
 
 Initialize Push with Project ID and Channel name
 
 ```
 RNMarketoModule.initializeMarketoPush("ProjectId", "Channel_name")
-
 ```
 
 Add the following Service to `AndroidManifest.xml`
-
 
 ```xml
 <service android:exported="true" android:name=".MyFirebaseMessagingService" android:stopWithTask="true">
@@ -398,7 +391,6 @@ Add the following Service to `AndroidManifest.xml`
         <action android:name="com.google.firebase.MESSAGING_EVENT"/> 
     </intent-filter/>
 </activity/>
-
 ```
 
 Create a class with name `FirebaseMessagingService.java` and Add the following code
@@ -423,7 +415,6 @@ public class MyFirebaseMessagingService extends FirebaseMessagingService {
        marketoSdk.showPushNotification(remoteMessage);
    }
 }
-
 ```
 
 Permissions must be enabled in your Xcode project to send push notifications to the user's device.
@@ -434,7 +425,6 @@ Now in your `AppDelegate.m` file in XCode, import Marketo
 
 ```
 #import <MarketoFramework/MarketoFramework.h> 
-
 ```
 
 Add `UNUserNotificationCenterDelegate` to AppDelegate Interface as follows to handle Delegates
@@ -443,7 +433,6 @@ Add `UNUserNotificationCenterDelegate` to AppDelegate Interface as follows to ha
 @interface AppDelegate () <UNUserNotificationCenterDelegate>
 
 @end
-
 ```
 
 Register for remote notifications in `didFinishLaunchingWithOptions` method.
@@ -530,7 +519,6 @@ Add "MarketoActivity" to `AndroidManifest.xml` file inside application tag.
         <data android:host="add_test_device" android:scheme="mkto"/>
     </intent-filter/>
 </activity/>
-
 ```
 
 **iOS**
