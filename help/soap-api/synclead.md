@@ -4,7 +4,7 @@ feature: SOAP
 description: syncLead SOAP calls
 exl-id: e6cda794-a9d4-4153-a5f3-52e97a506807
 ---
-# syncLean
+# syncLead
 
 This function inserts or updates a single lead record. When updating an existing lead, the lead is identified with one of the following keys:
 
