@@ -43,6 +43,7 @@ index: yes
 - REST{#rest}
    - [REST API overview](rest-api/rest-api.md)
    - [REST API reference](https://developer.adobe.com/marketo-apis/)
+   - [Activities](rest-api/activities.md)
    - Assets {#assets}
       - [Assets](rest-api/assets.md)
       - [Dynamic Content](rest-api/dynamic-content.md)

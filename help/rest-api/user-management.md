@@ -124,31 +124,35 @@ GET /userservice/management/v1/users/allusers.json
 ```json
 [
   {
-    "userid": "jamie@lannister.com",
-    "firstName": "Jamie",
-    "lastName": "Lannister",
-    "emailAddress": "jamie@houselannister.com",
-    "id": 6785,
+    "userid": "02226aae-9f54-45d1-bc26-8305c8f55ec7@adobe.com",
+    "firstName": "Aparna",
+    "lastName": "Ghosh",
+    "emailAddress": "aparna.ghosh@ericsson.com",
+    "id": 5222,
     "apiOnly": false
-  },
-  {
-    "userid": "jeoffery@housebaratheon.com",
-    "firstName": "Jeoffery",
-    "lastName": "Baratheon",
-    "emailAddress": "jeoffery@housebaratheon.com",
-    "id": 7718,
+    },
+    {
+    "userid": "038e1cac-3f3e-4c05-b0b3-6265fd2abcd3@adobe.com",
+    "firstName": "Timm",
+    "lastName": "Rehse",
+    "emailAddress": "timm.rehse@ericsson.com",
+    "id": 7075,
     "apiOnly": false
-  },
-  {
-    "userid": "rickon@housestark.com",
-    "firstName": "Rickon",
-    "lastName": "Stark",
-    "emailAddress": "rickon@housestark.com",
-    "id": 8612,
+    },
+    {
+    "userid": "0a855522-06c9-4a9e-93de-91a0d2cc2987@adobe.com",
+    "firstName": "Dhinagaran",
+    "lastName": "Swaminathan",
+    "emailAddress": "dhinagaran.swaminathan@ericsson.com",
+    "id": 6439,
     "apiOnly": false
-  }
+    }
 ]
 ```
+
+>[!NOTE]
+>
+>In the code sample above, the `userid` displayed is for a customer that has been migrated to Adobe IMS. Those customers yet to migrate will see a regular email address in the `userid` field.
 
 ### Browse Roles
 
@@ -292,7 +296,7 @@ On [Adobe IMS-integrated subscriptions](https://experienceleague.adobe.com/en/do
 
 The [Invite User](https://developer.adobe.com/marketo-apis/api/user/#tag/User-Management/operation/inviteUserUsingPOST) endpoint to send a "Welcome to Marketo" email invitation to new user. The email body contains a "Login to Marketo" link which allows user to access Marketo for the first time. To accept the invitation, the email recipient clicks the "Login to Marketo" link, creates their password, and gains access to Marketo. Until the acceptance process is complete, the invitation is "pending" and the user record may not be edited. A pending invitation expires seven days after being sent. More information about managing users can be found [here](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/users-and-roles/managing-marketo-users).
 
-Parameters are passed in the request body in application/json format .
+Parameters are passed in the request body in `application/json` format .
 
 The following parameters are required:  `emailAddress`, `firstName`, `lastName, userRoleWorkspaces`. The `userRoleWorkspaces` parameter is an array of objects which contain `accessRoleId` and `workspaceId` attributes.
 
