@@ -43,7 +43,6 @@ index: yes
 - REST{#rest}
    - [REST API overview](rest-api/rest-api.md)
    - [REST API reference](https://developer.adobe.com/marketo-apis/)
-   - [Activities](rest-api/activities.md)
    - Assets {#assets}
       - [Assets](rest-api/assets.md)
       - [Dynamic Content](rest-api/dynamic-content.md)
@@ -85,7 +84,9 @@ index: yes
    - [Endpoint Reference](rest-api/endpoint-reference.md)
    - [Error Codes](rest-api/error-codes.md)
    - Lead Database {#lead-database}
+      - [Activities](rest-api/activities.md)
       - [Companies](rest-api/companies.md)
+      - [Custom Objects](rest-api/custom-objects.md)
       - [Field List](rest-api/fields.md)
       - [Field Types](rest-api/field-types.md)
       - [Lead Database](rest-api/lead-database.md)

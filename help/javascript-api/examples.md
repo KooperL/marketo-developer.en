@@ -1,6 +1,6 @@
 ---
 title: Examples
-description: Examples of Marketo code
+description: Examples of Marketo code for configuring form actions 
 feature: Javascript
 exl-id: dc5f0cc5-ff5a-48b0-be36-52c10e56f798
 ---
@@ -22,7 +22,6 @@ MktoForms2.loadForm("//app-ab00.marketo.com", "785-UHP-775", 1057, function(form
         return false;
     });
 });
-
 ```
 
 ## Take Visitor to User-Defined URL

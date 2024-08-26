@@ -1,6 +1,6 @@
 ---
 title: Configuration
-description: Configuration API
+description: Use the Configuration Javascript API to set configuration values when using Munchkin.
 feature: Javascript
 exl-id: 4700ce7b-f624-4f27-871e-9a050f203973
 ---

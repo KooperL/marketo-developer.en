@@ -132,9 +132,10 @@ public class RNMarketoModule extends ReactContextBaseJavaModule {
        marketoSdk.setSecureSignature(secureMode);
    }
    @ReactMethod
-   public void initializeSDK(String munchkinId, String appSecreteKey){
-       marketoSdk.initializeSDK(munchkinId,appSecreteKey);
-   }
+      public void initializeSDK(String frameworkType, String munchkinId, String appSecreteKey){
+          marketoSdk.initializeSDK(frameworkType,munchkinId,appSecreteKey);
+    }
+   
 
    @ReactMethod
    public void initializeMarketoPush(String projectId){
@@ -243,32 +244,48 @@ NS_ASSUME_NONNULL_BEGIN
 NS_ASSUME_NONNULL_END
 ```
 
-Create the corresponding implementation file, MktoBridge.m, in the same folder and include the following content:
+Create the corresponding implementation file, `MktoBridge.m`, in the same folder and include the following content:
 
 ```
 //
-//  MktoBridge.m
+//  MktoBridge.h
+//  Created by Marketo, An Adobe company.
 //
+
+#import <Foundation/Foundation.h>
+#import <React/RCTBridgeModule.h>
+
+NS_ASSUME_NONNULL_BEGIN
+
+@interface MktoBridge : NSObject <RCTBridgeModule>
+
+@end
+
+NS_ASSUME_NONNULL_END
+
+
+//
+//  MktoBridge.m
 //  Created by Marketo, An Adobe company.
 //
 
 #import "MktoBridge.h"
-#import <MarketoFramework/MarketoFramework.h>
+#import <MarketoFramework/Marketo.h>
 #import <React/RCTBridge.h>
 #import "ConstantStringsHeader.h"
 
-@implementation MktoBridge
+@implementation MktoBridge 
 
 RCT_EXPORT_MODULE(RNMarketoModule);
-
+ 
 +(BOOL)requiresMainQueueSetup{
   return NO;
 }
-
-RCT_EXPORT_METHOD(initializeWithMunchkin:(NSString *) munchkinId Secret: (NSString *) secretKey andFrameworkType : (NSString *) frameworkType{
-  [[Marketo sharedInstance] initializeWithMunchkinID:munchkinId appSecret:secretKey  mobileFrameworkType:frameworktype launchOptions:nil];
+ 
+RCT_EXPORT_METHOD(initializeSDK:(NSString *) munchkinId SecretKey: (NSString *) secretKey andFrameworkType: (NSString *) frameworkType){
+  [[Marketo sharedInstance] initializeWithMunchkinID:munchkinId appSecret:secretKey mobileFrameworkType:frameworkType launchOptions:nil];
 }
-
+ 
 RCT_EXPORT_METHOD(reportAction:(NSString *)actionName withMetaData:(NSDictionary *)metaData){
   MarketoActionMetaData *meta = [[MarketoActionMetaData alloc] init];
   [meta setType:[metaData objectForKey:KEY_ACTION_TYPE]];
@@ -277,7 +294,7 @@ RCT_EXPORT_METHOD(reportAction:(NSString *)actionName withMetaData:(NSDictionary
   [meta setMetric:[metaData valueForKey:KEY_ACTION_METRIC]];
   [[Marketo sharedInstance] reportAction:actionName withMetaData:meta];
 }
-
+ 
 RCT_EXPORT_METHOD(associateLead:(NSDictionary *)leadDetails){
   MarketoLead *lead = [[MarketoLead alloc] init];
   if ([leadDetails objectForKey:KEY_EMAIL] != nil) {
@@ -296,15 +313,15 @@ RCT_EXPORT_METHOD(associateLead:(NSDictionary *)leadDetails){
   }
     [[Marketo sharedInstance] associateLead:lead];
 }
-
+ 
 RCT_EXPORT_METHOD(uninitializeMarketoPush){
   [[Marketo sharedInstance] unregisterPushDeviceToken];
 }
-
+ 
 RCT_EXPORT_METHOD(reportAll){
   [[Marketo sharedInstance] reportAll];
 }
-
+ 
 RCT_EXPORT_METHOD(setSecureSignature:(NSDictionary *)secureSignature){
   MKTSecuritySignature *secSignature = [[MKTSecuritySignature alloc]
                                         initWithAccessKey:[secureSignature objectForKey:KEY_ACCESSKEY]
@@ -314,7 +331,28 @@ RCT_EXPORT_METHOD(setSecureSignature:(NSDictionary *)secureSignature){
   
     [[Marketo sharedInstance] setSecureSignature:secSignature];
 }
+
+RCT_EXPORT_METHOD(requestPermission:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject) {
+  UNUserNotificationCenter *center = [UNUserNotificationCenter currentNotificationCenter];
+  [center requestAuthorizationWithOptions:(UNAuthorizationOptionAlert + UNAuthorizationOptionSound + UNAuthorizationOptionBadge)
+                        completionHandler:^(BOOL granted, NSError * _Nullable error) {
+    if (error) {
+      reject(@"PERMISSION_ERROR", @"Permission request failed", error);
+    } else {
+      resolve(@(granted));
+    }
+  }];
+}
+
+RCT_EXPORT_METHOD(registerForRemoteNotifications) {
+  dispatch_async(dispatch_get_main_queue(), ^{
+    [[UIApplication sharedApplication] registerForRemoteNotifications];
+  });
+}
+
+
 @end
+
 ```
 
 #### Initialize Marketo SDK
@@ -421,7 +459,7 @@ Permissions must be enabled in your Xcode project to send push notifications to 
 
 To send push notifications, [add Push Notifications](push-notifications.md).
 
-Now in your `AppDelegate.m` file in XCode, import Marketo
+In XCode import `Marketo` in your `AppDelegate.m` file , 
 
 ```
 #import <MarketoFramework/MarketoFramework.h> 
@@ -502,6 +540,109 @@ didReceiveNotificationResponse:(UNNotificationResponse *)response
 -(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
     NSLog(@"didFailToRegisterForRemoteNotificationsWithError");
 }
+```
+
+create PushNotifications.tsx file and add the following:
+
+```
+import { NativeModules } from 'react-native';
+const { RNMarketoModule } = NativeModules;
+
+const requestPermission = (): Promise<boolean> => {
+return RNMarketoModule.requestPermission()
+.then((granted: boolean) => {
+console.log('Permission granted:', granted);
+return granted;
+})
+.catch((error: any) => {
+console.error('Permission error:', error);
+throw error;
+});
+};
+
+const registerForRemoteNotifications = (): void => {
+RNMarketoModule.registerForRemoteNotifications();
+};
+
+export { requestPermission, registerForRemoteNotifications };
+```
+
+
+Add `App.tsx` to allow push notifications
+
+```
+import React, { useEffect } from 'react';
+
+useEffect(() => {
+requestPermission().then(granted => {
+if (granted) {
+registerForRemoteNotifications();
+}
+});
+}, []);
+```
+
+Update `AppDelegate.mm` with APNS delegate methods:
+
+```
+#import "AppDelegate.h"
+#import "MktoBridge.h"
+#import <MarketoFramework/Marketo.h>
+#import <React/RCTBundleURLProvider.h>
+
+@implementation AppDelegate
+
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
+{
+  self.moduleName = @"MyNewApp";
+  // You can add your custom initial props in the dictionary below.
+  // They will be passed down to the ViewController used by React Native.
+  self.initialProps = @{};
+
+  return [super application:application didFinishLaunchingWithOptions:launchOptions];
+}
+
+- (NSURL *)sourceURLForBridge:(RCTBridge *)bridge
+{
+  return [self bundleURL];
+}
+
+-(void)userNotificationCenter:(UNUserNotificationCenter *)center 
+      willPresentNotification:(UNNotification *)notification withCompletionHandler:(void (^)(UNNotificationPresentationOptions options))completionHandler{
+    completionHandler(UNAuthorizationOptionSound | UNAuthorizationOptionAlert | UNAuthorizationOptionBadge);
+}
+
+- (void)userNotificationCenter:(UNUserNotificationCenter *)center
+didReceiveNotificationResponse:(UNNotificationResponse *)response
+         withCompletionHandler:(void(^)(void))completionHandler {
+    [[Marketo sharedInstance] userNotificationCenter:center 
+                      didReceiveNotificationResponse:response
+                               withCompletionHandler:completionHandler];
+}
+
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *)deviceToken {
+    // Register the push token with Marketo
+    [[Marketo sharedInstance] registerPushDeviceToken:deviceToken];
+}
+
+- (void)applicationWillTerminate:(UIApplication *)application {
+    [[Marketo sharedInstance] unregisterPushDeviceToken];
+}
+
+-(void)application:(UIApplication *)application didFailToRegisterForRemoteNotificationsWithError:(NSError *)error{
+  NSLog(@"Failed to register for remote notification - %@", [error userInfo]);
+}
+
+- (NSURL *)bundleURL
+{
+#if DEBUG
+  return [[RCTBundleURLProvider sharedSettings] jsBundleURLForBundleRoot:@"index"];
+#else
+  return [[NSBundle mainBundle] URLForResource:@"main" withExtension:@"jsbundle"];
+#endif
+}
+
+@end
 ```
 
 ### Add Test Devices
