@@ -1,6 +1,6 @@
 ---
 title:  Custom Objects
-feature: REST API, Custom Objects, Lead Database
+feature: REST API, Custom Objects
 description: Create and manipulate custom Marketo objects.
 ---
 
@@ -514,7 +514,7 @@ Here we can to see the following attributes:
 
 ### List Types
 
-The [List Custom Object Types](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Custom-Objects/operation/listCustomObjectTypesUsingGET) endpoint returns metadata for all custom object types available in the destination instance.  Note that this endpoint is similar to [List Custom Objects](https://experienceleague.corp.adobe.com/docs/marketo-developer/marketo/soap/custom-objects/custom-objects.html?lang=en), but is more comprehensive and includes additional metadata such as state, relationships, and fields. If an approved version exists, it is returned.  Otherwise the draft version is returned.  The optional **state** parameter is used to specify the version of the custom object type to return: **draft**, **approved**, or **approvedWithDraft**.  The optional **names** parameter is used to specify specific names of custom object types to return; it is structured as a comma separated list of API names.
+The [List Custom Object Types](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Custom-Objects/operation/listCustomObjectTypesUsingGET) endpoint returns metadata for all custom object types available in the destination instance.  Note that this endpoint is similar to [List Custom Objects](https://experienceleague.adobe.com/docs/marketo-developer/marketo/soap/custom-objects/custom-objects.html?lang=en), but is more comprehensive and includes additional metadata such as state, relationships, and fields. If an approved version exists, it is returned.  Otherwise the draft version is returned.  The optional **state** parameter is used to specify the version of the custom object type to return: **draft**, **approved**, or **approvedWithDraft**.  The optional **names** parameter is used to specify specific names of custom object types to return; it is structured as a comma separated list of API names.
 
 ```
 GET /rest/v1/customobjects/schema.json?names=purchaseHistory
@@ -1168,7 +1168,7 @@ POST /rest/v1/customobjects/schema/enrollment/approve.json
 }
 ```
 
-You can populate custom object records programmatically by using [Sync Custom Object](#create_and_update), or [Bulk Custom Object Import](https://experienceleague.corp.adobe.com/docs/marketo-developer/marketo/rest/bulk-import/bulk-custom-object-import.html?lang=en). Alternatively, you can use Marketo UI functionality [Import Custom Object Data](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/import-custom-object-data).
+You can populate custom object records programmatically by using [Sync Custom Object](#create_and_update), or [Bulk Custom Object Import](https://experienceleague.adobe.com/docs/marketo-developer/marketo/rest/bulk-import/bulk-custom-object-import.html?lang=en). Alternatively, you can use Marketo UI functionality [Import Custom Object Data](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/import-custom-object-data).
 
 ## Update Field
 
