@@ -258,7 +258,7 @@ POST /rest/v1/customobjects/{apiName}.json?_method=GET
 
 ## Create and Update
 
-Use the [Sync Custom Objects](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Custom-Objects/operation/syncCustomObjectsUsingPOST) endpoint to create or update custom objects, you can specify the operation using the `action` parameter.  Up to 300 records can be created or updated in one call.  The values used in the `input` array are largely based on the information returned by the [Describe Custom Objects](https://developers.marketo.com/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Custom_Objects/describeUsingGET_1) endpoint. In an example car object, there is just one dedupe field, `vin`.  In order to update or create records when using dedupeFields mode, each record in our input array needs to include at least a `vin` field.
+Use the [Sync Custom Objects](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Custom-Objects/operation/syncCustomObjectsUsingPOST) endpoint to create or update custom objects, you can specify the operation using the `action` parameter.  Up to 300 records can be created or updated in one call.  The values used in the `input` array are largely based on the information returned by the [Describe Custom Objects](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/rest/endpoint-reference#!/Custom_Objects/describeUsingGET_1) endpoint. In an example car object, there is just one dedupe field, `vin`.  In order to update or create records when using dedupeFields mode, each record in our input array needs to include at least a `vin` field.
 
 ```
 POST /rest/v1/customobjects/{apiName}.json
@@ -328,7 +328,7 @@ When performing updates via `idField` mode, the `idField` will always be `market
 
 ## Delete
 
-[Deleting records](/rest-api/endpoint-reference/lead-database-endpoint-reference/#!/Custom_Objects/deleteCustomObjectsUsingPOST) is very straightforward.  Just select your `deleteBy` mode, either `idField` or `dedupeFields`, and include the corresponding fields in each of the records in your `input` array. A maximum of 300 records per call is allowed.
+[Deleting records](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Custom-Objects/operation/deleteCustomObjectsUsingPOST) is very straightforward.  Just select your `deleteBy` mode, either `idField` or `dedupeFields`, and include the corresponding fields in each of the records in your `input` array. A maximum of 300 records per call is allowed.
 
 ```
 POST /rest/v1/customobjects/{apiName}/delete.json
