@@ -1,6 +1,6 @@
 ---
 title: Custom Data Events
-description: Custom Data Events API
+description: Use the Custom Data Events Javascript API for tracking your unique events.
 feature: Javascript
 exl-id: ef7cab9c-3bd0-450e-9247-9324b1e6f9ab
 ---

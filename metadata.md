@@ -5,7 +5,6 @@ product: marketo
 type: Documentation
 mini-toc-levels: 2
 git-repo: https://github.com/AdobeDocs/marketo-developer.en
-hide: yes
 ---
 
 # Metadata for internal use
