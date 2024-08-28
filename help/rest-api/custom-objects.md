@@ -1,9 +1,9 @@
 ---
-title:  Custom Objects
+title: Custom Objects
 feature: REST API, Custom Objects
 description: Create and manipulate custom Marketo objects.
+exl-id: 88e8829b-f8f1-46d7-a753-5aa6e20e2c40
 ---
-
 # Custom Objects
 
 [**Custom Object Endpoint Reference**](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Custom-Objects) Marketo allows users to define Marketo Custom Objects which are related to Marketo Standard Objects (Leads, Companies) or other Marketo Custom Objects.  Marketo Custom Objects can be created using the Marketo UI as described [here](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/administration/marketo-custom-objects/create-marketo-custom-objects), or by using the Custom Object Metadata API as described below.

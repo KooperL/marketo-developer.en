@@ -2,8 +2,8 @@
 title: Activities
 feature: REST API
 description: An API for managing Marketo Engage activities.
+exl-id: 1e69af23-2b0c-467a-897c-1dcf81343e73
 ---
-
 # Activities
 
 Marketo permits a huge variety of activity types related to lead records.  Nearly every change, action or flow step is recorded against a lead's activity log and can be retrieved via the API or leveraged in Smart List and Smart Campaign filters and triggers.  Activities are always related back to the lead record via the leadId, corresponding to the Id field of the record, and also has a unique id of its own.
@@ -704,4 +704,4 @@ POST /rest/v1/activities/external.json
 Activities endpoints have a timeout of 30s unless noted below.
 
 * Get Paging Token: 300s 
-* Add Custom Activity: 90s 
+* Add Custom Activity: 90s
