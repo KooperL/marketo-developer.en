@@ -19,7 +19,7 @@ The Munchkin API is comprised of the following functions: `init`, `createTrackin
 | Parameter Name  |   Optional/Required   |  Type   |  Description |
 | --- | --- | --- | --- |
 | Munchkin ID  |   Required  |   String  |   Munchkin Account ID found under Admin > Integration > Munchkin menu. Sets the target instance to send activities to.|
-|Configuration Settings  |   Optional   |  Object   |  Enables alternate behavior settings for Munchkin.|
+| [Configuration Settings](configuration.md)  |   Optional   |  Object   |  Enables alternate behavior settings for Munchkin.|
 
 ```javascript
 Munchkin.init('299-BYM-827');
@@ -45,7 +45,7 @@ Used for generating custom tracking behaviors, such as video player plays and pa
 | Parameter Name  |   Optional/Required   |  Type   |  Description |
 | --- | --- | --- | --- |
 |Function Type  |   Required  |   String   |  Determines the activity to record. Permissible values: `visitWebPage`, `clickLink`, `associateLead` |
-|Data  |   Required  |   Object  |   Contains data for the activity to be recorded.|
+| Data  |   Required  |   Object  |   Contains data for the activity to be recorded.|
 
 #### visitWebPage
 
@@ -54,7 +54,7 @@ Calling `munchkinFunction()` with `visitWebPage` sends a 'visit' activity for th
 | Data Property Name  |   Optional/Required   |  Type   |  Description |
 | --- | --- | --- | --- |
 |url  |   Required  |   String   |  The URL file path used to record a page visit.  This value is appended to current domain name to create full page name. For example, if url is `/index.html` and domain name is `www.example.com`, then the visited page is recorded as `www.example.com/index.html`. |
-|params  |   Optional  |   String  |   A query string of the desired parameters to be recorded.|
+| params  |   Optional  |   String  |   A query string of the desired parameters to be recorded.|
 
 For example, `foo=bar&biz=baz`.
 
