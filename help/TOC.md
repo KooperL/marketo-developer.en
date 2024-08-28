@@ -19,6 +19,7 @@ index: yes
    - [Get Visitor Data](javascript-api/get-visitor-data.md)
    - [Javascript API](javascript-api/javascript-api.md)
    - [Lead Tracking](javascript-api/lead-tracking.md)
+   - [Munchkin API Reference](javascript-api/api-reference.md)
    - [Pattern Match](javascript-api/pattern-match.md)
    - [Predictive Content](javascript-api/predictive-content.md)
    - [Redirects](javascript-api/redirect.md)
