@@ -2,6 +2,7 @@
 title: Data Ingestion
 feature: REST API, Dynamic Content
 description: Consume data with Marketo APIs.
+exl-id: 1d501916-53ac-42d8-a804-abb4ab01c7e8
 ---
 # Data Ingestion API
 
