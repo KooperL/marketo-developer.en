@@ -2,8 +2,8 @@
 title: Munchkin API Reference
 description: Use the Munchkin Javascript API to customize your Munchkin data.
 feature: Javascript
+exl-id: e9727691-5501-4223-bc98-2b4bacc33513
 ---
-
 # Munchkin API Reference
 
 Munchkin provides several functions which can be called manually through Javascript. These can allow for customized tracking of browser events, such as video plays, or clicks on non-links.
