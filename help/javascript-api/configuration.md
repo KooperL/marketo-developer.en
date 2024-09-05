@@ -23,7 +23,7 @@ The configuration settings object can contain any number of properties from the 
 | Name | Data Type | Description |
 |---|---|---|
 | altIds | Array | Accepts an array of Munchkin ID strings. When enabled, this duplicates all Web Activity to the targeted subscriptions, based on their Munchkin ID. |
-| anonymizeIP | Boolean | Anonymizes the IP address recorded in Marketo for new visitors.You can determine if your subscription is provisioned with Munchkin V2 by checking if your `{Munchkin-Id}.mktoresp.com` domain has one of the following addresses: `192.28.144.124` `134.213.193.62` `192.28.147.68` `103.237.104.82`. Alternatively, you can run the script below from a unix shell: nslookup {munchkin-id}.mktoresp.com | grep -E -c -e "(192.28.144.124,134.213.193.62,192.28.147.68,103.237.104.82)" If the command outputs '0' then your subscription is not provisioned with Munchkin V2; if it outputs 1 or greater, then it is provisioned. |
+| anonymizeIP | Boolean | Anonymizes the IP address recorded in Marketo for new visitors. |
 | apiOnly | Boolean | If set to true, then `Munchkin.Init()` function will not call `visitsWebPage`. This is useful for single-page web applications that need full control over every `visitsWebPage` event. |
 | asyncOnly | Boolean | If set to true, sends the XMLHttpRequest's asynchronously. Default is false. |
 | clickTime | Integer | Sets amount of time to block after a click to allow for click tracking request (in milliseconds). Reducing this reduces accuracy of click-tracking. Default is 350 ms. |
