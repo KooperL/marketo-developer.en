@@ -346,8 +346,8 @@ Each record in a successful request may succeed or fail on an individual basis, 
     <tr>
       <td><a name="1012"></a>1012</td>
       <td>Invalid cookie value &#8216;%s'</td>
-      <td>Can  occur when calling the <a href="https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/associateLeadUsingPOST">Associate Lead</a> with an invalid value for the cookie parameter.
-        This also occurs when calling <a href="https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/getLeadsByFilterUsingGET">Get Leads by Filter Type</a> with filterType=cookies and invalid valid value for filterValues parameter.</td>
+      <td>Can occur when calling the <a href="https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/associateLeadUsingPOST">Associate Lead</a> with an invalid value for the `cookie` parameter.
+        This also occurs when calling <a href="https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/getLeadsByFilterUsingGET">Get Leads by Filter Type</a> with `filterType=cookies` and an invalid value for the `filterValues` parameter.</td>
     </tr>
     <tr>
       <td><a name="1013"></a>1013</td>
