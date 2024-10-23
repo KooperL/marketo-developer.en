@@ -59,7 +59,7 @@ There are two methods that you can use to include a token in your calls, as an H
 
    >[!IMPORTANT]
    >
-   >Support for authentication using the **access_token** query parameter is being removed in a subsequent release. If your project uses a query parameter to pass the access token, it should be updated to use the **Authorization** header as soon as possible. New development should use the **Authorization** header exclusively.
+   >Support for authentication using the **access_token** query parameter is being removed on June 30th 2025. If your project uses a query parameter to pass the access token, it should be updated to use the **Authorization** header as soon as possible. New development should use the **Authorization** header exclusively.
 
 ## Tips and Best Practices
 
