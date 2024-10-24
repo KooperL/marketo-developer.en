@@ -22,7 +22,6 @@ Create an access token using an HTTP GET (or POST) request like so:
 
 ```
 GET <Identity URL>/oauth/token?grant_type=client_credentials&client_id=<Client Id>&client_secret=<Client Secret>
-
 ```
 
 If your request was valid, you receive a JSON response similar to the following:
@@ -47,19 +46,13 @@ Response Definition
 
 When making calls to REST API methods, an access token must be included in every call for the call to be successful.
 
-There are two methods that you can use to include a token in your calls, as an HTTP header, or as a query string parameter:
+The access token must be sent as a HTTP header.
 
-1. HTTP Header
+`Authorization: Bearer cdf01657-110d-4155-99a7-f986b2ff13a0:int`
 
-   `Authorization: Bearer cdf01657-110d-4155-99a7-f986b2ff13a0:int`
-
-1. Query Parameter
-
-   `access_token=cdf01657-110d-4155-99a7-f986b2ff13a0:int`
-
-   >[!IMPORTANT]
-   >
-   >Support for authentication using the **access_token** query parameter is being removed on June 30th 2025. If your project uses a query parameter to pass the access token, it should be updated to use the **Authorization** header as soon as possible. New development should use the **Authorization** header exclusively.
+>[!IMPORTANT]
+>
+>Support for authentication using the **access_token** query parameter is being removed on June 30th 2025. If your project uses a query parameter to pass the access token, it should be updated to use the **Authorization** header as soon as possible. New development should use the **Authorization** header exclusively.
 
 ## Tips and Best Practices
 
