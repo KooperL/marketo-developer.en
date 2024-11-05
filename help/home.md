@@ -10,7 +10,7 @@ Detailed documentations that help you master Marketo Engage API
 <table  style="table-layout:auto">
 <tbody>
 <tr>
-<td><a href="getting-started.md"><img src="assets/Smock_Book_18_N.svg" alt="Getting Started"></a></td>
+<td with="100px" ><a href="getting-started.md"><img src="assets/Smock_Book_18_N.svg" alt="Getting Started"></a></td>
 <td><a href="getting-started.md"><strong>Getting Started</strong></a>  Get familiar with Marketo Engage APIs.</td>
 </tr>
 <tr>
