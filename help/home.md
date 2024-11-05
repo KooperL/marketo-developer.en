@@ -7,7 +7,7 @@ exl-id: a249945b-12f3-4b41-badc-ee7a72d5e7eb
 
 Detailed documentations that help you master Marketo Engage API
 
-<table>
+<table  style="table-layout:fixed">
 <tbody>
 <tr>
 <td><a href="getting-started.md"><img src="assets/Smock_Book_18_N.svg" alt="Getting Started"></a></td>
