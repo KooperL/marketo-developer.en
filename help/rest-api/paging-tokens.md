@@ -10,6 +10,8 @@ To page through results, or retrieve data updated relative to a given data, Mark
 
 In certain cases long paging token strings may be returned. This may cause you to encounter an HTTP 414 error code. You can find more information on how to handle these [errors](error-codes.md).
 
+See the [Paging Token API](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Activities/operation/getActivitiesPagingTokenUsingGET) documentation.
+
 ## Token Types
 
 There are two related, but distinct, types of paging tokens which Marketo provides:
