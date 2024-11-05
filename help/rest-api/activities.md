@@ -127,7 +127,7 @@ In some cases, this API may respond with fewer than 300 activity items, but also
 
 Note that within each result array item, the `id` integer attribute is being replaced by the `marketoGUID` string attribute as unique identifier. 
 
-## Data value changes
+### Data value changes
 
 For Data Value Change activities, a specialized version of the activities API is provided. The [Get Lead Changes](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Activities/operation/getLeadChangesUsingGET) endpoint only returns activities of Data Value Change records to lead fields. The interface is the same as the Get Lead Activities API with two differences:
 
@@ -182,7 +182,7 @@ Each activity in the response has a fields array, including a list of changes in
 
 Note that within each result array item, the `id` integer attribute is being replaced by the `marketoGUID` string attribute as unique identifier.
 
-## Deleted leads
+### Deleted leads
 
 There is also a special endpoint [Get Deleted Leads](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Activities/operation/getDeletedLeadsUsingGET) for retrieving deleted activities from Marketo.
 
@@ -223,7 +223,7 @@ GET /rest/v1/activities/deletedleads.json?nextPageToken=GIYDAOBNGEYS2MBWKQYDAORQ
 
 Note that within each result array item, the `id` integer attribute is being replaced by the `marketoGUID` string attribute as unique identifier.
 
-## Page through results
+### Page through results
 
 By default, the endpoints mentioned in this section return 300 activity items at a time.  If the `moreResult` attribute is true, more results are available. Call the endpoint until the `moreResult` attribute returns false, which means that there are no more results available. The `nextPageToken` returned from this endpoint should always be reused for the next iteration of this call.
 
@@ -316,7 +316,7 @@ GET /rest/v1/activities/external/type/{apiName}/describe.json
 }
 ```
 
-### Create type
+## Create type
 
 Each custom activity type requires a display name, API name, trigger name, filter name, and primary attribute.
 
@@ -380,7 +380,7 @@ POST /rest/v1/activities/external/type.json
 }
 ```
 
-### Update Type
+## Update Type
 
 Updating a type is very similar, except the apiName is the only required parameter as a path parameter.
 
@@ -442,7 +442,7 @@ Valid data types for attributes are: string, boolean, integer, float, link, emai
 
 When changing the primary attribute of an activity type, any existing primary attribute should be demoted by setting `isPrimary` to false first.
 
-## Create Attributes
+### Create Attributes
 
 Creating an attribute takes a required `apiName` path parameter. Also required are the `name` and `dataType` parameters.` The description and` `isPrimary` parameters are optional.
 
@@ -509,7 +509,7 @@ POST /rest/v1/activities/external/type/{apiName}/attributes/create.json
 }
 ```
 
-## Update attributes
+### Update attributes
 
 When performing updates to attributes, the `apiName` of the attribute is the primary key. The `apiName` parameter must exist for the update to succeed (that is, you cannot change the `apiName` parameter using update).
 
@@ -576,7 +576,7 @@ POST /rest/v1/activities/external/type/{apiName}/attributes/update.json
 }
 ```
 
-## Delete Attributes
+### Delete Attributes
 
 Deleting an attribute takes a required `apiName` path parameter that is the custom activity API name.  Also required is an attribute parameter that is an array of attribute objects.  Each object must contain an `apiName` parameter that is the custom activity type API name.
 
