@@ -5,19 +5,20 @@ description: API security with Authentication Signatures
 exl-id: d6bed8ee-77fa-440c-8f35-a71cf77f45d3
 ---
 # Authentication Signature
-    
+
 Marketo API security uses a simple yet highly secure model, based on HMAC-SHA1 signatures with messages transmitted over HTTPS. A key advantage of this model is that it provides stateless authentication.
+
 HMAC-SHA1 signatures require the following:
-        
-* A User ID (also called Access Key) that is transmitted with the service request
-* A Signature that is calculated using a shared secret-key and message content and is transmitted with the service request
-* A shared secret-key (also called Encryption Key) that is not transmitted with the service request
-        
-This security information is confirmed via Admin > SOAP API within Marketo.
-The client program will calculate the HMAC-SHA1 signature using the shared secret-key and part of the request message content. The client must include a SOAP header, AuthenticationHeaderInfo, to pass authentication information with the SOAP message.
+
+- A User ID (also called Access Key) that is transmitted with the service request
+- A Signature that is calculated using a shared secret-key and message content and is transmitted with the service request
+- A shared secret-key (also called Encryption Key) that is not transmitted with the service request
+
+The client program calculates the HMAC-SHA1 signature using the shared secret-key and part of the request message content. The client must include a SOAP header, AuthenticationHeaderInfo, to pass authentication information with the SOAP message.
+
 The following pseudo code demonstrates the algorithm:
 
-```
+```javascript
 // Request timestamp: a timestamp string in W3C WSDL date format
 stringToEncrypt = requestTimestamp + clientAccessID;
 
@@ -34,14 +35,14 @@ authHeader = "<ns1:AuthenticationHeader>" +
 
 ## Request Header
 
-|Field Name|Required/Optional|Description|
-|--- |--- |--- |
-|mktowsUserId|Required|Marketo client access ID is found within your Marketo admin SOAP API panel under Integration.|
-|requestSignature|Required|HMAC-SHA1 signature based on shared secret key, requestTimestamp and Marketo User Id|
-|requestTimestamp|Required|Request timestamp (W3C WSDL date format Ex. "2013-06-09T14:04:54-08:00")|
-|partnerId|Optional|LaunchPoint Technology Partner API Key.|
+| Field Name| Required/Optional | Description|
+| --- | --- | --- |
+| `mktowsUserId` | Required | Marketo client access ID is found within your Marketo admin SOAP API panel under Integration. |
+| `requestSignature` | Required | HMAC-SHA1 signature based on shared secret key, `requestTimestamp`, and Marketo User Id |
+| `requestTimestamp` | Required | Request timestamp (W3C WSDL date format Ex. "2013-06-09T14:04:54-08:00") |
+| `partnerId` | Optional | LaunchPoint Technology Partner [API Key](../launchpoint-api.pdf). |
 
-## Request XML getLeadActivity
+## Request XML - getLeadActivity
 
 ```xml
 <soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mkt="http://www.marketo.com/mktows/">
@@ -68,7 +69,7 @@ authHeader = "<ns1:AuthenticationHeader>" +
 </soapenv:Envelope>
 ```
 
-## Response XML Success
+## Response XML - Success
 
 ```xml
 <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ns1="http://www.marketo.com/mktows/">
@@ -125,28 +126,28 @@ authHeader = "<ns1:AuthenticationHeader>" +
 </SOAP-ENV:Envelope
 ```
 
-## Response XML &#8211; Failure (Invalid Credentials)
+## Response XML - Failure (Invalid Credentials)
 
 ```xml
-   <?xml version="1.0" encoding="UTF-8"?>
-   <SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
-     <SOAP-ENV:Body>
-       <SOAP-ENV:Fault>
-         <faultcode>SOAP-ENV:Client</faultcode>
-         <faultstring>20014 - Authentication failed</faultstring>
-         <detail>
-           <ns1:serviceException xmlns:ns1="http://www.marketo.com/mktows/">
-             <name>mktServiceException</name>
-             <message>Authentication failed (20014)</message>
-             <code>20014</code>
-           </ns1:serviceException>
-         </detail>
-       </SOAP-ENV:Fault>
-     </SOAP-ENV:Body>
-   </SOAP-ENV:Envelope>
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/">
+  <SOAP-ENV:Body>
+    <SOAP-ENV:Fault>
+      <faultcode>SOAP-ENV:Client</faultcode>
+      <faultstring>20014 - Authentication failed</faultstring>
+      <detail>
+        <ns1:serviceException xmlns:ns1="http://www.marketo.com/mktows/">
+          <name>mktServiceException</name>
+          <message>Authentication failed (20014)</message>
+          <code>20014</code>
+        </ns1:serviceException>
+      </detail>
+    </SOAP-ENV:Fault>
+  </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
 ```
 
-## Sample Code PHP
+## Sample Code - PHP
 
 ```php
 <?php
@@ -159,15 +160,15 @@ authHeader = "<ns1:AuthenticationHeader>" +
   // Create Signature
   $dtzObj = new DateTimeZone("America/Los_Angeles");
   $dtObj  = new DateTime('now', $dtzObj);
-  $timeStamp = $dtObj-&gt;format(DATE_W3C);
+  $timeStamp = $dtObj->format(DATE_W3C);
   $encryptString = $timeStamp . $marketoUserId;
   $signature = hash_hmac('sha1', $encryptString, $marketoSecretKey);
  
   // Create SOAP Header
   $attrs = new stdClass();
-  $attrs-&gt;mktowsUserId = $marketoUserId;
-  $attrs-&gt;requestSignature = $signature;
-  $attrs-&gt;requestTimestamp = $timeStamp;
+  $attrs->mktowsUserId = $marketoUserId;
+  $attrs->requestSignature = $signature;
+  $attrs->requestTimestamp = $timeStamp;
   $authHdr = new SoapHeader($marketoNameSpace, 'AuthenticationHeader', $attrs);
  
   print_r($authHdr)
@@ -175,7 +176,7 @@ authHeader = "<ns1:AuthenticationHeader>" +
 ?>
 ```
 
-## Sample Code Java
+## Sample Code - Java
 
 ```java
 import com.marketo.mktows.*;
@@ -235,7 +236,7 @@ public class AuthenticationHeader {
 }
 ```
 
-## Sample Code Ruby
+## Sample Code - Ruby
 
 ```ruby
 require 'savon' # Use version 2.0 Savon gem

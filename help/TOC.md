@@ -64,7 +64,6 @@ index: yes
       - [Tokens](rest-api/tokens.md)
       - [Transactional Email](rest-api/transactional-email.md)
    - [Authentication](rest-api/authentication.md)
-   - [Authentication Signature](rest-api/authentication-signature.md)
    - [Base URL](rest-api/base-url.md)
    - [Best Practices](rest-api/marketo-integration-best-practices.md)
    - Bulk Extract {#bulk-extract}
