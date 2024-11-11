@@ -46,19 +46,19 @@ Response Definition
 
 When making calls to REST API methods, an access token must be included in every call for the call to be successful.
 
-The access token must be sent as a HTTP header.
+The access token must be sent as an HTTP header.
 
 `Authorization: Bearer cdf01657-110d-4155-99a7-f986b2ff13a0:int`
 
 >[!IMPORTANT]
 >
->Support for authentication using the **access_token** query parameter is being removed on June 30th 2025. If your project uses a query parameter to pass the access token, it should be updated to use the **Authorization** header as soon as possible. New development should use the **Authorization** header exclusively.
+>Support for authentication using the **access_token** query parameter is being removed on June 30, 2025. If your project uses a query parameter to pass the access token, it should be updated to use the **Authorization** header as soon as possible. New development should use the **Authorization** header exclusively.
 
 ## Tips and Best Practices
 
 Managing access token expiration is important to ensure that your integration works smoothly and prevents unexpected authentication errors from occurring during normal operation. When designing authentication for your integration, be sure to store the token and expiration period contained in the Identity response.
 
-Before making any REST call, you should check the validity of the token based on its remaining lifespan. If the token is expired, then renew it by calling [Identity](https://developer.adobe.com/marketo-apis/api/identity/#tag/Identity/operation/identityUsingGET)endpoint. This helps ensure that your REST call never fails due to an expired token. This helps you manage the latency of your REST calls in a predictable fashion, which is crucial for end-user-facing applications.
+Before making any REST call, you should check the validity of the token based on its remaining lifespan. If the token is expired, then renew it by calling [Identity](https://developer.adobe.com/marketo-apis/api/identity/#tag/Identity/operation/identityUsingGET) endpoint. This helps ensure that your REST call never fails due to an expired token. This helps you manage the latency of your REST calls in a predictable fashion, which is crucial for end-user-facing applications.
 
 If an expired token is used to authenticate a REST call, the REST call will fail and return a 602 error code. If an invalid token is used to authenticate a REST call, a 601 error code is returned. If either of these codes are received, the client should renew the token by calling Identity endpoint.
 
