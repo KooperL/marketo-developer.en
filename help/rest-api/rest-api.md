@@ -60,10 +60,20 @@ Find the [!UICONTROL Endpoint] in the REST API box and save in a note for now.
 
 ![REST Endpoint](assets/admin-web-services-rest-endpoint-1.png)
 
-Open a new browser tab and enter the following, using the appropriate information to call [Get Leads by Filter Type](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/getLeadsByFilterUsingGET):
+When making calls to REST API methods, an access token must be included in every call for the call to be successful. The access token must be sent as a HTTP header.
 
 ```
-<Your Endpoint URL>/rest/v1/leads.json?access_token=<Your Access Token>&filterType=email&filterValues=<Your Email Address>
+Authorization: Bearer cdf01657-110d-4155-99a7-f986b2ff13a0:int
+```
+
+>[!IMPORTANT]
+>
+>Support for authentication using the **access_token** query parameter is being removed on June 30th 2025. If your project uses a query parameter to pass the access token, it should be updated to use the **Authorization** header as soon as possible. New development should use the **Authorization** header exclusively.
+
+Open a new browser tab and enter the following, using the appropriate information to call [Get Leads by Filter Type](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/getLeadsByFilterUsingGET)
+
+```
+<Your Endpoint URL>/rest/v1/leads.json?&filterType=email&filterValues=<Your Email Address>
 ```
 
 If you don't have a lead record with your email address in your database, substitute it for one that you know is there. Hit enter in your URL bar, and you should get back a JSON response resembling this:
