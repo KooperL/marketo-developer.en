@@ -19,7 +19,11 @@ Bulk extract is performed by creating a job, defining the set of data to retriev
 
 ## Authentication
 
-The bulk extract APIs use the same OAuth 2.0 authentication method as other Marketo REST APIs. This requires a valid access token to be embedded either as the query-string parameter `access_token={_AccessToken_}`, or as an HTTP header `Authorization: Bearer {_AccessToken_}`.
+The bulk extract APIs use the same OAuth 2.0 authentication method as other Marketo REST APIs. This requires a valid access token to be sent as an HTTP header `Authorization: Bearer {_AccessToken_}`.
+
+>[!IMPORTANT]
+>
+>Support for authentication using the **access_token** query parameter is being removed on June 30, 2025. If your project uses a query parameter to pass the access token, it should be updated to use the **Authorization** header as soon as possible. New development should use the **Authorization** header exclusively.
 
 ## Limits
 
