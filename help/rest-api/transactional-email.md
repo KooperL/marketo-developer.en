@@ -129,9 +129,8 @@ public class RequestCampaign {
         JsonObject result = null;
         try {
             JsonObject requestBody = buildRequest(); //builds the Json Request Body
-            String s = endpoint + "?access_token=" + auth.getToken(); //takes the endpoint URL and appends the access_token parameter to authenticate
-            System.out.println("Executing RequestCampaign call\n" + "Endpoint: " + s + "\nRequest Body:\n"  + requestBody);
-            URL url = new URL(s); 
+            System.out.println("Executing RequestCampaign call\n" + "Endpoint: " + endpoint + "\nRequest Body:\n"  + requestBody);
+            URL url = new URL(endpoint);
             HttpsURLConnection urlConn = (HttpsURLConnection) url.openConnection(); //Return a URL connection and cast to HttpsURLConnection
             urlConn.setRequestMethod("POST");
             urlConn.setRequestProperty("Content-type", "application/json");
@@ -250,7 +249,7 @@ Token is empty or expired. Trying new authentication
 Trying to authenticate with ...
 Got Authentication Response: {"access_token":"19d51b9a-ff60-4222-bbd5-be8b206f1d40:st","token_type":"bearer","expires_in":3565,"scope":"apiuser@mktosupport.com"}
 Executing RequestCampaign call
-Endpoint: .../rest/v1/campaigns/1578/trigger.json?access_token=19d51b9a-ff60-4222-bbd5-be8b206f1d40:st
+Endpoint: .../rest/v1/campaigns/1578/trigger.json
 Request Body:
 {"input":{"leads":[{"id":1}],"tokens":[{"name":"{{my.bodyReplacement}}","value":"<div class=\"replacedContent\"><p>This content has been replaced</p></div>"}]}}
 Result:
