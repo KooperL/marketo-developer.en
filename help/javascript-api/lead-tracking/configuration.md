@@ -1,12 +1,12 @@
 ---
 title: Configuration
 description: Use the Configuration Javascript API to set configuration values when using Munchkin.
-feature: Javascript
+feature: Munchkin Tracking Code, Javascript
 exl-id: 4700ce7b-f624-4f27-871e-9a050f203973
 ---
 # Configuration
 
-Munchkin can accept various configuration settings to customize behavior. Configuration settings are properties of a JavaScript object that is passed as the second parameter when calling [Munchkin.init()](lead-tracking.md#munchkin-behavior)
+Munchkin can accept various configuration settings to customize behavior. Configuration settings are properties of a JavaScript object that is passed as the second parameter when calling [Munchkin.init()](api-reference.md#munchkin_init)
 
 ```json
 Munchkin.init("AAA-BBB-CCC", {
@@ -30,11 +30,11 @@ The configuration settings object can contain any number of properties from the 
 | cookieAnon | Boolean | If set to false, prevents tracking and cookie creation of new anonymous leads. Leads have cookies and are tracked after filling out a Marketo form, or by clicking through from a Marketo Email. Default is true. |
 | cookieLifeDays | Integer | Sets the expiry date of any newly created Munchkin tracking cookies to this many days in the future. Default is 730 days (2 years). |
 | customName | String | Custom page name. System use only. |
-| domainLevel | Integer | Sets the number of parts from the page's domain to use when setting the domain attribute of the cookie.For example, suppose the current page domain is "www.example.com".domainLevel: 2 will set the cookie domain attribute to ".example.com"domainLevel: 3 will set the cookie domain attribute to ".www.example.com"Background:Munchkin will automatically manage certain two-letter top-level domains. This defaults to two parts in normal cases where the top-level domain is three letters. For example "www.example.com", the two rightmost parts are used to set the cookie, ".example.com".For two letter country codes such as ".jp", ".us", ".cn", and ".uk", the code defaults to three parts. For example "www.example.co.jp" will use three rightmost domain parts, ".example.co.jp".If the domain pattern requires a different behavior, then this must be specified using the `domainLevel` parameter. |
+| <a name="domainlevel"></a>domainLevel | Integer | Sets the number of parts from the page's domain to use when setting the domain attribute of the cookie.For example, suppose the current page domain is "www.example.com".domainLevel: 2 will set the cookie domain attribute to ".example.com"domainLevel: 3 will set the cookie domain attribute to ".www.example.com"Background:Munchkin will automatically manage certain two-letter top-level domains. This defaults to two parts in normal cases where the top-level domain is three letters. For example "www.example.com", the two rightmost parts are used to set the cookie, ".example.com".For two letter country codes such as ".jp", ".us", ".cn", and ".uk", the code defaults to three parts. For example "www.example.co.jp" will use three rightmost domain parts, ".example.co.jp".If the domain pattern requires a different behavior, then this must be specified using the `domainLevel` parameter. |
 | domainSelectorV2 | Boolean | If set to true, utilizes an improved method to determine how to set the cookie domain attribute. |
 | httpsOnly | Boolean | Defaults to false. When set to true, sets cookie to use Secure setting when the tracked page was served via https. |
-| useBeaconAPI | Boolean | Defaults to false. When set to true, uses the Beacon API to send non-blocking requests instead of XMLHttpRequest. If the browser does not support this API, the Munchkin falls back to using XMLHttpRequest. |
-| wsInfo | String | Takes a string to target a workspace. This workspace ID is obtained by selecting the Workspace in the Admin &gt; Integration &gt; Munchkin menu. This setting only applies to the initial creation of an anonymous lead record. Once the Munchkin cookie value has been established for that lead record, the wsInfo parameter cannot be used to change its partition. Since this setting only affects anonymous leads, it is only relevant to partition-specific Anonymous Visitors in Web Reports. |
+| useBeaconAPI | Boolean | Defaults to false. When set to true, uses the [Beacon API](https://developer.mozilla.org/en-US/docs/Web/API/Beacon_API) to send non-blocking requests instead of [XMLHttpRequest](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest). If the browser does not support this API, the Munchkin falls back to using XMLHttpRequest. |
+| wsInfo | String | Takes a string to target a workspace. This workspace ID is obtained by selecting the Workspace in the Admin &gt; Integration &gt; Munchkin menu. This setting only applies to the initial creation of an anonymous lead record. Once the Munchkin cookie value has been established for that lead record, the wsInfo parameter cannot be used to change its partition. Since this setting only affects anonymous leads, it is only relevant to partition-specific [Anonymous Visitors in Web Reports](https://experienceleague.adobe.com/en/docs/marketo/using/product-docs/reporting/basic-reporting/report-activity/display-people-or-anonymous-visitors-in-web-reports). |
 
 ## Examples
 
