@@ -10,7 +10,7 @@ Marketo's Munchkin JavaScript allows for tracking of end-user page visits and cl
 
 ## Embedding the Code
 
-Your Marketo instance automatically provides pre-configured tracking code snippets to embed code on your external pages which track activity back to your Marketo instance. Use of the embed code is governed by this [license agreement](../../munchkin-license.pdf).
+Your Marketo instance automatically provides pre-configured tracking code snippets to embed code on your external pages which track activity back to your Marketo instance. Use of the embed code is governed by this [license agreement](../munchkin-license.pdf).
 
 There are three tracking code types available:
 
@@ -68,7 +68,7 @@ On a lead's first visit to a page on your domain, a new anonymous lead record is
 
 - The lead must visit a Munchkin-tracked page with an `mkt_tok` parameter in the query string from a tracked Marketo email link.
 - The lead must fill out a Marketo Form.
-- A SOAP [syncLead](../../soap-api/leads.md) or REST [Associate Lead](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/associateLeadUsingPOST) call must be sent.
+- A SOAP [syncLead](../soap-api/leads.md) or REST [Associate Lead](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/associateLeadUsingPOST) call must be sent.
 
 Once one of these conditions is fulfilled, the cookie and all associated web activity is associated to the known lead.
 
