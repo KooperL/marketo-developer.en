@@ -12,14 +12,15 @@ index: yes
 - [Home](home.md)
 - [Getting Started](getting-started.md)
 - Javascript API {#javascriptapi}
-   - [Configuration](javascript-api/configuration.md)
    - [Custom Data Events](javascript-api/custom-data-events.md)
    - [Examples](javascript-api/examples.md)
    - [Forms API Reference](javascript-api/forms-api-reference.md)
    - [Get Visitor Data](javascript-api/get-visitor-data.md)
    - [Javascript API](javascript-api/javascript-api.md)
-   - [Lead Tracking](javascript-api/lead-tracking.md)
-   - [Munchkin API Reference](javascript-api/api-reference.md)
+   - [Lead Tracking]{#leadtracking}
+      - [Lead Tracking](javascript-api/lead-tracking.md)
+      - [Configuration](javascript-api/configuration.md)
+      - [Munchkin API Reference](javascript-api/api-reference.md)
    - [Pattern Match](javascript-api/pattern-match.md)
    - [Predictive Content](javascript-api/predictive-content.md)
    - [Redirects](javascript-api/redirect.md)

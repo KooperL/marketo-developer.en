@@ -1,7 +1,7 @@
 ---
 title: Munchkin API Reference
 description: Use the Munchkin Javascript API to customize your Munchkin data.
-feature: Javascript
+feature: Munchkin Tracking Code, Javascript
 exl-id: e9727691-5501-4223-bc98-2b4bacc33513
 ---
 # Munchkin API Reference
@@ -11,6 +11,8 @@ Munchkin provides several functions which can be called manually through Javascr
 ## Functions
 
 The Munchkin API is comprised of the following functions: `init`, `createTrackingCookie`, `munchkinFunction`.
+
+<a name="munchkin_init"></a>
 
 ### Munchkin.init()
 

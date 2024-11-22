@@ -1,10 +1,10 @@
 ---
 title: JavaScript API
 description: Javascript API
-feature: Munchkin Tracking Code, Javascript
+feature: Munchkin Tracking Code, Forms, Web Personalization, Predictive Content, Social, Javascript
 exl-id: 6129a467-be44-44bd-9e02-62009070c318
 ---
-# Javascript APi
+# Javascript API
 
 The following is an overview of Marketo client-side JavaScript integration capabilities. You must have a Marketo account to make use of these capabilities. Usually, implementation simply involves adding an "embed code" to your web property. You may optionally use additional functionality by calling JavaScript functions that are exposed by the embed code. Those functions are fully documented here.
 
