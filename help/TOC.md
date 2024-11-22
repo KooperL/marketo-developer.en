@@ -17,7 +17,7 @@ index: yes
    - [Forms API Reference](javascript-api/forms-api-reference.md)
    - [Get Visitor Data](javascript-api/get-visitor-data.md)
    - [Javascript API](javascript-api/javascript-api.md)
-   - [Lead Tracking](#leadtracking)
+   - [Lead Tracking]{#leadtracking}
       - [Lead Tracking](javascript-api/lead-tracking.md)
       - [Configuration](javascript-api/configuration.md)
       - [Munchkin API Reference](javascript-api/api-reference.md)
