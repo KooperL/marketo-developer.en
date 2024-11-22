@@ -13,6 +13,7 @@ Munchkin provides several functions which can be called manually through Javascr
 The Munchkin API is comprised of the following functions: `init`, `createTrackingCookie`, `munchkinFunction`.
 
 <a name="munchkin_init"></a>
+
 ### Munchkin.init()
 
 `Munchkin.init()` must be called before any other functions. It sets up Munchkin on the current page to send activities to a specific instance and generates a "Visits Web Page" activity for the current page.
