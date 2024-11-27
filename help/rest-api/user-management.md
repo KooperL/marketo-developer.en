@@ -124,29 +124,29 @@ GET /userservice/management/v1/users/allusers.json
 ```json
 [
   {
-    "userid": "02226aae-9f54-45d1-bc26-8305c8f55ec7@adobe.com",
-    "firstName": "Aparna",
-    "lastName": "Ghosh",
-    "emailAddress": "aparna.ghosh@ericsson.com",
-    "id": 5222,
+    "userid": "jamie@lannister.com",
+    "firstName": "Jamie",
+    "lastName": "Lannister",
+    "emailAddress": "jamie@houselannister.com",
+    "id": 6785,
     "apiOnly": false
-    },
-    {
-    "userid": "038e1cac-3f3e-4c05-b0b3-6265fd2abcd3@adobe.com",
-    "firstName": "Timm",
-    "lastName": "Rehse",
-    "emailAddress": "timm.rehse@ericsson.com",
-    "id": 7075,
+  },
+  {
+    "userid": "jeoffery@housebaratheon.com",
+    "firstName": "Jeoffery",
+    "lastName": "Baratheon",
+    "emailAddress": "jeoffery@housebaratheon.com",
+    "id": 7718,
     "apiOnly": false
-    },
-    {
-    "userid": "0a855522-06c9-4a9e-93de-91a0d2cc2987@adobe.com",
-    "firstName": "Dhinagaran",
-    "lastName": "Swaminathan",
-    "emailAddress": "dhinagaran.swaminathan@ericsson.com",
-    "id": 6439,
+  },
+  {
+    "userid": "rickon@housestark.com",
+    "firstName": "Rickon",
+    "lastName": "Stark",
+    "emailAddress": "rickon@housestark.com",
+    "id": 8612,
     "apiOnly": false
-    }
+  }
 ]
 ```
 
