@@ -12,10 +12,10 @@ The Marketo Lead's API provides a large set of capabilities for simple CRUD appl
 
 ## Describe
 
-One of the key capabilities of the Leads API is the Describe method. Use Describe Leads to retrieve a full list of the fields available for interaction via both the REST API and SOAP API, as well as metadata for each:
+One of the key capabilities of the Leads API is the Describe method. Use Describe Leads to retrieve a full list of the fields available for interaction via both the REST API, as well as metadata for each:
 
 * Data type
-* REST and SOAP API names
+* REST API names
 * Length (if applicable)
 * Read-Only
 * Friendly label
