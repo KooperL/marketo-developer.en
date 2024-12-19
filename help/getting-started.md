@@ -7,6 +7,10 @@ exl-id: 78c44c32-4e59-4d55-a45c-ef0d7dac814d
 
 Marketo Engage is a marketing automation platform that enables marketers to manage personalized multi-channel programs and campaigns to prospects and customers. The Marketo Engage platform can be extended using integration points. Below you find the core entities and their relationships.
 
+>[!NOTE]
+>The SOAP API is being deprecated and will no longer be available after October 31st 2025. All new development should be done with the Marketo [REST API](./rest-api/rest-api.md), and existing services should be migrated by that date to avoid interruptions in service. If you have a service which uses the SOAP API, please consult the SOAP API [Migration Guide](./soap-api/migration.md) for information on how to migrate.
+>
+
 The following objects are not available via REST API when native sync is enabled: Company, Opportunity, Opportunity Role, Sales Person
 
 ![Data Model](assets/data_model.png)

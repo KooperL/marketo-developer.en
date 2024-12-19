@@ -68,7 +68,7 @@ On a lead's first visit to a page on your domain, a new anonymous lead record is
 
 - The lead must visit a Munchkin-tracked page with an `mkt_tok` parameter in the query string from a tracked Marketo email link.
 - The lead must fill out a Marketo Form.
-- A SOAP [syncLead](../soap-api/leads.md) or REST [Associate Lead](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/associateLeadUsingPOST) call must be sent.
+- A REST [Associate Lead](https://developer.adobe.com/marketo-apis/api/mapi/#tag/Leads/operation/associateLeadUsingPOST) call must be sent.
 
 Once one of these conditions is fulfilled, the cookie and all associated web activity is associated to the known lead.
 
