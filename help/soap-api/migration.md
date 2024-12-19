@@ -2,8 +2,8 @@
 title: Migrating to REST API
 feature: SOAP
 description: Migrating from SOAP to REST APIs
+exl-id: c2956db3-defe-4163-99f3-58654ce8ee2b
 ---
- 
 # Migrating to REST API
 
 The Marketo Engage SOAP API will be retired after October 31, 2025. All existing integrations using the SOAP API should be retired or migrated to the [Marketo Engage REST API](https://experienceleague.adobe.com/en/docs/marketo-developer/marketo/rest/rest-api) by this date in order to avoid interruptions in service.
