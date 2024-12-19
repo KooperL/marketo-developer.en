@@ -136,6 +136,7 @@ index: yes
       - [[!DNL listMObjects]](soap-api/listmobjects.md)
       - [Marketo Objects](soap-api/marketo-objects.md)
       - [[!DNL syncMObjects]](soap-api/syncmobjects.md)
+   - [Migrating to REST API](soap-api/migration.md)
    - Programs {#programs}
       - [[!DNL getChannels]](soap-api/getchannels.md)
       - [[!DNL getTags]](soap-api/gettags.md)

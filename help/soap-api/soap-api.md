@@ -6,7 +6,7 @@ exl-id: 6618cc82-15ae-4030-aa00-438e635d8369
 ---
 # SOAP API
 
-The SOAP API is being deprecated and will no longer be available after October 31st 2025.  All new development should be done with the Marketo [REST](https://developer.adobe.com/marketo-apis/) API, and existing services should be migrated by that date to avoid interruptions in service.
+The SOAP API is being deprecated and will no longer be available after October 31st 2025. All new development should be done with the Marketo [REST API](../rest-api/rest-api.md), and existing services should be migrated by that date to avoid interruptions in service. If you have a service which uses the SOAP API, please consult the SOAP API [Migration Guide](./migration.md) for information on how to migrate.
 
 ## SOAP WSDL
 
