@@ -18,7 +18,7 @@ This function lets you import a list of leads into an existing Static List in Ma
 | mary@company.com | Mary | Rodgers |
 | wanda@megacorp.com | Wanda | Williams |
 
-**Note:** `displayName` values should be used in the `importFileHeader` rather than the `name` values.
+`displayName` values should be used in the `importFileHeader` rather than the `name` values.
 
 **Dynamic Email Content:** Optionally, you can pass values on a per lead basis that act as replacements for My Tokens in an email.
 
@@ -30,7 +30,9 @@ This function lets you import a list of leads into an existing Static List in Ma
 
 **Important:** If you add in tokens for the leads, you must specify the Smart Campaign that uses them. The next time the specified Smart Campaign runs, it will use the values from your list, instead of the normal My Token values. After that single Campaign runs, the tokens will be discarded.
 
-**NOTE:** `importToList` can take time to complete, particularly for large lists. If you plan to use the newly imported list in other API calls, you should use `importToListStatus` to check that the operation is complete.
+`importToList` can take time to complete, particularly for large lists. If you plan to use the newly imported list in other API calls, you should use `importToListStatus` to check that the operation is complete.
+
+**Note:** Importing NULL values for numeric fields in a CSV file may generate a "Change Data Value" activity for those fields, even if the field is already blank. Any smart campaigns that use a "Data Value Changed" Filter or a "Data Value Changes" Trigger may cause leads to qualify for those campaigns even though the data is not actually changing. Use constraints on these filters/triggers to ensure leads do not qualify for incorrect campaigns when performing imports.
 
 ## Request
 
