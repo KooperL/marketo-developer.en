@@ -314,9 +314,12 @@ GET /rest/asset/v1/program/byTag.json?tagType=Presenter&tagValue=Dennis
 
 ## Create and Update
 
-[Creating]https://developer.adobe.com/marketo-apis/api/asset/#tag/Programs/operation/createProgramUsingPOST) and [updating](https://developer.adobe.com/marketo-apis/api/asset/#tag/Programs/operation/updateProgramUsingPOST) programs follows the standard asset pattern and has `folder`, `name`, `type` and `channel` as required parameters, with `description`, `costs` and `tags` being optional. Channel and type may only be set at program creation. Only description, name, `tags` and `costs` may be updated after creation, with an additional `costsDestructiveUpdate` parameter allowed. Passing `costsDestructiveUpdate` as true will cause all existing costs to be cleared and replaced with any costs included in the call. Note that tags may be required for some program types in some subscriptions, but this is configuration-dependent and should first be checked with Get Tags to see if there are instance-specific requirements.
+[Creating](https://developer.adobe.com/marketo-apis/api/asset/#tag/Programs/operation/createProgramUsingPOST) and [updating](https://developer.adobe.com/marketo-apis/api/asset/#tag/Programs/operation/updateProgramUsingPOST) programs follows the standard asset pattern and has `folder`, `name`, `type` and `channel` as required parameters, with `description`, `costs` and `tags` being optional. Channel and type may only be set at program creation. Only description, name, `tags` and `costs` may be updated after creation, with an additional `costsDestructiveUpdate` parameter allowed. Passing `costsDestructiveUpdate` as true will cause all existing costs to be cleared and replaced with any costs included in the call. Note that tags may be required for some program types in some subscriptions, but this is configuration-dependent and should first be checked with Get Tags to see if there are instance-specific requirements.
 
-When creating or updating an Email Program, a `startDate` and `endDate` may also be passed.
+When creating or updating an Email Program, a `startDate` and `endDate` may also be passed as a UTC date/time:
+
+`"startDate": "2022-10-19T15:00:00.000Z"`
+`"endDate": "2022-10-19T15:00:00.000Z"`
 
 ### Create
 
