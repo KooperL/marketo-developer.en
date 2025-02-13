@@ -13,7 +13,7 @@ Below are links to the Marketo REST API references.
 - [Lead Database](https://developer.adobe.com/marketo-apis/api/mapi/)
 - [User Management](https://developer.adobe.com/marketo-apis/api/user/)
 
-## Endpoint List (#endpoint_list)
+## Endpoint List {#endpoint_list}
 
 Here is a comprehensive list of REST API endpoints.
 
