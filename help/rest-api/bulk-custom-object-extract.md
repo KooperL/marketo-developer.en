@@ -398,7 +398,7 @@ leadId,color,make,model,vIN
 13,Fusion Red,Tesla,Roadster,SFGRC3C41FF154321
 ```
 
-To support partial and resumption-friendly retrieval of extracted data, the file endpoint optionally supports the HTTP header Range of the type bytes. If the header is not set, the whole of the contents will be returned. You can read more about using the Range header in Marketo [Bulk Extract](bulk-extract.md).
+To support partial and resumption-friendly retrieval of extracted data, the file endpoint optionally supports the HTTP header `Range` of the type `bytes`. If the header is not set, the whole of the contents will be returned. You can read more about using the Range header in Marketo [Bulk Extract](bulk-extract.md).
 
 ## Canceling a Job
 

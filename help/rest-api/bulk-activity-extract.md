@@ -216,7 +216,7 @@ GET /bulk/v1/activities/export/{exportId}/file.json
 
 The response contains a file formatted in the way that the job was configured. The endpoint responds with the contents of the file.
 
-If a requested lead field is empty (contains no data), `then null` is placed in the corresponding field in the export file.  In the example below, the campaignId field for the returned activity is empty.
+If a requested lead field is empty (contains no data), `then null` is placed in the corresponding field in the export file.  In the example below, the `campaignId` field for the returned activity is empty.
 
 ```json
 marketoGUID,leadId,activityDate,activityTypeId,campaignId,primaryAttributeValueId,primaryAttributeValue,attributes
