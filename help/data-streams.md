@@ -180,7 +180,7 @@ To implement the Lead Activity Data Stream, here are the steps for customers to 
     1. The Activity types they wish to receive (complete list above)
     1. A means of authentication, so that the customer can verify that the requests are legitimate. Either:
         1. An identity provider URL, Client ID, and Client Secret for OAuth [Client Credentials Authentication](https://www.oauth.com/oauth2-servers/access-tokens/client-credentials/)
-        1. An API token, which can be included in requests sent by the Lead Activity Datastream either in query parameters, or in an Authorization header (customer's choice)
+        1. An API token, which can be included in requests sent by the Lead Activity Datastream in an Authorization http header
 
 Adobe then enables the data stream, at which point customers begin to receive data.
 
