@@ -45,15 +45,27 @@ Response Definition
 ## Using an Access Token
 
 When making calls to REST API methods, an access token must be included in every call for the call to be successful.
+The access token must be sent as an HTTP header.
 
 >[!IMPORTANT]
 >
 >Support for authentication using the **access_token** query parameter is being removed on June 30, 2025. If your project uses a query parameter to pass the access token, it should be updated to use the **Authorization** header as soon as possible. New development should use the **Authorization** header exclusively.
 
-The access token must be sent as an HTTP header. For example, in a CURL request:
+### Switching to the Authorization header
+
+
+To switch from using the `access_token` query parameter to an Authorization header, a small code change is required.
+
+Using CURL as an example, this code sends the `access_token` value as a form parameter (the -F flag):
 
 ```bash
-$ curl -H 'Authorization: Bearer cdf01657-110d-4155-99a7-f984b2ff13a0:int`' 'https://123-ABC-456.mktourl.com/rest/v1/apicall.json?filterType=id&filterValues=4,5,7,12,13'
+curl ...  -F access_token=<Access Token> <REST API Endpoint Base URL>/bulk/v1/apiCall.json
+```
+
+This code sends the same value as the `Authorization: Bearer` http header (the -H flag):
+
+```bash
+curl ... -H 'Authorization: Bearer <Access Token>' <REST API Endpoint Base URL>/bulk/v1/apiCall.json
 ```
 
 ## Tips and Best Practices
